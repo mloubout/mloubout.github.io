@@ -1,5 +1,6 @@
 ---
 title: "Sparsity-promoting least-square migration with linearized Bregman and compressive sensing"
+etype: 'conference'
 collection: publications
 permalink: /publication/2015-08-09-01-Sparsity-promoting-least-square-migration-with-linearized-Bregman-and-compressive-sensing
 excerpt: '(Natal, Brazil)'

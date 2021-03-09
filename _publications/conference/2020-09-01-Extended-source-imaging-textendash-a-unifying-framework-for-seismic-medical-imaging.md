@@ -1,5 +1,6 @@
 ---
 title: "Extended source imaging textendash- a unifying framework for seismic &amp; medical imaging"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-09-01-Extended-source-imaging-textendash-a-unifying-framework-for-seismic-medical-imaging
 excerpt: '(SEG, virtual)'

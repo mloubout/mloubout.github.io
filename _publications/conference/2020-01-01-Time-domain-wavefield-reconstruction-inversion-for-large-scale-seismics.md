@@ -1,5 +1,6 @@
 ---
 title: "Time-domain wavefield reconstruction inversion for large-scale seismics"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-01-01-Time-domain-wavefield-reconstruction-inversion-for-large-scale-seismics
 excerpt: 'Accepted in EAGE, withdrawn due to logistical challenge'

@@ -1,5 +1,6 @@
 ---
 title: "An Event-Driven Approach to Serverless Seismic Imaging in the Cloud"
+etype: 'article'
 collection: publications
 permalink: /publication/2020-03-01-An-Event-Driven-Approach-to-Serverless-Seismic-Imaging-in-the-Cloud
 excerpt: '(IEEE Transactions on Parallel and Distributed Systems)'

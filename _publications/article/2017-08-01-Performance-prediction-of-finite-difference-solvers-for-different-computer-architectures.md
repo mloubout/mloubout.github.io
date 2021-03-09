@@ -1,5 +1,6 @@
 ---
 title: "Performance prediction of finite-difference solvers for different computer architectures"
+etype: 'article'
 collection: publications
 permalink: /publication/2017-08-01-Performance-prediction-of-finite-difference-solvers-for-different-computer-architectures
 excerpt: '(Computers \&amp; Geosciences)'

@@ -1,5 +1,6 @@
 ---
 title: "Effects of wrong adjoints for RTM in TTI media"
+etype: 'conference'
 collection: publications
 permalink: /publication/2018-10-01-Effects-of-wrong-adjoints-for-RTM-in-TTI-media
 excerpt: '(SEG, Anaheim)'

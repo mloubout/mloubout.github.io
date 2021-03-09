@@ -1,5 +1,6 @@
 ---
 title: "Devito: automated fast finite difference computation"
+etype: 'conference'
 collection: publications
 permalink: /publication/2016-11-01-Devito-automated-fast-finite-difference-computation
 excerpt: '(WOLFHPC Workshop (SC16), Utah)'

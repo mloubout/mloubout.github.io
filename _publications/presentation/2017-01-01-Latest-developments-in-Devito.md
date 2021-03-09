@@ -1,5 +1,6 @@
 ---
 title: "Latest developments in Devito"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2017-01-01-Latest-developments-in-Devito
 date: 2017-01-01

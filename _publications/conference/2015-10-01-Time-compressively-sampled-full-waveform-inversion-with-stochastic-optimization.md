@@ -1,5 +1,6 @@
 ---
 title: "Time compressively sampled full-waveform inversion with stochastic optimization"
+etype: 'conference'
 collection: publications
 permalink: /publication/2015-10-01-Time-compressively-sampled-full-waveform-inversion-with-stochastic-optimization
 excerpt: '(SEG, New Orleans)'

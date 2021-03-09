@@ -1,5 +1,6 @@
 ---
 title: "Data normalization strategies for full-waveform inversion"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-06-01-Data-normalization-strategies-for-full-waveform-inversion
 excerpt: '(EAGE, Paris)'

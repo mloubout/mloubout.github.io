@@ -1,5 +1,6 @@
 ---
 title: "Full-Waveform Inversion - Part 1: forward modeling"
+etype: 'article'
 collection: publications
 permalink: /publication/2017-12-01-Full-Waveform-Inversion-Part-1-forward-modeling
 excerpt: '(The Leading Edge)'

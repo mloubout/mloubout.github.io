@@ -1,5 +1,6 @@
 ---
 title: "Geophysics Bright Spots: Efficient coding of large-scale seismic inversion algorithms"
+etype: 'article'
 collection: publications
 permalink: /publication/2019-01-01-Geophysics-Bright-Spots-Efficient-coding-of-large-scale-seismic-inversion-algorithms
 excerpt: '(The Leading Edge)'

@@ -1,5 +1,6 @@
 ---
 title: "Deep Convolutional Neural Networks in prestack seismictextendash-two exploratory examples"
+etype: 'conference'
 collection: publications
 permalink: /publication/2018-10-01-Deep-Convolutional-Neural-Networks-in-prestack-seismictextendash-two-exploratory-examples
 excerpt: '(SEG, Anaheim)'

@@ -1,5 +1,6 @@
 ---
 title: "Regularizing waveform inversion by projections onto convex sets"
+etype: 'conference'
 collection: publications
 permalink: /publication/2015-08-09-01-Regularizing-waveform-inversion-by-projections-onto-convex-sets
 excerpt: '(Natal, Brazil)'

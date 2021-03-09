@@ -1,5 +1,6 @@
 ---
 title: "Unsupervised data-guided uncertainty analysis in imaging and horizon tracking"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-10-01-Unsupervised-data-guided-uncertainty-analysis-in-imaging-and-horizon-tracking
 excerpt: 'SIAMTXLA'

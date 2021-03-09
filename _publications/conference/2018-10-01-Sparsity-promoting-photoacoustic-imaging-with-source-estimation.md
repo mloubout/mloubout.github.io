@@ -1,5 +1,6 @@
 ---
 title: "Sparsity-promoting photoacoustic imaging with source estimation"
+etype: 'conference'
 collection: publications
 permalink: /publication/2018-10-01-Sparsity-promoting-photoacoustic-imaging-with-source-estimation
 excerpt: '(IEEE IUS, Kobe)'

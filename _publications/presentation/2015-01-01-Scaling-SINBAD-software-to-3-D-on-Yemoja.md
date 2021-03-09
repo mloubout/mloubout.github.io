@@ -1,5 +1,6 @@
 ---
 title: "Scaling SINBAD software to 3-D on Yemoja"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2015-01-01-Scaling-SINBAD-software-to-3-D-on-Yemoja
 date: 2015-01-01

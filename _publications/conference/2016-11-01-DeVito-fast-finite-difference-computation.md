@@ -1,5 +1,6 @@
 ---
 title: "DeVito: fast finite difference computation"
+etype: 'conference'
 collection: publications
 permalink: /publication/2016-11-01-DeVito-fast-finite-difference-computation
 excerpt: '(Super Computing, Utah)'

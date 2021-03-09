@@ -1,5 +1,6 @@
 ---
 title: "Scaling through abstractions textendash high-performance vectorial wave simulations for seismic inversion with Devito"
+etype: 'techreport'
 collection: publications
 permalink: /publication/2020-04-01-Scaling-through-abstractions-textendash-high-performance-vectorial-wave-simulations-for-seismic-inversion-with-Devito
 date: 2020-04-01

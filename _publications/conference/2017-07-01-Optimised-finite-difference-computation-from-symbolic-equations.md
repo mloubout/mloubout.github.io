@@ -1,5 +1,6 @@
 ---
 title: "Optimised finite difference computation from symbolic equations"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-07-01-Optimised-finite-difference-computation-from-symbolic-equations
 excerpt: '(SciPy, Texas)'

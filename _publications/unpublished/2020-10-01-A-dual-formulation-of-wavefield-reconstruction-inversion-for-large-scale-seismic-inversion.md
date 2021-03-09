@@ -1,5 +1,6 @@
 ---
 title: "A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion"
+etype: 'unpublished'
 collection: publications
 permalink: /publication/2020-10-01-A-dual-formulation-of-wavefield-reconstruction-inversion-for-large-scale-seismic-inversion
 excerpt: 'Submitted to Geophysics'

@@ -1,5 +1,6 @@
 ---
 title: "Lossy Checkpoint Compression in Full Waveform Inversion"
+etype: 'unpublished'
 collection: publications
 permalink: /publication/2020-09-01-Lossy-Checkpoint-Compression-in-Full-Waveform-Inversion
 excerpt: 'Submitted to GMD'

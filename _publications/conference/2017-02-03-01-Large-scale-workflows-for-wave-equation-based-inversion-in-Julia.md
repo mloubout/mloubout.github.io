@@ -1,5 +1,6 @@
 ---
 title: "Large-scale workflows for wave-equation based inversion in Julia"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-02-03-01-Large-scale-workflows-for-wave-equation-based-inversion-in-Julia
 excerpt: '(SIAM Conference on Computational Science and Engineering, Atlanta)'

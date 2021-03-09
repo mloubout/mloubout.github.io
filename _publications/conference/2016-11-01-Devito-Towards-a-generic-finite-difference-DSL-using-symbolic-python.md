@@ -1,5 +1,6 @@
 ---
 title: "Devito: Towards a generic finite difference DSL using symbolic python"
+etype: 'conference'
 collection: publications
 permalink: /publication/2016-11-01-Devito-Towards-a-generic-finite-difference-DSL-using-symbolic-python
 excerpt: '(PyHPC, Utah)'

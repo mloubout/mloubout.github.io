@@ -1,5 +1,6 @@
 ---
 title: "Preconditioned training of normalizing flows for variational inference in inverse problems"
+etype: 'conference'
 collection: publications
 permalink: /publication/2021-01-01-Preconditioned-training-of-normalizing-flows-for-variational-inference-in-inverse-problems
 date: 2021-01-01

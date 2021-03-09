@@ -1,5 +1,6 @@
 ---
 title: "A large-scale framework for symbolic implementations of seismic inversion algorithms in Julia"
+etype: 'article'
 collection: publications
 permalink: /publication/2019-03-01-A-large-scale-framework-for-symbolic-implementations-of-seismic-inversion-algorithms-in-Julia
 excerpt: '(Geophysics)'

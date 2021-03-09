@@ -1,5 +1,6 @@
 ---
 title: "A large-scale framework in Julia for fast prototyping of seismic inversion algorithms"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2017-01-01-A-large-scale-framework-in-Julia-for-fast-prototyping-of-seismic-inversion-algorithms
 date: 2017-01-01

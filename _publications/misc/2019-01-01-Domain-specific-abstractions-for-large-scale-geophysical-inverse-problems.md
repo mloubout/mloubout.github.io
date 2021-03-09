@@ -1,5 +1,6 @@
 ---
 title: "Domain-specific abstractions for large-scale geophysical inverse problems"
+etype: 'misc'
 collection: publications
 permalink: /publication/2019-01-01-Domain-specific-abstractions-for-large-scale-geophysical-inverse-problems
 excerpt: '(HotCSE)'

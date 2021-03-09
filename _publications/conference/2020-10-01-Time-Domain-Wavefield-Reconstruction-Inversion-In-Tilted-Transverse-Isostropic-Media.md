@@ -1,5 +1,6 @@
 ---
 title: "Time-Domain Wavefield Reconstruction Inversion In Tilted Transverse Isostropic Media"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-10-01-Time-Domain-Wavefield-Reconstruction-Inversion-In-Tilted-Transverse-Isostropic-Media
 excerpt: 'SIAMTXLA'

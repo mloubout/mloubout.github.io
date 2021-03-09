@@ -1,5 +1,6 @@
 ---
 title: "Combining checkpointing and data compression to accelerate adjoint-based optimization problems"
+etype: 'article'
 collection: publications
 permalink: /publication/2019-01-01-Combining-checkpointing-and-data-compression-to-accelerate-adjoint-based-optimization-problems
 excerpt: '(Euro-Par 2019: Parallel Processing)'

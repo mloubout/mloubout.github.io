@@ -1,5 +1,6 @@
 ---
 title: "Sparsity promoting least-squares migration for long offset sparse OBN"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-10-01-Sparsity-promoting-least-squares-migration-for-long-offset-sparse-OBN
 excerpt: '(SEG Workshop, virtual)'

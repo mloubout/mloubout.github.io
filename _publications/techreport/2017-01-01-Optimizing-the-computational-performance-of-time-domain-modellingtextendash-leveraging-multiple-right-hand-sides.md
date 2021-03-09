@@ -1,5 +1,6 @@
 ---
 title: "Optimizing the computational performance of time-domain modellingtextendash-leveraging multiple right-hand-sides"
+etype: 'techreport'
 collection: publications
 permalink: /publication/2017-01-01-Optimizing-the-computational-performance-of-time-domain-modellingtextendash-leveraging-multiple-right-hand-sides
 date: 2017-01-01

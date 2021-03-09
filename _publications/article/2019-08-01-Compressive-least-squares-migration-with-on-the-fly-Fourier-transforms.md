@@ -1,5 +1,6 @@
 ---
 title: "Compressive least-squares migration with on-the-fly Fourier transforms"
+etype: 'article'
 collection: publications
 permalink: /publication/2019-08-01-Compressive-least-squares-migration-with-on-the-fly-Fourier-transforms
 excerpt: '(Geophysics)'

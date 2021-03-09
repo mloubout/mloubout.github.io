@@ -1,5 +1,6 @@
 ---
 title: "Accelerating ideation &amp; innovation cheaply in the Cloud the power of abstraction, collaboration &amp; reproducibility"
+etype: 'conference'
 collection: publications
 permalink: /publication/2019-10-01-Accelerating-ideation-innovation-cheaply-in-the-Cloud-the-power-of-abstraction-collaboration-reproducibility
 excerpt: '(EAGE HPC Workshop, Dubai)'

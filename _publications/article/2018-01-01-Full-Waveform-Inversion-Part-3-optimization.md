@@ -1,5 +1,6 @@
 ---
 title: "Full-Waveform Inversion - Part 3: optimization"
+etype: 'article'
 collection: publications
 permalink: /publication/2018-01-01-Full-Waveform-Inversion-Part-3-optimization
 excerpt: '(The Leading Edge)'

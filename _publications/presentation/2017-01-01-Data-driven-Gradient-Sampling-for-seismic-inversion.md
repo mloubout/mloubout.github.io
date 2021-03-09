@@ -1,5 +1,6 @@
 ---
 title: "Data driven Gradient Sampling for seismic inversion"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2017-01-01-Data-driven-Gradient-Sampling-for-seismic-inversion
 date: 2017-01-01

@@ -1,5 +1,6 @@
 ---
 title: "Devito (v3.1.0): an embedded domain-specific language for finite differences and geophysical exploration"
+etype: 'article'
 collection: publications
 permalink: /publication/2019-01-01-Devito-v310-an-embedded-domain-specific-language-for-finite-differences-and-geophysical-exploration
 excerpt: '(Geoscientific Model Development)'

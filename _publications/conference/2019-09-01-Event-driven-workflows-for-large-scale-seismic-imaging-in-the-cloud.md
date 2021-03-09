@@ -1,5 +1,6 @@
 ---
 title: "Event-driven workflows for large-scale seismic imaging in the cloud"
+etype: 'conference'
 collection: publications
 permalink: /publication/2019-09-01-Event-driven-workflows-for-large-scale-seismic-imaging-in-the-cloud
 excerpt: '(SEG, San Antonio)'

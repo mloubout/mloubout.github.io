@@ -1,5 +1,6 @@
 ---
 title: "Temporal blocking of finite-difference stencil operators with sparse &quot;off-the-grid&quot; sources"
+etype: 'unpublished'
 collection: publications
 permalink: /publication/2020-10-01-Temporal-blocking-of-finite-difference-stencil-operators-with-sparse-off-the-grid-sources
 excerpt: 'Submitted to IPDPS'

@@ -1,5 +1,6 @@
 ---
 title: "Serverless seismic imaging in the cloud"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-03-01-Serverless-seismic-imaging-in-the-cloud
 excerpt: 'Rice Oil and Gas High Performance Computing Conference 2020'

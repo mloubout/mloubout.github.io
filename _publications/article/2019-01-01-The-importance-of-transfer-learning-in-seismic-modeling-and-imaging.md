@@ -1,5 +1,6 @@
 ---
 title: "The importance of transfer learning in seismic modeling and imaging"
+etype: 'article'
 collection: publications
 permalink: /publication/2019-01-01-The-importance-of-transfer-learning-in-seismic-modeling-and-imaging
 excerpt: '(Accepted in GEOPHYSICS)'

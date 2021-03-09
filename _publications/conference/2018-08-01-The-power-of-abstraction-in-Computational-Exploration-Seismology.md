@@ -1,5 +1,6 @@
 ---
 title: "The power of abstraction in Computational Exploration Seismology"
+etype: 'conference'
 collection: publications
 permalink: /publication/2018-08-01-The-power-of-abstraction-in-Computational-Exploration-Seismology
 date: 2018-08-01

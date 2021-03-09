@@ -1,5 +1,6 @@
 ---
 title: "Regularizing waveform inversion by projections onto intersections of convex sets"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2015-01-01-Regularizing-waveform-inversion-by-projections-onto-intersections-of-convex-sets
 date: 2015-01-01

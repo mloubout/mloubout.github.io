@@ -1,5 +1,6 @@
 ---
 title: "Noise robust and time-domain formulations of Wavefield Reconstruction Inversion"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2017-01-01-Noise-robust-and-time-domain-formulations-of-Wavefield-Reconstruction-Inversion
 date: 2017-01-01

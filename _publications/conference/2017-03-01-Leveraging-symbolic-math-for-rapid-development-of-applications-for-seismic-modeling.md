@@ -1,5 +1,6 @@
 ---
 title: "Leveraging symbolic math for rapid development of applications for seismic modeling"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-03-01-Leveraging-symbolic-math-for-rapid-development-of-applications-for-seismic-modeling
 excerpt: '(Oil and Gas HPC Conference, Rice University)'

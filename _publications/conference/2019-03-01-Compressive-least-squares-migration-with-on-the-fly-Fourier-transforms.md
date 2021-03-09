@@ -1,5 +1,6 @@
 ---
 title: "Compressive least squares migration with on-the-fly Fourier transforms"
+etype: 'conference'
 collection: publications
 permalink: /publication/2019-03-01-Compressive-least-squares-migration-with-on-the-fly-Fourier-transforms
 excerpt: '(SIAM CSE)'

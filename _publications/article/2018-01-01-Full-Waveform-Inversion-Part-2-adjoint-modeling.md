@@ -1,5 +1,6 @@
 ---
 title: "Full-Waveform Inversion - Part 2: adjoint modeling"
+etype: 'article'
 collection: publications
 permalink: /publication/2018-01-01-Full-Waveform-Inversion-Part-2-adjoint-modeling
 excerpt: '(The Leading Edge)'

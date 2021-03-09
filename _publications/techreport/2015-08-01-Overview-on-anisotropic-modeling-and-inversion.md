@@ -1,5 +1,6 @@
 ---
 title: "Overview on anisotropic modeling and inversion"
+etype: 'techreport'
 collection: publications
 permalink: /publication/2015-08-01-Overview-on-anisotropic-modeling-and-inversion
 date: 2015-08-01

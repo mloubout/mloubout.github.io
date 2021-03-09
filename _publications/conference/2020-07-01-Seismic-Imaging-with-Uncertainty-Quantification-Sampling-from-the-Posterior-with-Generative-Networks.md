@@ -1,5 +1,6 @@
 ---
 title: "Seismic Imaging with Uncertainty Quantification: Sampling from the Posterior with Generative Networks"
+etype: 'conference'
 collection: publications
 permalink: /publication/2020-07-01-Seismic-Imaging-with-Uncertainty-Quantification-Sampling-from-the-Posterior-with-Generative-Networks
 date: 2020-07-01

@@ -1,5 +1,6 @@
 ---
 title: "High-performance seismic applications of OPESCI"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2016-01-01-High-performance-seismic-applications-of-OPESCI
 date: 2016-01-01

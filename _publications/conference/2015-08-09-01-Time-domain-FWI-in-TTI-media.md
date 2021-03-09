@@ -1,5 +1,6 @@
 ---
 title: "Time-domain FWI in TTI media"
+etype: 'conference'
 collection: publications
 permalink: /publication/2015-08-09-01-Time-domain-FWI-in-TTI-media
 excerpt: '(Natal, Brazil)'

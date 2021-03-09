@@ -1,5 +1,6 @@
 ---
 title: "Time-domain Wavefield Reconstruction Inversion in a TTI medium"
+etype: 'techreport'
 collection: publications
 permalink: /publication/2020-04-01-Time-domain-Wavefield-Reconstruction-Inversion-in-a-TTI-medium
 date: 2020-04-01

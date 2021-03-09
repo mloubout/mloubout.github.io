@@ -1,5 +1,6 @@
 ---
 title: "Modeling for inversion in exploration geophysics"
+etype: 'mastersthesis'
 collection: publications
 permalink: /publication/2020-03-01-Modeling-for-inversion-in-exploration-geophysics
 date: 2020-03-01

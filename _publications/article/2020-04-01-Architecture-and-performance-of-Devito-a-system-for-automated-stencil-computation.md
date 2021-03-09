@@ -1,5 +1,6 @@
 ---
 title: "Architecture and performance of Devito, a system for automated stencil computation"
+etype: 'article'
 collection: publications
 permalink: /publication/2020-04-01-Architecture-and-performance-of-Devito-a-system-for-automated-stencil-computation
 excerpt: '(ACM Trans. Math. Softw.)'

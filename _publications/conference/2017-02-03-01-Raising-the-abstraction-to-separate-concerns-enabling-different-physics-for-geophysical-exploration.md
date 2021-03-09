@@ -1,5 +1,6 @@
 ---
 title: "Raising the abstraction to separate concerns: enabling different physics for geophysical exploration"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-02-03-01-Raising-the-abstraction-to-separate-concerns-enabling-different-physics-for-geophysical-exploration
 excerpt: '(SIAM Conference on Computational Science and Engineering, Atlanta)'

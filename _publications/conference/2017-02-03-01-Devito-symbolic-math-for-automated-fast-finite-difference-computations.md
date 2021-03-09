@@ -1,5 +1,6 @@
 ---
 title: "Devito: symbolic math for automated fast finite difference computations"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-02-03-01-Devito-symbolic-math-for-automated-fast-finite-difference-computations
 excerpt: '(SIAM Conference on Computational Science and Engineering, Atlanta)'

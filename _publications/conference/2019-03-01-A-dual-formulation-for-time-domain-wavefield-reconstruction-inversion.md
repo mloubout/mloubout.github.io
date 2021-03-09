@@ -1,5 +1,6 @@
 ---
 title: "A dual formulation for time-domain wavefield reconstruction inversion"
+etype: 'conference'
 collection: publications
 permalink: /publication/2019-03-01-A-dual-formulation-for-time-domain-wavefield-reconstruction-inversion
 excerpt: '(SIAM GS)'

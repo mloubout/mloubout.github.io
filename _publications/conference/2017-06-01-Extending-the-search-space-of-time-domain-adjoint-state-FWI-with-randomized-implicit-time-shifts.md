@@ -1,5 +1,6 @@
 ---
 title: "Extending the search space of time-domain adjoint-state FWI with randomized implicit time shifts"
+etype: 'conference'
 collection: publications
 permalink: /publication/2017-06-01-Extending-the-search-space-of-time-domain-adjoint-state-FWI-with-randomized-implicit-time-shifts
 excerpt: '(EAGE, Paris)'

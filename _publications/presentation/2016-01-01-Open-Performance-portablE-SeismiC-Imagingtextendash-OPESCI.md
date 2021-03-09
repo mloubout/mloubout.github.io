@@ -1,5 +1,6 @@
 ---
 title: "Open Performance portablE SeismiC Imagingtextendash-OPESCI"
+etype: 'presentation'
 collection: publications
 permalink: /publication/2016-01-01-Open-Performance-portablE-SeismiC-Imagingtextendash-OPESCI
 date: 2016-01-01

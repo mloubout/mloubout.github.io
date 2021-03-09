@@ -1,5 +1,6 @@
 ---
 title: "Neural network augmented wave-equation simulation"
+etype: 'techreport'
 collection: publications
 permalink: /publication/2019-09-01-Neural-network-augmented-wave-equation-simulation
 date: 2019-09-01

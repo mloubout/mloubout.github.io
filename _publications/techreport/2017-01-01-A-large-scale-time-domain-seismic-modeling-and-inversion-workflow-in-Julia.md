@@ -1,5 +1,6 @@
 ---
 title: "A large-scale time-domain seismic modeling and inversion workflow in Julia"
+etype: 'techreport'
 collection: publications
 permalink: /publication/2017-01-01-A-large-scale-time-domain-seismic-modeling-and-inversion-workflow-in-Julia
 date: 2017-01-01
