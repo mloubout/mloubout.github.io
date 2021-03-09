@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ziyi (Francis) Yin"
+title                    : "Mathias Louboutin"
 title_separator          : "-"
-name                     : &name "Ziyi (Francis) Yin"
-description              : &description "CSE PhD student @ Georgia Tech"
-url                      : https://ziyiyin97.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Mathias Louboutin"
+description              : &description "Postdoctoral Fellow @ Georgia Tech"
+url                      : https://mloubout.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ziyiyin97/ziyiyin97.github.io"
+repository               : "mloubout/mloubout.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 facebook:
-  username               :  ziyi.yin.97
+  username               :  
   app_id                 :
   publisher              :
 og_image                 :  # Open Graph/Twitter default site image
@@ -78,36 +78,36 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ziyi (Francis) Yin"
-  avatar           : "icon.jpg"
-  bio              : "CSE PhD student @ Georgia Tech"
+  name             : "Mathias Louboutin"
+  avatar           : 
+  bio              : "Postdoctoral Fellow @ Georgia Tech"
   location         : "Atlanta, GA"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=ji9kwj8AAAAJ&hl=en"
-  email            : "ziyi.yin@gatech.edu"
-  researchgate     : "https://www.researchgate.net/profile/Ziyi_Yin4"
+  googlescholar    : "https://scholar.google.com/citations?user=RGVC664AAAAJ&hl=en"
+  email            : "mlouboutin3@gatech.edu"
+  researchgate     : "https://www.researchgate.net/profile/Mathias-Louboutin"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         : "ziyi.yin.97"
+  facebook         : 
   foursquare       :
-  github           : "ziyiyin97"
+  github           : "mloubout"
   google_plus      :
   keybase          :
-  instagram        : "francis_yin97"
+  instagram        : "notthereallouboutinbutkinda"
   impactstory      : 
   lastfm           :
-  linkedin         : "ziyi-francis-yin"
+  linkedin         : "mathias-louboutin-a116b957"
   orcid            : 
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : 
   steam            :
   tumblr           :
-  twitter          : # "replacethistwitterhandle"
+  twitter          : "Louboutjunior"
   vine             :
   weibo            :
   xing             :

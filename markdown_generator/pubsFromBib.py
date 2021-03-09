@@ -23,20 +23,16 @@ import string
 import html
 import os
 import re
+import wget
+
+if not os.path.isfile("mypubs.bib"):
+    wget.download("https://slim.gatech.edu/biblio/export/bibtex?f%5Bauthor%5D=1", "./mypubs.bib")
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
-        "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
-        
-    },
     "journal":{
-        "file": "pubs.bib",
-        "venuekey" : "journal",
+        "file": "mypubs.bib",
+        "venuekey" : "title",
         "venue-pretext" : "",
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
@@ -65,7 +61,8 @@ for pubsource in publist:
         pub_month = "01"
         pub_day = "01"
         
-        b = bibdata.entries[bib_id].fields
+        b = bibdata.entries[bib_id]
+        etype, b = b.type, b.fields
         
         try:
             pub_year = f'{b["year"]}'
@@ -76,14 +73,16 @@ for pubsource in publist:
                     pub_month = "0"+b["month"]
                     pub_month = pub_month[-2:]
                 elif(b["month"] not in range(12)):
-                    tmnth = strptime(b["month"][:3],'%b').tm_mon   
-                    pub_month = "{:02d}".format(tmnth) 
+                    try:
+                        tmnth = strptime(b["month"][:3],'%b').tm_mon
+                        pub_month = "{:02d}".format(tmnth) 
+                    except:
+                        pub_month = str(b["month"])
                 else:
                     pub_month = str(b["month"])
             if "day" in b.keys(): 
                 pub_day = str(b["day"])
 
-                
             pub_date = pub_year+"-"+pub_month+"-"+pub_day
             
             #strip out {} as needed (some bibtex entries that maintain formatting)
@@ -111,14 +110,13 @@ for pubsource in publist:
             citation = citation + " " + html_escape(venue)
             citation = citation + ", " + pub_year + "."
 
-            
             ## YAML variables
             md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
-            
+
             md += """collection: """ +  publist[pubsource]["collection"]["name"]
 
             md += """\npermalink: """ + publist[pubsource]["collection"]["permalink"]  + html_filename
-            
+
             note = False
             if "note" in b.keys():
                 if len(str(b["note"])) > 5:
@@ -128,7 +126,7 @@ for pubsource in publist:
             md += "\ndate: " + str(pub_date) 
 
             md += "\nvenue: '" + html_escape(venue) + "'"
-            
+
             url = False
             if "url" in b.keys():
                 if len(str(b["url"])) > 5:
@@ -139,7 +137,6 @@ for pubsource in publist:
 
             md += "\n---"
 
-            
             ## Markdown description for individual page
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
@@ -149,9 +146,12 @@ for pubsource in publist:
             else:
                 md += "\nUse [Google Scholar](https://scholar.google.com/scholar?q="+html.escape(clean_title.replace("-","+"))+"){:target=\"_blank\"} for full citation"
 
-            md_filename = os.path.basename(md_filename)
+            if "abstract" in b.keys():
+                md += "\n" + html_escape(b["abstract"]) + "\n"
 
-            with open("../_publications/" + md_filename, 'w') as f:
+            md_filename = os.path.basename(md_filename)
+            os.makedirs(f"../_publications/{etype}", exist_ok=True)
+            with open(f"../_publications/{etype}/{md_filename}", 'w') as f:
                 f.write(md)
             print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
         # field may not exist for a reference

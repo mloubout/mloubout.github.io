@@ -7,11 +7,5 @@ main:
   - title: "Publications"
     url: /publications/
     
-  - title: "Honors and Awards"
-    url: /awards/
-
-  - title: "Teaching"
-    url: /teaching/    
-
-  - title: "Contact"
-    url: /contact/
+  - title: "Softwares"
+    url: /softwares/
