@@ -1,0 +1,72 @@
+project:
+  type: website
+
+website:
+  title: "Mathias Louboutin"
+  google-analytics: "G-ERCRWL13YZ"
+  search: true
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: pubs/publications.qmd
+        text: Publications
+      - href: software.qmd
+        text: Software
+      - href: resume.qmd
+        text: Resume
+
+    tools:
+      - icon: github
+        menu:
+          - text: Personal
+            href: https://github.com/mloubout
+          - text: Sponsor
+            href: https://github.com/sponsors/mloubout
+      - icon: twitter
+        href: https://twitter.com/Louboutjunior
+      - icon: linkedin
+        href: https://www.linkedin.com/in/mathias-louboutin-a116b957/
+      - icon: 
+
+  sidebar:
+  - title: Publications
+    style: "docked"
+    contents:
+      - href: pubs/publications.qmd
+        text: Publications
+      - title: Thesis
+        href: pubs/Thesis.qmd
+      - title: Journal Papers
+        href: pubs/Journals.qmd
+      - title: Conferences
+        href: pubs/Conferences.qmd
+      - title: Presentations
+        href: pubs/Presentations.qmd
+      - title: Technical Reports
+        href: pubs/TechReports.qmd
+      - title: Unpublished
+        href: pubs/Unpublished.qmd
+  
+  - title: Software
+    style: "docked"
+    contents: 
+      - software.qmd
+
+  page-footer:
+    center:
+      - text: "2023 Copyright (c) Mathias Louboutin"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    link-external-newwindow: True
+
+execute:
+  freeze: auto
+
+

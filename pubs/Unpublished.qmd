@@ -1,0 +1,73 @@
+---
+title: "Unpublished"
+bibliography: unpublished.bib
+nocite: |
+  @*
+---
+
+## Generative Seismic Kriging with Normalizing Flows
+
+@orozco2023IMAGEgsk  [Link](https://slimgroup.github.io/IMAGE2023/BayesianKrig/abstract.html)
+
+The objective is to demonstrate the applicability of Normalizing Flows (NFs) to subsurface kriging from wells. We will show that after supervised training, we can generate multiple realistic samples of plausible earth models that match the observed wells. We observe that these samples produce uncertainty statistics that are correlated with the complex parts of the model. The applicability of this method is for areas nearby the original survey used for training. Finally, we compare the speed and quality of our solutions with those obtained using a traditional variogram approach.
+
+## Coupled physics inversion for geological carbon storage monitoring
+
+@yin2023IMAGEcpi  [Link](https://slimgroup.github.io/IMAGE2023/yin2023IMAGEend2end/abstract.html)
+
+Understanding CO2 plume behavior is key to the success of geological carbon storage projects. While two-phase flow equations provide a good model to make predictions on future CO2 plume behavior, these equations rely on having access to the true permeability model. Unfortunately, accurate information on the permeability is unavailable, which greatly jeopardizes our ability to predict CO2 plume behavior. To overcome this problem, we estimate the permeability from time-lapse seismic data via a coupled inversion methodology that improve as more monitoring data becomes available over time.
+
+## Model-Parallel Fourier Neural Operators as Learned Surrogates for Large-Scale Parametric PDEs
+
+@grady2022SCtll  [Link](https://slim.gatech.edu/Publications/Public/Submitted/2022/grady2022SCtll/grady2022SCtll.pdf)
+
+Fourier neural operators (FNOs) are a recently introduced neural network architecture for learning solution operators of partial differential equations (PDEs), which have been shown to perform significantly better than comparable deep learning approaches. Once trained, FNOs can achieve speed-ups of multiple orders of magnitude over conventional numerical PDE solvers. However, due to the high dimensionality of their input data and network weights, FNOs have so far only been applied to two-dimensional or small three-dimensional problems. To remove this limited problem-size barrier, we propose a model-parallel version of FNOs based on domain-decomposition of both the input data and network weights. We demonstrate that our model-parallel FNO is able to predict time-varying PDE solutions of over 2.6 billion variables on Perlmutter using up to 512 A100 GPUs and show an example of training a distributed FNO on the Azure cloud for simulating multiphase CO2 dynamics in the Earth ' s subsurface.
+
+## 3D seismic survey design by maximizing the spectral gap
+
+@zhang2023IMAGEssd  [Link](https://slimgroup.github.io/IMAGE2023/zhang2023IMAGEsg/abstract.html)
+
+The massive cost of 3D acquisition calls for methods to reduce the number of receivers by designing optimal receiver sampling masks. Recent studies on 2D seismic showed that maximizing the spectral gap of the subsampling mask leads to better wavefield reconstruction results. We enrich the current study by proposing a simulation-free method to generate optimal 3D acquisition by maximizing the spectral gap of the subsampling mask via a simulated annealing algorithm. Numerical experiments confirm improvement of the proposed method over receiver sampling locations obtained by jittered sampling.
+
+## Learned multiphysics inversion with differentiable programming and machine learning
+
+@louboutin2023lmi  [Link](https://slim.gatech.edu/Publications/Public/Submitted/2023/louboutin2023lmi/le_software.html)
+
+We present the Seismic Laboratory for Imaging and Modeling/Monitoring (SLIM) open-source software framework for computational geophysics and, more generally, inverse problems involving the wave-equation (e.g., seismic and medical ultrasound), regularization with learned priors, and learned neural surrogates for multiphase flow simulations. By integrating multiple layers of abstraction, our software is designed to be both readable and scalable. This allows researchers to easily formulate their problems in an abstract fashion while exploiting the latest developments in high-performance computing. We illustrate and demonstrate our design principles and their benefits by means of building a scalable prototype for permeability inversion from time-lapse crosswell seismic data, which aside from coupling of wave physics and multiphase flow, involves machine learning.
+
+## Learned non-linear simultenous source and corresponding supershot for seismic imaging.
+
+@louboutin2023IMAGEloi  [Link](https://slimgroup.github.io/IMAGE2023/OneShot/abstract.html)
+
+Seismic imaging ' s main limiting factor is the scale of the involved dataset and the number of independent wave-equation solves required to migrate thousands of shots. To tackle this dimensionality curse, we introduce a learned framework that extends the conventional computationally reductive linear source superposition (e.g., via random simultaneous-source encoding) to a nonlinear learned source superposition and its corresponding learned supershot. With this method, we can image the subsurface at the cost of a one-shot migration by learning the most informative superposition of shots.
+
+## Wave-based inversion at scale on GPUs with randomized trace estimation
+
+@louboutin2023rte  [Link](https://slim.gatech.edu/Publications/Public/Submitted/2023/louboutin2023rte/paper.html)
+
+Thanks to continued performance improvements in software and hardware, wave-equation based imaging technologies, such full-waveform inversion and reverse-time migration, are becoming more common place. However, wide-spread adaptation of these advanced imaging modalities has not yet materialized because current implementations are not able to reap the full benefits from accelerators, in particular those offered by memory-scarce graphics processing units. Through the use of randomized trace estimation, we overcome the memory bottleneck of this type of hardware. At the cost of limited computational overhead and controllable incoherent errors in the gradient, the memory footprint of adjoint-state methods is reduced drastically. Thanks to this relatively simple to implement memory reduction via an approximate imaging condition, we are able to benefit from graphics processing units without memory offloading. We demonstrate the performance of the proposed algorithm on acoustic 2- and 3-D full-waveform inversion examples and on the formation of image gathers in transverse tilted isotropic media.
+
+## Time-lapse seismic monitoring of geological carbon storage with the nonlinear joint recovery model
+
+@gahlot2023IMAGEtsm  [Link](https://slimgroup.github.io/IMAGE2023/NonLinear-JRM/abstract.html)
+
+During time-lapse seismic monitoring, weak 4D signal below the level of inversion or migration artifacts poses challenges. To address these, low-cost randomized non-replicated acquisitions and linear joint recovery model (JRM) have been introduced to take advantage of the shared information between different vintages in the time-lapse seismic data and subsurface structure undergoing localized changes. Since the relationship between seismic data and subsurface properties is seldomly linear, we propose a more versatile nonlinear JRM, which extends linear JRM to nonlinear forward modeling.
+
+## Enhancing CO2 Leakage Detectability via Dataset Augmentation
+
+@erdinc2023IMAGEecl  [Link](https://slimgroup.github.io/IMAGE2023/DetectabilityWithVision/abstract.html)
+
+Previous work showed that neural classifiers can be trained to detect CO2 leakage from time-lapse seismic images. While this result is crucial to the global deployment of geological carbon storage (GCS), its success depends on relatively dense non-replicated time-lapse data acquisition. In this study, we show that by augmenting the training set with various coarse receiver samplings and corresponding seismic images, we can improve the leakage detection capabilities and accuracy while increasing the robustness with respect to low-cost coarse receiver samplings, e.g. ocean bottom nodes (OBNs).
+
+## Amortized Bayesian Full Waveform Inversion and Experimental Design with Normalizing Flows
+
+@orozco2023IMAGEabf  [Link](https://slimgroup.github.io/IMAGE2023/BayesianFWI/abstract.html)
+
+Probabilistic approaches to Full-Waveform Inversion (FWI), such as Bayesian ones, traditionally require expensive computations involving many wave-equation solves. To reduce the computational burden at test time, we propose to amortize the computational cost with offline training. After training, we aim to efficiently generate probabilistic FWI solutions with uncertainty. This aim is achieved by exploiting the ability of networks (i.e Normalizing Flows) to learn distributions, such as the Bayesian posterior. The posterior uncertainty is used during training to optimize the receiver sampling.
+
+## Monitoring Subsurface CO2 Plumes with Sequential Bayesian Inference
+
+@yu2023IMAGEmsc  [Link](https://slimgroup.github.io/IMAGE2023/SequentialBayes/abstract.html)
+
+To monitor and predict CO2 plume dynamics during geological carbon storage, reservoir engineers usually perform two-phase flow simulations. While these simulations may provide useful insights, their usefulness is limited due to numerous complicating factors including uncertainty in the dynamics of the plume itself. To study this phenomenon, we consider stochasticity in the dynamic caused by unknown random changes in the injection rate. By conditioning the CO2 plume predictions on seismic observations, we correct the CO2 plume predictions and quantify uncertainty with machine learning.
+

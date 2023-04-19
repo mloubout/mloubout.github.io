@@ -1,0 +1,301 @@
+---
+title: "TechReports"
+bibliography: techreports.bib
+nocite: |
+  @*
+---
+
+## InvertibleNetworks.jl - Memory efficient deep learning in Julia
+
+@witte2021JULIACONmedlj  [Link](https://slim.gatech.edu/Publications/Public/Conferences/JuliaCon/2021/witte2021JULIACONmedlj/witte2021JULIACONmedlj.pdf)
+
+We present InvertibleNetworks.jl, an open-source package for invertible neural networks and normalizing flows using memory-efficient backpropagation. InvertibleNetworks.jl uses manually implement gradients to take advantage of the invertibility of building blocks, which allows for scaling to large-scale problem sizes. We present the architecture and features of the library and demonstrate its application to a variety of problems ranging from loop unrolling to uncertainty quantification.
+
+## Fast and reliability-aware seismic imaging with conditional normalizing flows
+
+@siahkoohi2021EarthMLfar  [Link](https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/siahkoohi2021EarthMLfar/siahkoohi2021EarthMLfar.pdf)
+
+The posterior probability distribution provides a comprehensive description of the solution in ill-posed inverse problems. Sampling from the posterior distribution in the context of seismic imaging is challenged by the high-dimensionality of the unknown and the expensive-to-evaluate forward operator. These challenges limit the applicability of Markov Chain sampling methods due to the costs associated with the forward operator. Moreover, explicitly choosing a prior distribution that captures the true heterogeneity exhibited by the Earth ' s subsurface further complicates casting seismic imaging into a Bayesian framework. To handle this situation and to assess uncertainty, we propose a data-driven variational inference approach based on conditional normalizing flows (NFs). The proposed scheme leverages existing data, which are in the form of low- and high-fidelity migrated image pairs, to train a conditional NF capable of characterizing the posterior distribution. After training, the NF can be used to sample from the posterior distribution associated with a previously unseen seismic survey, which is in some sense close, e.g., data from a neighboring survey area. In our numerical example, we obtain high-fidelity images from the Parihaka dataset and low-fidelity images are derived from these images through the process of demigration, followed by adding band-limited noise and migration. During inference, given shot records from a new neighboring seismic survey, we first compute the reverse-time migration image. Next, by feeding this low-fidelity migrated image to the NF we gain access to samples from the posterior distribution virtually for free. We use these samples to compute a high-fidelity image including a first assessment of the image ' s reliability.
+
+## ML @ scale using randomized linear algebra
+
+@herrmann2021Microsoftrla  
+
+Deep Learning for large-scale applications such as video encoding or seismic segmentation are challenged by the excessive amounts of memory that is required for training networks via backpropagation. In this talk, I will discuss how techniques from randomized linear algebra can be used to address these bottle necks and bring down the memory footprint of training CNNs by up to a factor of O(N) (where N is number of pixels) without increasing computational cost. Additionally, I will illustrate how the seemingly disparate technologies of deep learning and large-scale PDE-constrained optimization share important similarities that can be taken advantage of in the development of next-generation deep learning technologies, with possible applications in scientific computing and sustainability.
+
+## Seismic Velocity Inversion and Uncertainty Quantification Using Conditional Normalizing Flows
+
+@ren2021AGUsvi  [Link](https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/815883)
+
+In this work, we use a conditional normalizing flow (CNF) to address the seismic velocity inversion problem. Considering the large dimension difference between seismic data and velocity model, we reduce the data dimension by calculating its reverse time. After that, we train the CNF on pairs of migrated data and velocity. During inference, given a new seismic data, feeding the corresponding migrated image into the trained CNF will lead to posterior samples of the velocity inversion distribution. In addition, uncertainty quantification of the inverted results can be achieved by statistical metrics like mean and standard deviation. In our numerical example, the implementation is based on open-sourced software InvertibleNetworks.jl (Witte et al., 2021), JUDI.jl (Witte et al., 2019) and Devito (Louboutin et al., 2019). The training dataset are built based on the SEG/EAGE Overthrust model. For an unseen seismic data, the posterior samples of inversion results given by the trained CNF can be considered as good estimates of the true velocity. Especially, judging from the metrics like MAE, MSE, PSNR, SSIM, et al., the posterior mean is usually closer to the true velocity and the standard deviation indicates that the velocity value is more reliable within the subsurface layers than that on layer edges. Moreover, the inverted results, either the posterior samples or posterior mean, can be used as an initial model in the subsequent FWI for a more accurate result.
+
+## DeVito: fast finite difference computation
+
+@deaguiar2016SCdff  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SC/2016/deaguiar2016SCdff/deaguiar2016SCdff_poster.pdf)
+
+Seismic imaging, used in energy exploration, is arguably the most compute and data intensive application in the private sector. The commonly used methods involve solving the wave equations numerically using finite difference formulations. Writing optimized code for these applications involves multiple man-years of effort that need to be repeated every time a new development needs to be factored in { \textendash } for every target platform. DeVito is a new tool for performing optimized Finite Difference (FD) computation from high-level symbolic problem definitions. The application developer needs to provide a differential equation in symbolic form. DeVito performs automated code generation and Just-In-Time (JIT) compilation based on this symbolic equation to create and execute highly optimized Finite Difference kernels on multiple computer platforms. DeVito has been designed to be used as part of complex workflows involving data flows across multiple applications over different nodes of a cluster.
+
+## Compressive least squares migration with on-the-fly Fourier transforms
+
+@witte2019SIAMCSEclsmft  
+
+Least-squares seismic imaging is an inversion-based approach for accurately imaging the earth ' s subsurface. However, in the time-domain, the computational cost and memory requirements of this approach scale with the size and recording length of the seismic experiment, thus making this approach often prohibitively expensive in practice. To overcome these issues, we borrow ideas from compressive sensing and signal processing and introduce an algorithm for sparsity-promoting seismic imaging using on-the-fly Fourier transforms. By computing gradients and functions values for random subsets of source locations and frequencies, we considerably limit the number of wave equation solves, while on-the-fly Fourier transforms allow computing an arbitrary number of monochromatic frequency-domain wavefields with a time-domain modeling code and without having to solve large-scale Helmholtz equations. The memory requirements of this approach are independent of the number of time steps and solely depend on the number of frequencies, which determine the amount of crosstalk and subsampling artifacts in the image. We show the application of our approach to several large-scale open source data sets and compare the results to a conventional time-domain approach with optimal checkpointing.
+
+## Enabling wave-based inversion on GPUs with randomized trace estimation
+
+@louboutin2022EAGEewi  [Link](10.3997/2214-4609.202210531)
+
+By building on recent advances in the use of randomized trace estimation to drastically reduce the memory footprint of adjoint-state methods, we present and validate an imaging approach that can be executed exclusively on accelerators. Results obtained on field-realistic synthetic datasets, which include salt and anisotropy, show that our method produces high-fidelity images. These findings open the enticing perspective of 3D wave-based inversion technology with a memory footprint that matches the hardware and that runs exclusively on clusters of GPUs without the undesirable need to offload certain tasks to CPUs.
+
+## Sparsity-promoting least-square migration with linearized Bregman and compressive sensing
+
+@witte2015IIPFWIspl  
+
+We present a novel adaptation of a recently developed relatively simple iterative algorithm to solve large-scale sparsity-promoting optimization problems. Our algorithm is particularly suitable to large-scale geophysical inversion problems, such as sparse least-squares reverse-time migration or Kirchoff migration since it allows for a tradeoff between parallel computations, memory allocation, and turnaround times, by working on subsets of the data with different sizes. Comparison of the proposed method for sparse least-squares imaging shows a performance that rivals and even exceeds the performance of state-of-the art one-norm solvers that are able to carry out least-squares migration at the cost of a single migration with all data.
+
+## Optimised finite difference computation from symbolic equations
+
+@lange2017SCIPYofd  [Link](http://conference.scipy.org/proceedings/scipy2017/michael_lange.html)
+
+Domain-specific high-productivity environments are playing an increasingly important role in scientific computing due to the levels of abstraction and automation they provide. In this paper we introduce Devito, an open-source domain-specific framework for solving partial differential equations from symbolic problem definitions by the finite difference method. We highlight the generation and automated execution of highly optimized stencil code from only a few lines of high-level symbolic Python for a set of scientific equations, before exploring the use of Devito operators in seismic inversion problems.
+
+## The Next Step: Interoperable Domain-Specific Programming
+
+@herrmann2023SIAMCSEtns  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAMCSE/2023/herrmann2023SIAMCSEtns/index.html)
+
+Even though domain-specific programming approaches allow for readable, scalable, and maintainable software without sacrificing performance, the new paradigm of learned physics-informed models calls for an interdisciplinary approach typically involving multiple domain-specific languages. Take for example the problem of inverting for the fluid-flow properties from time-lapse seismic data, which entails domain-specific programming on the intersection of wave simulators, matrix-free linear algebra, learned neural surrogates for two-phase flow, and prior and posterior distributions for the fluid-flow properties. While domain-specific solutions exist for each of these sub-disciplines, integrating these approaches { \textendash } which may involve different programming languages { \textendash } into a single coupled scalable inversion framework that supports algorithmic differentiation can be a challenge. However, we show that challenges like this can be met when working with proper abstractions. In our inversion example, this involves math-inspired symbolic abstractions for numerical solutions of the wave equation (Devito), matrix-free implementations for its Jacobians (JUDI.jl), abstractions for Automatic Differentiation (ChainRules.jl), and homegrown implementations for conditional Invertible Neural Networks (InvertibleNetworks.jl) and Fourier Neural Operators (ParametricOperators.jl).
+
+## Uncertainty-aware time-lapse monitoring of geological carbon storage with learned surrogates
+
+@yin2023EMIutm  
+
+Time-lapse seismic monitoring of CO2 sequestration is computationally expensive as it involves modeling of both fluid-flow physics and wave physics. It also requires differentiation through the solvers with respect to properties of interest in the subsurface. In this talk, we present a learned end-to-end inversion framework, which uses a pre-trained Fourier neural operator as a learned surrogate for the fluid-flow simulator in order to greatly reduces the cost associated with fluid-flow modeling and differentiation through the solver. Through synthetic experiments, we demonstrate the efficacy of this framework on inverting the subsurface permeability of the reservoir and on monitoring CO2 plumes. We further quantify the uncertainty of the permeability and CO2 plumes with conditional normalizing flow. With this framework, we can also forecast the growth of CO2 plumes in the future with uncertainty estimation without any acquired seismic data.
+
+## Seismic Imaging with Uncertainty Quantification: Sampling from the Posterior with Generative Networks
+
+@siahkoohi2020SIAMISsiu  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAMIS/2020/siahkoohi2020SIAMISsiu/siahkoohi2020SIAMISsiu_pres.pdf)
+
+n/a
+
+## Devito: automated fast finite difference computation
+
+@kukreja2016WOLFHPCdaf  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SC/2016/WOLFHPC/kukreja2016WOLFHPCdaf/kukreja2016WOLFHPCdaf.pdf)
+
+Domain specific languages have successfully been used in a variety of fields to cleanly express scientific problems as well as to simplify implementation and performance optimization on different computer architectures. Although a large number of stencil languages are available, finite difference domain specific languages have proved challenging to design because most practical use cases require additional features that fall outside the finite difference abstraction. Inspired by the complexity of real-world seismic imaging problems, we introduce Devito, a domain specific language in which high level equations are expressed using symbolic expressions from the SymPy package. Complex equations are automatically manipulated, optimized, and translated into highly optimized C code that aims to perform comparably or better than hand-tuned code. All this is transparent to users, who only see concise symbolic mathematical expressions.
+
+## Event-driven workflows for large-scale seismic imaging in the cloud
+
+@witte2019SEGedw  [Link](10.1190/segam2019-3215069.1)
+
+Cloud computing has seen a large rise in popularity in recent years and is becoming a cost effective alternative to on-premise computing, with theoretically unlimited scalability. However, so far little progress has been made in adapting the cloud for high performance computing (HPC) tasks, such as seismic imaging and inversion. As the cloud does not provide the same type of fast and reliable connections as conventional HPC clusters, porting legacy codes developed for HPC environments to the cloud is ineffective and misses out on an opportunity to take advantage of new technologies presented by the cloud. We present a novel approach of bringing seismic imaging and inversion workflows to the cloud, which does not rely on a traditional HPC environment, but is based on serverless and event-driven computations. Computational resources are assigned dynamically in response to events, thus minimizing idle time and providing resilience to hardware failures. We test our workflow on two large-scale imaging examples and demonstrate that cost-effective HPC in the cloud is possible, but requires careful reconsiderations of how to bring software to the cloud.
+
+## Effects of wrong adjoints for RTM in TTI media
+
+@louboutin2018SEGeow  [Link](10.1190/segam2018-2996274.1)
+
+In order to obtain accurate images of the subsurface, anisotropic modeling and imaging is necessary. However, the twenty-one parameter complete wave-equation is too computationally expensive to be of use in this case. The transverse tilted isotropic wave-equation is then the next best feasible representation of the physics to use for imaging. The main complexity arising from transverse tilted isotropic imaging is to model the receiver wavefield (back propagation of the data or data residual) for the imaging condition. Unlike the isotropic or the full physics wave-equations, the transverse tilted isotropic wave-equation is not not self-adjoint. This difference means that time-reversal will not model the correct receiver wavefield and this can lead to incorrect subsurface images. In this work, we derive and implement the adjoint wave-equation to demonstrate the necessity of exact adjoint modeling for anisotropic modeling and compare our result with adjoint-free time-reversed imaging.
+
+## Raising the abstraction to separate concerns: enabling different physics for geophysical exploration
+
+@louboutin2017SIAMras  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAM/2017/louboutin2017SIAMras/louboutin2017SIAMras_pres.mov)
+
+Full-waveform inversion is a PDE-constrained optimisation problem involving massive amounts of data (petabytes) and large numbers of unknowns (O(10^9)). This well known compute-intensive and data-intensive is extremely challenging for several reasons. First, there is the complexity of having to handle extremely large data volumes with metadata related to experimental details in the field, and the discretization of the unknown earth parameters and approximate physics. Second, reduced or adjoint-state methods call for computationally intensive PDE solves for each source experiment (of which there are thousands) for each iteration of a gradient-based optimization scheme. The talks will give an overview how carefully chosen layers of abstraction can help manage both the complexity and scale of inversion while still achieving the high degree of computational performance required to make full-waveform a practical tool. Specifically, the presentations will focus on domain specific stencil language for time-stepping methods to solve various types of wave equations and on abstracts for large-scale parallel optimization frameworks.
+
+## Preconditioned training of normalizing flows for variational inference in inverse problems
+
+@siahkoohi2021AABIpto  [Link](https://slim.gatech.edu/Publications/Public/Conferences/AABI/2021/siahkoohi2021AABIpto/siahkoohi2020ABIfab.html)
+
+Obtaining samples from the posterior distribution of inverse problems with expensive forward operators is challenging especially when the unknowns involve the strongly heterogeneous Earth. To meet these challenges, we propose a preconditioning scheme involving a conditional normalizing flow (NF) capable of sampling from a low-fidelity posterior distribution directly. This conditional NF is used to speed up the training of the high-fidelity objective involving minimization of the Kullback-Leibler divergence between the predicted and the desired high-fidelity posterior density for indirect measurements at hand. To minimize costs associated with the forward operator, we initialize the high-fidelity NF with the weights of the pretrained low-fidelity NF, which is trained beforehand on available model and data pairs. Our numerical experiments, including a 2D toy and a seismic compressed sensing example, demonstrate that thanks to the preconditioning considerable speed-ups are achievable compared to training NFs from scratch.
+
+## Amortized normalizing flows for transcranial ultrasound with uncertainty quantification
+
+@orozco2023MIDLanf  [Link](https://slim.gatech.edu/Publications/Public/Conferences/MIDL/2023/orozco2023MIDLanf/paper.pdf)
+
+We present a novel approach to transcranial ultrasound computed tomography that utilizes normalizing flows to improve the speed of imaging and provide Bayesian uncertainty quantification. Our method combines physics-informed methods and data-driven methods to accelerate the reconstruction of the final image. We make use of a physics-informed summary statistic to incorporate the known ultrasound physics with the goal of compressing large incoming observations. This compression enables efficient training of the normalizing flow and standardizes the size of the data regardless of imaging configurations. The combinations of these methods results in fast uncertainty-aware image reconstruction that generalizes to a variety of transducer configurations. We evaluate our approach with in silico experiments and demonstrate that it can significantly improve the imaging speed while quantifying uncertainty. We validate the quality of our image reconstructions by comparing against the traditional physics-only method and also verify that our provided uncertainty is calibrated with the error.
+
+## Time compressively sampled full-waveform inversion with stochastic optimization
+
+@louboutin2015SEGtcs  [Link](10.1190/segam2015-5924937.1)
+
+Time-domain Full-Waveform Inversion (FWI) aims to image the subsurface of the earth accurately from field recorded data and can be solved via the reduced adjoint-state method. However, this method requires access to the forward and adjoint wavefields that are meet when computing gradient updates. The challenge here is that the adjoint wavefield is computed in reverse order during time stepping and therefore requires storage or other type of mitigation because storing the full time history of the forward wavefield is too expensive in realistic 3D settings. To overcome this challenge, we propose an approximate adjoint-state method where the wavefields are subsampled randomly, which drastically the amount of storage needed. By using techniques from stochastic optimization, we control the errors induced by the subsampling. Examples of the proposed technique on a synthetic but realistic 2D model show that the subsampling-related artifacts can be reduced significantly by changing the sampling for each source after each model update. Combination of this gradient approximation with a quasi-Newton method shows virtually artifact free inversion results requiring only 5\% of storage compared to saving the history at Nyquist. In addition, we avoid having to recompute the wavefields as is required by checkpointing.
+
+## Sparsity-promoting photoacoustic imaging with source estimation
+
+@sharan2018IEEEIUSspoa  [Link](10.1109/ULTSYM.2018.8580037)
+
+Photoacoustics has emerged as a high-contrast imaging modality that provides optical absorption maps inside of tissues, therefore complementing morphological information of conventional ultrasound. The laser-generated photoacoustic waves are usually envelope-detected, thus disregarding the specific waveforms generated by each photoabsorber. Here we propose a sparsity-promoting image reconstruction method that allows the estimation of each photoabsorber ' s source-time function. Preliminary studies showed the ability to reconstruct the optical absorption map of an in silico vessel phantom. By using a sparsity-promoting imaging method, absorption maps and source-time functions can still be recovered even in situations where the number of transducers is decreased by a factor of six. Moreover, the recovery is able to attain higher resolution than conventional beamforming methods. Because our method recovers the source-time function of the absorbers, it could potentially also be used to distinguish different types of photoabsorbers, or the degree of aggregation of exogenous agents, under the assumption that these would generate different source-time functions at the moment of laser irradiation.
+
+## Unsupervised data-guided uncertainty analysis in imaging and horizon tracking
+
+@siahkoohi2020SIAMTXLAudg  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAMTXLA/2020/siahkoohi2020SIAMTXLAudg/siahkoohi2020SIAMTXLAudg_pres.pdf)
+
+Imaging typically is the first stage of a sequential workflow, and uncertainty quantification becomes more relevant when applied to subsequent tasks. We propose a Bayesian approach to horizon tracking uncertainty analysis, where we deploy a deep prior instead of adhering to handcrafted priors. By passing samples from the posterior distribution obtained via stochastic gradient Langevin dynamics to an automatic horizon tracker, we are able to incorporate the uncertainty on model parameters into horizon tracking.
+
+## Extended source imaging { \textendash } - a unifying framework for seismic and medical imaging
+
+@yin2020SEGesi  [Link](10.1190/segam2020-3426999.1)
+
+We present three imaging modalities that live on the crossroads of seismic and medical imaging. Through the lens of extended source imaging, we can draw deep connections among the fields of wave-equation based seismic and medical imaging, despite first appearances. From the seismic perspective, we underline the importance to work with the correct physics and spatially varying velocity fields. Medical imaging, on the other hand, opens the possibility for new imaging modalities where outside stimuli, such as laser or radar pulses, can not only be used to identify endogenous optical or thermal contrasts but that these sources can also be used to insonify the medium so that images of the whole specimen can in principle be created.
+
+## Regularizing waveform inversion by projections onto convex sets
+
+@louboutin2015IIPFWIrwi  
+
+A framework is proposed for regularizing the waveform inversion problem by projections onto intersections of convex sets. Multiple pieces of prior information about the geology are represented by multiple convex sets, for example limits on the velocity or minimum smoothness conditions on the model. The data-misfit is then minimized, such that the estimated model is always in the intersection of the convex sets. Therefore, it is clear what properties the estimated model will have at each iteration. This approach does not require any quadratic penalties to be used and thus avoids the known problems and limitations of those types of penalties. It is shown that by formulating waveform inversion as a constrained problem, regularization ideas such as Tikhonov regularization and gradient filtering can be incorporated into one framework. The algorithm is generally applicable, in the sense that it works with any (differentiable) objective function and does not require significant additional computation. The method is demonstrated on the inversion of the 2D marine isotropic elastic synthetic seismic benchmark by Chevron using an acoustic modeling code. To highlight the effect of the projections, we apply no data pre-processing. This is joint work with Bas Peters.
+
+## Learned wave-based imaging - variational inference at scale
+
+@herrmann2021Delftlwi  [Link](https://slim.gatech.edu/Publications/Public/Conferences/Delft/2021/herrmann2021Delftlwi/herrmann2021Delftlwi.pdf)
+
+High dimensionality, complex physics, and lack of access to the ground truth rank medical ultrasound and seismic imaging amongst the most challenging problems in the computational imaging sciences. If these challenges were not bad enough, modern applications of computational imaging increasingly call for the assessment of uncertainty on the image itself and on subsequent tasks. During this talk, I will show how recent developments in Normalizing Flows, a new type of invertible neural networks, can be used to cast wave-based imaging into a scalable Bayesian framework. Contrary to conventional methods, where sample images are drawn from the posterior distribution during inversion, our approach trains Normalizing Flows capable of generating samples from the posterior. Aside from greatly reducing the computational cost, this approach gives us access to the image itself (via Maximum a posteriori or mean estimation) and its multidimensional statistical distribution including its pointwise variance.
+
+## Time-domain wavefield reconstruction inversion for large-scale seismics
+
+@rizzuti2020EAGEtwri  [Link](https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2020/rizzuti2020EAGEtwri/rizzuti2020EAGEtwri.html)
+
+Wavefield reconstruction inversion is an imaging technique akin to full-waveform inversion, albeit based on a relaxed version of the wave equation. This relaxation aims to beat the multimodality typical of full-waveform inversion. However it prevents the use of time-marching solvers for the augmented equation and, as a consequence, cannot be straightforwardly employed to large 3D problems. In this work, we formulate a dual version of wavefield reconstruction inversion amenable to explicit time-domain solvers, yielding a robust and scalable inversion technique.
+
+## Large-scale workflows for wave-equation based inversion in Julia
+
+@witte2017SIAMlsw  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAM/2017/witte2017SIAMlsw/witte2017SIAMlsw_pres.mov)
+
+Full-waveform inversion is a PDE-constrained optimisation problem involving massive amounts of data (petabytes) and large numbers of unknowns (O(10^9)). This well known compute-intensive and data-intensive is extremely challenging for several reasons. First, there is the complexity of having to handle extremely large data volumes with metadata related to experimental details in the field, and the discretization of the unknown earth parameters and approximate physics. Second, reduced or adjoint-state methods call for computationally intensive PDE solves for each source experiment (of which there are thousands) for each iteration of a gradient-based optimization scheme. The talks will give an overview how carefully chosen layers of abstraction can help manage both the complexity and scale of inversion while still achieving the high degree of computational performance required to make full-waveform a practical tool. Specifically, the presentations will focus on domain specific stencil language for time-stepping methods to solve various types of wave equations and on abstracts for large-scale parallel optimization frameworks.
+
+## Deep Bayesian Inference for Task-based Seismic Imaging
+
+@herrmann2021KAUSTdbi  
+
+High dimensionality, complex physics, and lack of access to the ground truth make seismic imaging one of the most challenging inversion problems in the computational imaging sciences. If these challenges were not bad enough, modern applications of computational imaging increasingly call for the assessment of uncertainty on the image itself and on subsequent tasks conducted on these images. By making use of a Markov-chain Monte Carlo (McMC) sampling technique, we demonstrate how uncertainty in the data can be propagated to the task of seismic horizon tracking. While this example shows that uncertainty can in principle be handled in a systematic manner by using neural nets as deep priors, it unfortunately also reveals that the McMC method fundamentally lacks ability to scale to relevant problem sizes. To overcome this shortcoming, we introduce a variational formulation based on normalizing flows. In this approach, invertible neural networks are trained to generate samples from the posterior. There are strong indications that this approach has the capability to scale better to problems where the forward operator is expensive to evaluate.
+
+## Leveraging symbolic math for rapid development of applications for seismic modeling
+
+@kukreja2016OGHPClsm  [Link](https://slim.gatech.edu/Publications/Public/Conferences/OGHPC/2017/kukreja2016OGHPClsm/kukreja2016OGHPClsm.pdf)
+
+Wave propagation kernels are the core of many commonly used algorithms for inverse problems in exploration geophysics. While they are easy to write and analyze for the simplied cases, the code quickly becomes complex when the physics needs to be made more precise or the performance of these codes is to be optimized. Signicant eort is repeated every time new forms of physics need to be implemented, or a new computing platform to be supported. The use of symbolic mathematics as a domain specic language (DSL) for input, combined with automatic generation of high performance code customized for the target hardware platform is a promising approach to maximize code reuse. Devito is a DSL for nite dierence that uses symbolic mathematics to generate optimized code for wave propagation based on a provided wave equation. It enables rapid application development in a eld where the average time spent on development has historically been in weeks and months. The Devito DSL system is completely wrapped within the Python programming language and the fact that the running code is in C is completely transparent, making it simple to include Devito as part of a larger work ow including multiple applications over a large cluster.
+
+## Data normalization strategies for full-waveform inversion
+
+@louboutin2017EAGEdns  [Link](10.3997/2214-4609.201700720)
+
+Amplitude mismatch is an inherent problem in seismic inversion. Most of the source estimation techniques are associated with amplitude uncertainty due to incomplete representation of the physics or estimation method parameters. Rewriting the inversion problem in an amplitude free formulation allows to mitigate the amplitude ambiguity and help the inversion process to converge. We present in this work two different strategies to lessen amplitude effects in seismic inversion, derive the corresponding update directions and show how we handle scaling error correctly in both the objective function and the gradient.
+
+## De-risking Carbon Capture and Sequestration with Explainable CO$_2$ Leakage Detection in Time-lapse Seismic Monitoring Images
+
+@erdinc2022AAAIdcc  [Link](https://slim.gatech.edu/Publications/Public/Conferences/AAAI/2022/erdinc2022AAAIdcc/erdinc2022AAAIdcc.pdf)
+
+With the growing global deployment of carbon capture and sequestration technology to combat climate change, monitoring and detection of potential CO$_2$ leakage through existing or storage induced faults are critical to the safe and long-term viability of the technology. Recent work on time-lapse seismic monitoring of CO$_2$ storage has shown promising results in its ability to monitor the growth of the CO$_2$ plume from surface recorded seismic data. However, due to the low sensitivity of seismic imaging to CO$_2$ concentration, additional developments are required to efficiently interpret the seismic images for leakage. In this work, we introduce a binary classification of time-lapse seismic images to delineate CO$_2$ plumes (leakage) using state-of-the-art deep learning models. Additionally, we localize the leakage region of CO$_2$ plumes by leveraging Class Activation Mapping (CAM) methods.
+
+## Learned coupled inversion for carbon sequestration monitoring and forecasting with Fourier neural operators
+
+@yin2022SEGlci  [Link](10.1190/image2022-3722848.1)
+
+Seismic monitoring of carbon storage sequestration is a challenging problem involving both fluid-flow physics and wave physics. Additionally, monitoring usually requires the solvers for these physics to be coupled and differentiable to effectively invert for the subsurface properties of interest. To drastically reduce the computational cost, we introduce a learned coupled inversion framework based on the wave modeling operator, rock property conversion and a proxy fluid-flow simulator. We show that we can accurately use a Fourier neural operator as a proxy for the fluid-flow simulator for a fraction of the computational cost. We demonstrate the efficacy of our proposed method by means of a synthetic experiment. Finally, our framework is extended to carbon sequestration forecasting, where we effectively use the surrogate Fourier neural operator to forecast the CO$_2$ plume in the future at near-zero additional cost.
+
+## Time-domain Wavefield Reconstruction Inversion for large-scale seismic inversion
+
+@rizzuti2021SIAMGSwrid  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAMGS/2021/rizzuti2021SIAMGSwrid/rizzuti2021SIAMGSwrid.pdf)
+
+Data fitting based on a wave equation model has driven the modern development in seismic imaging, and it is now relevant for large scale inversion. A wider adoption is currently being limited by available computational resources and the classical limitations of non-linear optimization, which often produces suboptimal local minima. A class of methods based on the inexact solution of the wave equation, known as wavefield reconstruction inversion, have shown remarkable robustness towards local minima, however the solvers required for the inexact wave equation scale badly to 3D problems. We propose a reformulation of wavefield reconstruction inversion which involves the solution of the classical time-domain wave equation, and it is practical for large-scale problems. Applications to tilted-transverse isotropy synthetic datasets clearly demonstrate the advantage over traditional full-waveform inversion.
+
+## Abstractions for at-scale seismic inversion
+
+@louboutin2022RHPCafa  [Link](https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2022/louboutin2022RHPCafa/RiceHPC22.pdf)
+
+We present the SLIM open-source software framework for computational geophysics, and more generally, inverse problems based on the wave-equation (e.g., medical ultrasound). We developed a software environment aimed at scalable research and development by designing multiple layers of abstractions. This environment allows the researchers to easily formulate their problem in an abstract fashion, while still being able to exploit the latest developments in high-performance computing. We illustrate and demonstrate the benefits of our software design on many geophysical applications, including seismic inversion and physics-informed machine learning for geophysics (e.g., loop unrolled imaging, uncertainty quantification), all while facilitating the integration of external software.
+
+## A dual formulation for time-domain wavefield reconstruction inversion
+
+@rizzuti2019SEGadf  [Link](10.1190/segam2019-3216760.1)
+
+We illustrate a dual formulation for full-waveform inversion potentially apt to large 3-D problems. It is based on the optimization of the wave equation compliance, under the constraint of data misfit not exceeding a prescribed noise level. In the Lagrangian formulation, model and wavefield state variables are complemented with multipliers having the same dimension of data ( " dual data " variables). Analogously to classical wavefield reconstruction inversion, the wavefield unknowns can be projected out in closed form, by solving a version of the augmented wave equation. This leads to a saddle-point problem whose variables are only model and dual data. As such, this formulation represents a model extension, and is potentially robust against local minima. The classical downsides of model extension methods and wavefield reconstruction inversion are here effectively mitigated: storage of the dual variables is affordable, the augmented wave equation is amenable to time-marching finite-difference schemes, and no continuation strategy for penalty parameters is needed, with the prospect of 3-D applications.
+
+## Deep Convolutional Neural Networks in prestack seismic { \textendash } -two exploratory examples
+
+@siahkoohi2018SEGcnn  [Link](10.1190/segam2018-2998599.1)
+
+Deep convolutional neural networks are having quite an impact and have resulted in step changes in the capabilities of image and voice recognition systems and there are indications they may have a similar impact on post-stack seismic images. While these developments are certainly important, we are after all dealing with an imaging problem involving an unknown earth and not completely understood physics. When the imaging step itself is not handled properly, this may possibly offset gains offered by deep learning. Motivated by our work on deep convolutional neural networks in seismic data reconstruction, we discuss how generative networks can be employed in prestack problems ranging from the relatively mondane removal of the effects of the free surface to dealing with the complex effects of numerical dispersion in time-domain finite differences. While the results we present are preliminary, there are strong indications that generative deep convolutional neural networks can have a major impact on complex tasks in prestack seismic data processing and modeling for inversion.
+
+## Compressive time-lapse seismic monitoring of carbon storage and sequestration with the joint recovery model
+
+@yin2021SEGcts  [Link](10.1190/segam2021-3569087.1)
+
+Time-lapse seismic monitoring of carbon storage and sequestration is often challenging because the time-lapse signature of the growth of CO$_2$ plumes is weak in amplitude and therefore difficult to detect seismically. This situation is compounded by the fact that the surveys are often coarsely sampled and not replicated to reduce costs. As a result, images obtained for different vintages (baseline and monitor surveys) often contain artifacts that may be attributed wrongly to time-lapse changes. To address these issues, we propose to invert the baseline and monitor surveys jointly. By using the joint recovery model, we exploit information shared between multiple time-lapse surveys. Contrary to other time-lapse methods, our approach does not rely on replicating the surveys to detect time-lapse changes. To illustrate this advantage, we present a numerical sensitivity study where CO$_2$ is injected in a realistic synthetic model. This model is representative of the geology in the southeast of the North Sea, an area currently considered for carbon sequestration. Our example demonstrates that the joint recovery model improves the quality of time-lapse images allowing us to monitor the CO$_2$ plume seismically.
+
+## Abstractions and algorithms for efficient seismic inversion on accelerators
+
+@louboutin2022SEGWSaaa  [Link](https://www.imageevent.org/Workshop/next-fwi-derived-products)
+
+We present the SLIM open-source software framework for computational geophysics, and more generally, inverse problems based on the wave-equation (e.g., medical ultrasound). We developed a software environment aimed at scalable research and development by designing multiple layers of abstractions. This environment allows the researchers to easily formulate their problem in an abstract fashion, while still being able to exploit the latest developments in high-performance computing. We illustrate and demonstrate the benefits of our software design on many geophysical applications, including seismic inversion and physics-informed machine learning for geophysics (e.g., loop unrolled imaging, uncertainty quantification), all while facilitating the integration of external software.
+
+## The power of abstraction in Computational Exploration Seismology
+
+@herrmann2018SMCtpa  
+
+The field of Computational Exploration Seismology has over the years benefited tremendously from developments in HPC. Back in the 80 ' s and early 90 ' s, the oil \& gas industry was among the main drivers of HPC technology with a resurgence about ten years ago with the advent of full-waveform inversion-i.e., an adjoint-state method for inverse problems that involve the wave equation. While the combination of hardware developments and tedious manual coding efforts have resulted in major improvements, the rate of innovations is slow in part because of the inherent complexities of the mostly monolithic code bases. As a result, innovations make it too slowly into these optimized codes. This stifles innovation and could prevent adaptation of important developments such as machine learning with deep convolutional neural networks into existing workflows. In comparison, the technological advances in the academic as well as commercial machine learning communities have been much faster in part because of robust and well abstracted code bases such as PyTorch and TensorFlow. Since both machine learning and adjoint-state methods rely on back propagation strong similarities exist ready to be exploited. During my talk, I will discuss lessons we learned in finding the appropriate abstractions, read Domain Specific Language, for time-stepping stencil-based finite differences in Devito, and how this is relevant for machine learning with deep networks. I will also share a vision on how ideas from machine learning can be merged into the development of the next-generation of wave-equation based imaging codes. In particular, I will demonstrate the remarkable ability of deep convolutional networks to map low-fidelity dispersed numerical wave simulations to high-fidelity ones. I feel that this apparently generalizable capability of neural nets opens a complete new approach to tackle fundamental problems in computational exploration seismology.
+
+## Time-domain FWI in TTI media
+
+@witte2015IIPFWItdf  
+
+We develop an inversion workflow for tilted transverse isotropic (TTI) media using a purely acoustic formulation of the wave equation. The anisotropic modeling kernel is used for the forward modeling operator, as well as for the adjoint Jacobian to back propagate the data residual, thus providing the true gradient of the FWI objective function.
+
+## Time-Domain Wavefield Reconstruction Inversion In Tilted Transverse Isostropic Media
+
+@louboutin2020SIAMTXLAtdw  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SIAMTXLA/2020/louboutin2020SIAMTXLAtdw/louboutin2020SIAMTXLAtdw_pres.pdf)
+
+We introduce a generalization of time-domain wavefield reconstruction inversion to anisotropic acoustic modeling. Wavefield reconstruction inversion has been extensively researched in recent years for its ability to mitigate cycle skipping. The original method was formulated in the frequency domain with acoustic isotropic physics. However, frequency-domain modeling requires sophisticated iterative solvers that are difficult to scale to industrial-size problems and more realistic physical assumptions, such as tilted transverse isotropy, object of this study. The work presented here is based on a recently proposed dual formulation of wavefield reconstruction inversion, which allows time-domain propagator that are suitable to both large scales and more accurate physics.
+
+## Ultra-low memory seismic inversion with randomized trace estimation
+
+@louboutin2021SEGulm  [Link](10.1190/segam2021-3584072.1)
+
+Inspired by recent work on extended image volumes that lays the ground for randomized probing of extremely large seismic wavefield matrices, we present a memory frugal and computationally efficient inversion methodology that uses techniques from randomized linear algebra. By means of a carefully selected realistic synthetic example, we demonstrate that we are capable of achieving competitive inversion results at a fraction of the memory cost of conventional full-waveform inversion with limited computational overhead. By exchanging memory for negligible computational overhead, we open with the presented technology the door towards the use of low-memory accelerators such as GPUs.
+
+## Devito: Towards a generic finite difference DSL using symbolic python
+
+@lange2016dtg  [Link](10.1109/PyHPC.2016.9)
+
+Domain specific languages (DSL) have been used in a variety of fields to express complex scientific problems in a concise manner and provide automated performance optimization for a range of computational architectures. As such DSLs provide a powerful mechanism to speed up scientific Python computation that goes beyond traditional vectorization and pre-compilation approaches, while allowing domain scientists to build applications within the comforts of the Python software ecosystem. In this paper we present Devito, a new finite difference DSL that provides optimized stencil computation from high-level problem specifications based on symbolic Python expressions. We demonstrate Devito ' s symbolic API and performance advantages over traditional Python acceleration methods before highlighting its use in the scientific context of seismic inversion problems.
+
+## A simulation-free seismic survey design by maximizing the spectral gap
+
+@zhang2022SEGass  [Link](10.1190/image2022-3751690.1)
+
+Due to the tremendous cost of seismic data acquisition, methods have been developed to reduce the amount of data acquired by designing optimal missing trace reconstruction algorithms. These technologies are designed to record as little data as possible in the field, while providing accurate wavefield reconstruction in the areas of the survey that are not recorded. This is achieved by designing randomized subsampling masks that allow for accurate wavefield reconstruction via matrix completion methods. Motivated by these recent results, we propose a simulation-free seismic survey design that aims at improving the quality of a given randomized subsampling using a simulated annealing algorithm that iteratively increases the spectral gap of the subsampling mask, a property recently linked to the quality of the reconstruction. We demonstrate that our proposed method improves the data reconstruction quality for a fixed subsampling rate on a realistic synthetic dataset.
+
+## Accelerating innovation with software abstractions for scalable computational geophysics
+
+@louboutin2022SEGais  [Link](10.1190/image2022-3750561.1)
+
+We present the SLIM open-source software framework for computational geophysics, and more generally, inverse problems based on the wave-equation (e.g., medical ultrasound). We developed a software environment aimed at scalable research and development by designing multiple layers of abstractions. This environment allows the researchers to easily formulate their problem in an abstract fashion, while still being able to exploit the latest developments in high-performance computing. We illustrate and demonstrate the benefits of our software design on many geophysical applications, including seismic inversion and physics-informed machine learning for geophysics(e.g., loop unrolled imaging, uncertainty quantification), all while facilitating the integration of external software.
+
+## Temporal blocking of finite-difference stencil operators with sparse " off-the-grid " sources
+
+@bisbas2020IPDPStbf  [Link](10.1109/IPDPS49936.2021.00058)
+
+Stencil kernels dominate a range of scientific applications including seismic and medical imaging, image processing, and neural networks. Temporal blocking is a performance optimisation that aims to reduce the required memory bandwidth of stencil computations by re-using data from the cache for multiple time steps. It has already been shown to be beneficial for this class of algorithms. However, optimising stencils for practical applications remains challenging. These computations often include sparsely located operators, not aligned with the computational grid ( " off-the-grid " ). For example, our work is motivated by sources that inject a wavefield and measurements interpolating grid values. The resulting data dependencies make the adoption of temporal blocking much more challenging. We propose a methodology to inspect these data dependencies and reorder the computation, leading to performance gains in stencil codes where temporal blocking has not been applicable. We implement this novel scheme in the Devito domain-specific compiler toolchain. Devito implements a domain-specific language embedded in Python to generate optimised partial differential equation solvers using the finite-difference method from high-level symbolic problem definitions. We evaluate our scheme using isotropic acoustic, anisotropic acoustic and isotropic elastic wave propagators of industrial significance. Performance evaluation, after auto-tuning, shows that this enables substantial performance improvement through temporal blocking, over highly-optimised vectorized spatially-blocked code of up to 1.6x.
+
+## Velocity continuation with Fourier neural operators for accelerated uncertainty quantification
+
+@siahkoohi2022SEGvcw  [Link](10.1190/image2022-3750475.1)
+
+Seismic imaging is an ill-posed inverse problem that is challenged by noisy data and modeling inaccuracies { \textendash } -due to errors in the background squared-slowness model. Uncertainty quantification is essential for determining how variability in the background models affects seismic imaging. Due to the costs associated with the forward Born modeling operator as well as the high dimensionality of seismic images, quantification of uncertainty is computationally expensive. As such, the main contribution of this work is a survey-specific Fourier neural operator surrogate to velocity continuation that maps seismic images associated with one background model to another virtually for free. While being trained with only 200 background and seismic image pairs, this surrogate is able to accurately predict seismic images associated with new background models, thus accelerating seismic imaging uncertainty quantification. We support our method with a realistic data example in which we quantify seismic imaging uncertainties using a Fourier neural operator surrogate, illustrating how variations in background models affect the position of reflectors in a seismic image.
+
+## Extending the search space of time-domain adjoint-state FWI with randomized implicit time shifts
+
+@louboutin2017EAGEess  [Link](10.3997/2214-4609.201700831)
+
+Adjoint-state full-waveform inversion aims to obtain subsurface properties such as velocity, density or anisotropy parameters, from surface recorded data. As with any (non-stochastic) gradient based optimization procedure, the solution of this inversion procedure is to a large extend determined by the quality of the starting model. If this starting model is too far from the true model, these derivative-based optimizations will likely end up in local minima and erroneous inversion results. In certain cases, extension of the search space, e.g. by making the wavefields or focused matched sources additional unknowns, has removed some of these non-uniqueness issues but these rely on time-harmonic formulations. Here, we follow a different approach by combining an implicit extension of the velocity model, time compression techniques and recent results on stochastic sampling in non-smooth/non-convex optimization
+
+## Serverless seismic imaging in the cloud
+
+@witte2019RHPCssi  [Link](https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2019/witte2019RHPCssi/witte2019RHPCssi.html)
+
+This talk presents a serverless approach to seismic imaging in the cloud based on high-throughput containerized batch processing, event-driven computations and a domain-specific language compiler for solving the underlying wave equations. A 3D case study on Azure demonstrates that this approach allows reducing the operating cost of up to a factor of 6, making the cloud a viable alternative to on-premise HPC clusters for seismic imaging.
+
+## A dual formulation for time-domain wavefield reconstruction inversion
+
+@rizzuti2019SIAMGStwri  
+
+Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.
+

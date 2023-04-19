@@ -1,0 +1,27 @@
+---
+title: "Welcome to my personal Scientific Research Website!
+"
+---
+
+Hello! I am Mathias Louboutin, a scientific researcher and software developer with a passion for pushing the boundaries of knowledge and innovation. With extensive expertise in various scientific domains and a strong background in software development, I am dedicated to advancing research and solving complex problems through cutting-edge technology.
+
+I am a Postdoctoral Fellow at Georgia Institute of Technology, where I specialize in exploration geophysics and open source software development. My expertise lies in programming with Python and Julia, as well as utilizing Cloud computing platforms such as AWS and Azure.
+
+## Research Interests
+
+My research interests range from applied mathematics to exascale HPC. Some of my current research topics and software developments include:
+
+- Machine Learning: I am actively working on developing computational methods for machine learning, particularly leveraging randomized linear algebra techniques to enhance the performance and applications of machine learning algorithms in diverse scientific domains.
+- High-Performance Computing (HPC): With a focus on HPC for task parallel exascale problems, such as photoacoustic or seismic imaging, I am dedicated to developing cutting-edge HPC solutions to accelerate scientific simulations and data processing for large-scale scientific problems.
+- Domain-Specific Languages (DSLs): As one of the primary developers of [Devito], specifically its symbolic APIs, and the main developer of [JUDI], a linear algebra DSL for PDE constraints optimization built on top of [Devito], I am passionate about creating domain-specific languages (DSLs) for scientific computing to streamline complex workflows and optimize code efficiency.
+- PDE-Constrained Optimization and Inverse Problems: I specialize in developing methods and algorithms for solving wave-equation-based inverse problems, such as photoacoustic and ultrasound imaging in medical applications, or subsurface imaging in exploration geophysics, by utilizing state-of-the-art PDE-constrained optimization techniques.
+- Cloud Computing: Given my extensive experience in developing large-scale algorithms for cloud computing, particularly on the Azure platform, I have been actively involved in leveraging cloud resources to accelerate computations for industry-sized problems in scientific research.
+
+## Contact Me
+
+I am always eager to collaborate on research projects, discuss ideas, and explore new opportunities. Please feel free to reach out to me by [email](mailto:mathias.louboutin@gmail.com) to connect or inquire about potential collaborations. Let's work together to drive scientific research and software development forward!
+
+
+[Devito]: https://github.com/devitocodes/devito
+[JUDI]: https://github.com/slimgroup/JUDI.jl
+
