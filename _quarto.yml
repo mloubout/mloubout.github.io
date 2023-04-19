@@ -3,11 +3,8 @@ project:
 
 website:
   title: "Mathias Louboutin"
-  google-analytics:
-    tracking-id: "G-ERCRWL13YZ"
-    anonymize-ip: true
+  google-analytics: "G-ERCRWL13YZ"
   search: true
-  cookie-consent: true
   navbar:
     left:
       - href: index.qmd
@@ -18,8 +15,6 @@ website:
         text: Software
       - href: resume.qmd
         text: Resume
-      # - text: Tutorials
-      #   href: tutorials.qmd
 
     tools:
       - icon: github
@@ -59,13 +54,6 @@ website:
     contents: 
       - software.qmd
 
-  # - title: Tutorials
-  #   style: "docked"
-  #   contents: 
-  #     - tutorials.qmd
-  #     - title: JUDI
-  #       href: tutorials/01_intro.ipynb
-
   page-footer:
     center:
       - text: "2023 Copyright (c) Mathias Louboutin"
@@ -78,6 +66,7 @@ format:
     css: styles.css
     toc: true
     link-external-newwindow: True
+    code-copy: true
 
 execute:
   freeze: auto
