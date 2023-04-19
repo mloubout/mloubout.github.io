@@ -3,8 +3,11 @@ project:
 
 website:
   title: "Mathias Louboutin"
-  google-analytics: "G-ERCRWL13YZ"
+  google-analytics:
+    tracking-id: "G-ERCRWL13YZ"
+    anonymize-ip: true
   search: true
+  cookie-consent: true
   navbar:
     left:
       - href: index.qmd
@@ -15,6 +18,8 @@ website:
         text: Software
       - href: resume.qmd
         text: Resume
+      # - text: Tutorials
+      #   href: tutorials.qmd
 
     tools:
       - icon: github
@@ -27,7 +32,8 @@ website:
         href: https://twitter.com/Louboutjunior
       - icon: linkedin
         href: https://www.linkedin.com/in/mathias-louboutin-a116b957/
-      - icon: 
+      - icon: envelope-at-fill
+        href: mailto:mathias.louboutin@gmail.com
 
   sidebar:
   - title: Publications
@@ -52,6 +58,13 @@ website:
     style: "docked"
     contents: 
       - software.qmd
+
+  # - title: Tutorials
+  #   style: "docked"
+  #   contents: 
+  #     - tutorials.qmd
+  #     - title: JUDI
+  #       href: tutorials/01_intro.ipynb
 
   page-footer:
     center:
