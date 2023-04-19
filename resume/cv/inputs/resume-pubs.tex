@@ -1,0 +1,940 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=110061]
+\definecolor[rulecolor][h=110061]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd, page=no]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle, page=no]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}, page=no]
+\setuphead[subsubsection][style=\bf, page=no]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+\definemeasure[cslhangindent][1.5em]
+\definestartstop
+  [cslreferences]
+  [before={%
+     \setupnarrower[left=\measure{cslhangindent}]
+     \startnarrower[left]%
+     \setupindenting[-\leftskip,yes,first]%
+     \doindentation%
+   },
+   after=\stopnarrower]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\defineitemgroup[enumerate]
+\setupenumerate[each][fit][itemalign=left,distance=.5em,style={\feature[+][default:tnum]}]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+\startalignment[right]
+  \blank[2*big]
+  {\tfd Mathias Thibaut Louboutin}
+  \blank[3*medium]
+  {\tfa \crlf
+733 York View Dr, Auburn, 30011, GA\crlf
+mathias.louboutin@gmail.com\crlf
+404-451-6131\crlf
+\useURL[url1][mloubout.github.io]\from[url1]\crlf
+\goto{Github}[url(https://github.com/mloubout)]\crlf
+\goto{@louboutjunior}[url(https://twitter.com/Louboutjunior)]}
+  \blank[3*medium]
+\stopalignment
+
+\startsectionlevel[title={Experience},reference={experience}]
+
+\startdescription{March 2023-*}
+  {\bf Computational Imaging Scientist}: Oak Ridge National Laboratory,
+  Oak Ridge, TN {\em Scientific engagmenent, INCITE }
+
+  {\em Medical Imaging}
+
+  {\em HPC (Frontier, Summit, \ldots{})}
+\stopdescription
+
+\startdescription{July 2020-- February 2023}
+  {\bf Postdoctoral Fellow}: Georgia Institute of Technology, Atlanta,
+  GA
+
+  {\em High performance/low memory randomized linear algebra for
+  backpropagation based inverse problems}
+
+  {\em Cloud HPC for separable problems (task parallel)}
+
+  {\em Supervising the PhD and MSc students}
+
+  {\em Managing and developping the software stack for the Lab
+  (\goto{slimgroup}[url(https://github.com/slimgroup)])}
+
+  {\em Machine learning for geophysical and medical wave-equation based
+  inverse problems}
+
+  {\em HPC for machine learning}
+
+  {\em Geological Carbon Storage seismic monitoring}
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Computational
+experience},reference={computational-experience}]
+
+\startdescription{Open Source}
+  {\bf \goto{Devito}[url(https://github.com/devitocodes/devito)]}: A
+  symbolic domain specific language (DSL) for stencil computation with
+  just-in-time compilation and code generation. Achieves state of the
+  art performance while providing a high-level mathematical interface to
+  the users for the development of stencil based applications.
+
+  {\bf \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)]}: Linear
+  algebra high level API for wave-equation based inversion. This pacage
+  is built on top of Devito to have high performance wave-equation
+  solvers. A new additional Azure batch extension was developped for
+  scalability
+  \goto{JUDI4Cloud}[url(https://github.com/slimgroup/JUDI.jl)].
+
+  {\bf \goto{XConv}[url(https://github.com/slimgroup/XConv)]}: High
+  performance low memory convolutional layer. This repository implements
+  both in julia (for Flux.jl) and in python (for pytorch) a
+  convolutional layer that has virtually a zero memory imprnt for
+  training using randomized linear algebra to compute an unbiased
+  estimate of the gradient with respect to the weights. Additionaly, a
+  byte only implementation of the ReLU layer leads to memry reduction by
+  a factor of X2 for full networks.
+
+  {\bf \goto{dfno}[url(https://github.com/slimgroup/dfno)]}: Model
+  parallel (MPI model decomposition) implementation of Fourier Neural
+  Operators for PyTorch. Extension of distdl, a model parallel extension
+  of PyTorch.
+
+  {\bf \goto{InvertibleNetworks.jl}[url(https://github.com/slimgroup/InvertibleNetworks.jl)]}:
+  Native Julia implementation of invertible networks for variational
+  inference, generative models and normalizing flows.
+\stopdescription
+
+\startdescription{Programming Languages}
+  {\bf Python:} Main programming language for the development of
+  \goto{Devito}[url(https://github.com/devitocodes/devito)] and machine
+  learning applications.
+
+  {\bf Julia:} Heavy development of research software at Georgia Tech
+  (\goto{slimgroup}[url(https://github.com/slimgroup)]) in Julia
+
+  {\bf docker} Developped and automatized the deployement of
+  \goto{Devito}[url(https://github.com/devitocodes/devito)] and
+  \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)] images through
+  CI (github actions).
+
+  Knowledge of {\bf C}, {\bf Linux}, {\bf Bash}, {\bf PyTorch},
+  {\bf Azure}, {\bf Latex}, {\bf Markdown}, {\bf Matlab}, {\bf MPI},
+  {\bf OPenMP}, {\bf OpenACC}
+\stopdescription
+
+\startdescription{HPC}
+  {\bf \goto{Devito}[url(https://github.com/devitocodes/devito)]:} Weak
+  and strong scaling benchmarks of
+  \goto{Devito}[url(https://github.com/devitocodes/devito)] on
+  on-premise (Imperical college) and Cloud (Azure) hardware.
+
+  {\bf \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)]:}
+  Implementation and deployment at scale of
+  \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)] on clusters and
+  Azure Batch (up 300 nodes).
+
+  {\bf Optimum (2015-2018):} Early PhD 50 nodes cluster. Development of
+  parallel Matlab seismic inverse problem algorithms (FWI/RTM).
+
+  {\bf YEMOJA (2017-2018):} Part of a collaboration with SENAI-CIMANTEC.
+  Scaling of our Matlab and Julia framework to hundred of nodes.
+
+  {\bf Cloud (2018-):} Serverless and clusterless framework for task
+  parallel inverse problems on AWS and Azure.
+
+  {\bf Perlmutter (2022-):} Scaling of MPI-parallel Fourier Neural
+  Operator on Perlmutter (and previously Summit).
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Education},reference={education}]
+
+\startdescription{2018--2020}
+  {\bf PhD, Computer Science}; Georgia Institute of Technology, Atlanta,
+  GA
+
+  {\em Thesis title: Modeling for inversion in exploration geophysics}
+  \goto{Link}[url(https://slim.gatech.edu/content/modeling-inversion-exploration-geophysics)]
+
+  {\em Numerical and computational methods for large scale simulation
+  based inverse problems and machine learning}
+\stopdescription
+
+\startdescription{2013--2018}
+  {\bf PhD, Earth Science}; University of British Columbia, Canada
+
+  {\em Transfered to Georgia Institute of Technology in January 2018
+  following my supervior new position there.}
+\stopdescription
+
+\startdescription{2016 Feb-Aug}
+  {\bf Visiting PhD, Computer Science}; Impertial College London, UK
+
+  {\em Automatic code generation for geophysical exploration
+  applications with finite differences}
+\stopdescription
+
+\startdescription{2011--2013}
+  {\bf MSc, Applied Mathematics}; Universite de Rennes 1, Rennes, France
+
+  {\em Valedictorian}
+
+  {\em Required coursework}: Calculus, Numerical Methods, PDE
+  Resolution, Opti- mization, C/C++ Computing, Mathematics Modeling and
+  Simulation, Finite Element Method*
+
+  {\em Elective coursework}: Fluid Mechanics, Continuum Mechanics and
+  Thermo- mechanics, Bio-mechanics, Geophysics Modeling*
+\stopdescription
+
+\startdescription{2008--2011}
+  {\bf BSc, Aeronautical Engineering,} ENSICA-ISAE, Toulouse, France
+
+  {\em Leading French Aeronautical Engineering School.}
+
+  {\em Required coursework}: Mathematics, Mechanics, Continuum
+  Mechanics, Struc- tures Mechanics, Signal Processing, Thermodynamics,
+  Fluid Mechanics, Java progamming*
+
+  {\em Elective coursework}: Estimation Methods, Earth Observation
+  Satellites, Microwaves Processing*
+\stopdescription
+
+\startdescription{2006--2008}
+  {\bf Classe Preparatoires}; Lycee Chateaubriand, Rennes, France
+
+  {\em Advanced undergraduate preparatory program for national ranking
+  entry exam.}
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Internships},reference={internships}]
+
+\startdescription{Summer 2013}
+  {\bf Research internship}; ONERA, Toulouse, France
+
+  {\em Scattering patterns of atmospheric dust clouds analysis with the
+  Discrete Dipole Approximation (DDA) method.}
+\stopdescription
+
+\startdescription{Summer 2012}
+  {\bf Research internship}; INRIA, Grenoble, France
+
+  {\em Intern in NANO-D department at INRIA-Grenoble. L2-SVM for protein
+  interactions. Runtime and accuracy improvement of the C implementation
+  and algorithmic development.}
+\stopdescription
+
+\startdescription{Summer 2011}
+  {\bf Internship, Aeroconseil}, Toulouse, France
+
+  {\em Developed an interface for aerodynamics calculus in JAVA. Reading
+  and implementation of Excel and Scilab scripts through the interface.}
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Additonal
+skills},reference={additonal-skills}]
+
+\startitemize
+\item
+  Languages:
+
+  \startitemize[packed]
+  \item
+    French (native speaker)
+  \item
+    English (Advanced, PhD in USA)
+  \stopitemize
+\item
+  Miscelanous CS:
+
+  \startitemize[packed]
+  \item
+    Linux, Shell script, Latex, Markdown, Github, Unix, Matlab
+  \stopitemize
+\stopitemize
+
+\stopsectionlevel
+
+\startsectionlevel[title={Publications},reference={publications}]
+
+\startcslreferences
+
+\reference[ref-deaguiar2016SCdff]{}%
+Aguiar, M. de, Gorman, G., Herrmann, F. J., Kukreja, N., Lange, M.,
+Louboutin, M., & Zacarias, F. V. (2016, November). DeVito: Fast finite
+difference computation. Retrieved from
+\useURL[url2][https://slim.gatech.edu/Publications/Public/Conferences/SC/2016/deaguiar2016SCdff/deaguiar2016SCdff_poster.pdf]\from[url2]
+
+\reference[ref-bisbas2020IPDPStbf]{}%
+Bisbas, G., Luporini, F., Louboutin, M., Nelson, R., Gorman, G., &
+Kelly, P. H. J. (2021, May). Temporal blocking of finite-difference
+stencil operators with sparse "off-the-grid" sources.
+doi:\goto{10.1109/IPDPS49936.2021.00058}[url(https://doi.org/10.1109/IPDPS49936.2021.00058)]
+
+\reference[ref-erdinc2022AAAIdcc]{}%
+Erdinc, H. T., Gahlot, A. P., Yin, Z., Louboutin, M., & Herrmann, F. J.
+(2022a, November). De-risking carbon capture and sequestration with
+explainable CO$_2$ leakage detection in time-lapse seismic monitoring
+images. Retrieved from
+\useURL[url3][https://slim.gatech.edu/Publications/Public/Conferences/AAAI/2022/erdinc2022AAAIdcc/erdinc2022AAAIdcc.pdf]\from[url3]
+
+\reference[ref-erdinc2022ML4SEISMICdgp]{}%
+Erdinc, H. T., Gahlot, A. P., Yin, Z., Louboutin, M., & Herrmann, F. J.
+(2022b, November). De-risking GCS projects with explainable CO$_2$
+leakage detection in time-lapse seismic images. Retrieved from
+\useURL[url4][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/erdinc2022ML4SEISMICdgp/index.html]\from[url4]
+
+\reference[ref-gorman2016SINBADFopp]{}%
+Gorman, G., Aguiar, M. de, Ham, D., Herrmann, F. J., Kelly, P. H. J.,
+Kukreja, N., \ldots{} Zacarias, F. V. (2016). Open performance portablE
+SeismiC imaging-OPESCI. SINBAD. Retrieved from
+\useURL[url5][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2016/Fall/gorman2016SINBADFopp/gorman2016SINBADFopp.pdf]\from[url5]
+
+\reference[ref-herrmann2018SMCtpa]{}%
+Herrmann, F. J., Gorman, G. J., Hückelheim, J., Lensink, K., Kelly, P.
+H. J., Kukreja, N., \ldots{} Witte, P. A. (2018, August). The power of
+abstraction in computational exploration seismology.
+
+\reference[ref-herrmann2019EAGEHPCaii]{}%
+Herrmann, F. J., Jones, C., Gorman, G., Hückelheim, J., Lensink, K.,
+Kelly, P. H. J., \ldots{} Witte, P. A. (2019, October). Accelerating
+ideation and innovation cheaply in the cloud the power of abstraction,
+collaboration and reproducibility.
+
+\reference[ref-herrmann2021Microsoftrla]{}%
+Herrmann, F. J., Louboutin, M., & Siahkoohi, A. (2021, March). ML@scale
+using randomized linear algebra.
+
+\reference[ref-herrmann2021SEGWSlts]{}%
+Herrmann, F. J., Louboutin, M., Yin, Z., & Witte, P. A. (2021, October).
+Low-cost time-lapse seismic imaging of CCS with the joint recovery
+model.
+
+\reference[ref-herrmann2021Delftlwi]{}%
+Herrmann, F. J., Siahkoohi, A., Orozco, R., Rizzuti, G., Witte, P. A., &
+Louboutin, M. (2021, June). Learned wave-based imaging - variational
+inference at scale. Retrieved from
+\useURL[url6][https://slim.gatech.edu/Publications/Public/Conferences/Delft/2021/herrmann2021Delftlwi/herrmann2021Delftlwi.pdf]\from[url6]
+
+\reference[ref-grady2022SCtll]{}%
+II, T. J. G., Khan, R., Louboutin, M., Yin, Z., Witte, P. A., Chandra,
+R., \ldots{} Herrmann, F. J. (2022a, April). {\em Model-parallel fourier
+neural operators as learned surrogates for large-scale parametric PDEs}.
+Retrieved from
+\useURL[url7][https://slim.gatech.edu/Publications/Public/Submitted/2022/grady2022SCtll/grady2022SCtll.pdf]\from[url7]
+
+\reference[ref-grady2022ML4SEISMICesn]{}%
+II, T. J. G., Khan, R., Louboutin, M., Yin, Z., Witte, P. A., Chandra,
+R., \ldots{} Herrmann, F. J. (2022b, November). Effective scaling of
+numerical surrogates via domain-decomposed fourier neural operators.
+Retrieved from
+\useURL[url8][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/grady2022ML4SEISMICesn/index.html]\from[url8]
+
+\reference[ref-kukreja2019PASCccd]{}%
+Kukreja, N., Hückelheim, J., Louboutin, M., Hovland, P., & Gorman, G.
+(2019). Combining checkpointing and data compression to accelerate
+adjoint-based optimization problems. {\em Euro-Par 2019: Parallel
+Processing}, 87--100.
+doi:\goto{10.1007/978-3-030-29400-7_7}[url(https://doi.org/10.1007/978-3-030-29400-7_7)]
+
+\reference[ref-kukreja2020lcc]{}%
+Kukreja, N., Hueckelheim, J., Louboutin, M., Washbourne, J., Kelly, P.
+H. J., & Gorman, G. J. (2022). Lossy checkpoint compression in full
+waveform inversion. {\em Geoscientific Model Development}, {\em 15}(9),
+3815--3829.
+doi:\goto{10.5194/gmd-15-3815-2022}[url(https://doi.org/10.5194/gmd-15-3815-2022)]
+
+\reference[ref-kukreja2017SIAMdsm]{}%
+Kukreja, N., Lange, M., Louboutin, M., Luporini, F., & Gorman, G.
+(2017). Devito: Symbolic math for automated fast finite difference
+computations. Retrieved from
+\useURL[url9][https://slim.gatech.edu/Publications/Public/Conferences/SIAM/2017/kukreja2017SIAMdsm/kukreja2017SIAMdsm_pres.mov]\from[url9]
+
+\reference[ref-kukreja2016OGHPClsm]{}%
+Kukreja, N., Louboutin, M., Lange, M., Luporini, F., & Gorman, G. (2017,
+March). Leveraging symbolic math for rapid development of applications
+for seismic modeling. Retrieved from
+\useURL[url10][https://slim.gatech.edu/Publications/Public/Conferences/OGHPC/2017/kukreja2016OGHPClsm/kukreja2016OGHPClsm.pdf]\from[url10]
+
+\reference[ref-kukreja2016WOLFHPCdaf]{}%
+Kukreja, N., Louboutin, M., Zacarias, F. V., Luporini, F., Lange, M., &
+Gorman, G. (2016, November). Devito: Automated fast finite difference
+computation. Retrieved from
+\useURL[url11][https://slim.gatech.edu/Publications/Public/Conferences/SC/2016/WOLFHPC/kukreja2016WOLFHPCdaf/kukreja2016WOLFHPCdaf.pdf]\from[url11]
+
+\reference[ref-lange2016dtg]{}%
+Lange, M., Kukreja, N., Louboutin, M., Luporini, F., Zacarias, F. V.,
+Pandolfo, V., \ldots{} Gorman, G. (2016, November). Devito: Towards a
+generic finite difference DSL using symbolic python.
+doi:\goto{10.1109/PyHPC.2016.9}[url(https://doi.org/10.1109/PyHPC.2016.9)]
+
+\reference[ref-lange2017SCIPYofd]{}%
+Lange, M., Kukreja, N., Luporini, F., Louboutin, M., Yount, C.,
+Hückelheim, J., & Gorman, G. (2017, July). Optimised finite difference
+computation from symbolic equations. Retrieved from
+\useURL[url12][http://conference.scipy.org/proceedings/scipy2017/michael_lange.html]\from[url12]
+
+\reference[ref-louboutin2020THmfi]{}%
+Louboutin, M. (2020, March). {\em Modeling for inversion in exploration
+geophysics} (phd). Georgia Institute of Technology, Atlanta. Retrieved
+from
+\useURL[url13][https://slim.gatech.edu/Publications/Public/Thesis/2020/louboutin2020THmfi/louboutin2020THmfi.pdf]\from[url13]
+
+\reference[ref-louboutin2021ML4SEISMICmos]{}%
+Louboutin, M. (2021, November). ML4Seismic open source software
+environment. Retrieved from
+\useURL[url14][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/louboutin2021ML4SEISMICmos/Mon-10-10-Louboutin.pdf]\from[url14]
+
+\reference[ref-louboutin2016SEGocp]{}%
+Louboutin, M., Gorman, G., & Herrmann, F. J. (2016). {\em Optimizing the
+computational performance and maintainability of time-domain
+modelling-leveraging multiple right-hand-sides} (No. TR-EOAS-2016-2).
+UBC. Retrieved from
+\useURL[url15][https://slim.gatech.edu/Publications/Public/TechReport/2016/louboutin2016SEGocp/louboutin2016SEGocp.html]\from[url15]
+
+\reference[ref-louboutin2016OGHPCocp]{}%
+Louboutin, M., Gorman, G., & Herrmann, F. J. (2017). {\em Optimizing the
+computational performance of time-domain modelling-leveraging multiple
+right-hand-sides} (No. TR-EOAS-2017-2). UBC. Retrieved from
+\useURL[url16][https://slim.gatech.edu/Publications/Public/TechReport/2017/louboutin2016OGHPCocp/louboutin2016OGHPCocp.pdf]\from[url16]
+
+\reference[ref-louboutin2017EAGEdns]{}%
+Louboutin, M., Guasch, L., & Herrmann, F. J. (2017, June). Data
+normalization strategies for full-waveform inversion.
+doi:\goto{10.3997/2214-4609.201700720}[url(https://doi.org/10.3997/2214-4609.201700720)]
+
+\reference[ref-louboutin2015SINBADFess]{}%
+Louboutin, M., & Herrmann, F. J. (2015a). Extending the search space of
+time-domain adjoint-state FWI w/ randomized implicit time shifts.
+SINBAD. Retrieved from
+\useURL[url17][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2015/Fall/louboutin2015SINBADFess/louboutin2015SINBADFess.pdf]\from[url17]
+
+\reference[ref-louboutin2015SEGtcs]{}%
+Louboutin, M., & Herrmann, F. J. (2015b, October). Time compressively
+sampled full-waveform inversion with stochastic optimization.
+doi:\goto{10.1190/segam2015-5924937.1}[url(https://doi.org/10.1190/segam2015-5924937.1)]
+
+\reference[ref-louboutin2016SINBADFhps]{}%
+Louboutin, M., & Herrmann, F. J. (2016). High-performance seismic
+applications of OPESCI. SINBAD. Retrieved from
+\useURL[url18][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2016/Fall/louboutin2016SINBADFhps/louboutin2016SINBADFhps.pdf]\from[url18]
+
+\reference[ref-louboutin2017SINBADFddg]{}%
+Louboutin, M., & Herrmann, F. J. (2017a). Data driven gradient sampling
+for seismic inversion. SINBAD. Retrieved from
+\useURL[url19][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/louboutin2017SINBADFddg/louboutin2017SINBADFddg.pdf]\from[url19]
+
+\reference[ref-louboutin2017EAGEess]{}%
+Louboutin, M., & Herrmann, F. J. (2017b, June). Extending the search
+space of time-domain adjoint-state FWI with randomized implicit time
+shifts.
+doi:\goto{10.3997/2214-4609.201700831}[url(https://doi.org/10.3997/2214-4609.201700831)]
+
+\reference[ref-louboutin2021ML4SEISMICrla]{}%
+Louboutin, M., & Herrmann, F. J. (2021a, November). Randomized linear
+algebra for inversion. Retrieved from
+\useURL[url20][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/louboutin2021ML4SEISMICrla/Tue-10-20-Louboutin.pdf]\from[url20]
+
+\reference[ref-louboutin2021SEGulm]{}%
+Louboutin, M., & Herrmann, F. J. (2021b, September). Ultra-low memory
+seismic inversion with randomized trace estimation.
+doi:\goto{10.1190/segam2021-3584072.1}[url(https://doi.org/10.1190/segam2021-3584072.1)]
+
+\reference[ref-louboutin2022EAGEewi]{}%
+Louboutin, M., & Herrmann, F. J. (2022a, June). Enabling wave-based
+inversion on GPUs with randomized trace estimation.
+doi:\goto{10.3997/2214-4609.202210531}[url(https://doi.org/10.3997/2214-4609.202210531)]
+
+\reference[ref-louboutin2022SEGWSaaa]{}%
+Louboutin, M., & Herrmann, F. J. (2022b, September). Abstractions and
+algorithms for efficient seismic inversion on accelerators. Retrieved
+from
+\useURL[url21][https://www.imageevent.org/Workshop/next-fwi-derived-products]\from[url21]
+
+\reference[ref-louboutin2022ML4SEISMIClew]{}%
+Louboutin, M., Kartha, Y., Orozco, R., & Herrmann, F. J. (2022,
+November). Learned extensions for wave-based simulation and inversion.
+Retrieved from
+\useURL[url22][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/louboutin2022ML4SEISMIClew/index.html]\from[url22]
+
+\reference[ref-louboutin2016ppf]{}%
+Louboutin, M., Lange, M., Herrmann, F. J., Kukreja, N., & Gorman, G.
+(2017). Performance prediction of finite-difference solvers for
+different computer architectures. {\em Computers & Geosciences},
+{\em 105}, 148--157.
+doi:\useURL[url23][https://doi.org/10.1016/j.cageo.2017.04.014]\from[url23]
+
+\reference[ref-louboutin2017SIAMras]{}%
+Louboutin, M., Lange, M., Kukreja, N., Luporini, F., Herrmann, F. J., &
+Gorman, G. (2017). Raising the abstraction to separate concerns:
+Enabling different physics for geophysical exploration. Retrieved from
+\useURL[url24][https://slim.gatech.edu/Publications/Public/Conferences/SIAM/2017/louboutin2017SIAMras/louboutin2017SIAMras_pres.mov]\from[url24]
+
+\reference[ref-louboutin2018dae]{}%
+Louboutin, M., Lange, M., Luporini, F., Kukreja, N., Witte, P. A.,
+Herrmann, F. J., \ldots{} Gorman, G. J. (2019). Devito (v3.1.0): An
+embedded domain-specific language for finite differences and geophysical
+exploration. {\em Geoscientific Model Development}.
+doi:\goto{10.5194/gmd-12-1165-2019}[url(https://doi.org/10.5194/gmd-12-1165-2019)]
+
+\reference[ref-louboutin2017SINBADFldi]{}%
+Louboutin, M., Lange, M., Luporini, F., Kurjeka, N., Hueckelheim, J.,
+Gorman, G., \ldots{} Herrmann, F. J. (2017). Latest developments in
+devito. SINBAD. Retrieved from
+\useURL[url25][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/louboutin2017SINBADFldi/louboutin2017SINBADFldi.pdf]\from[url25]
+
+\reference[ref-louboutin2020SCsta]{}%
+Louboutin, M., Luporini, F., Witte, P. A., Nelson, R., Bisbas, G.,
+Thorbecke, J., \ldots{} Gorman, G. (2020). {\em Scaling through
+abstractions high-performance vectorial wave simulations for seismic
+inversion with devito} (No. TR-CSE-2020-3). Georgia Institute of
+Technology. Retrieved from
+\useURL[url26][https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SCsta/louboutin2020SCsta.html]\from[url26]
+
+\reference[ref-louboutin2015IIPFWIrwi]{}%
+Louboutin, M., Peters, B., Smithyman, B. R., & Herrmann, F. J. (2015).
+Regularizing waveform inversion by projections onto convex sets.
+
+\reference[ref-louboutin2020SEGtwri]{}%
+Louboutin, M., Rizzuti, G., & Herrmann, F. J. (2020a). {\em Time-domain
+wavefield reconstruction inversion in a TTI medium} (No. TR-CSE-2020-1).
+Georgia Institute of Technology. Retrieved from
+\useURL[url27][https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SEGtwri/louboutin2020SEGtwri.html]\from[url27]
+
+\reference[ref-louboutin2020SIAMTXLAtdw]{}%
+Louboutin, M., Rizzuti, G., & Herrmann, F. J. (2020b, October).
+Time-domain wavefield reconstruction inversion in tilted transverse
+isostropic media. Retrieved from
+\useURL[url28][https://slim.gatech.edu/Publications/Public/Conferences/SIAMTXLA/2020/louboutin2020SIAMTXLAtdw/louboutin2020SIAMTXLAtdw_pres.pdf]\from[url28]
+
+\reference[ref-louboutin2021NIPSmcte]{}%
+Louboutin, M., Siahkoohi, A., Wang, R., & Herrmann, F. J. (2021).
+{\em Low-memory stochastic backpropagation with multi-channel randomized
+trace estimation} (No. TR-CSE-2021-1). Retrieved from
+\useURL[url29][https://slim.gatech.edu/Publications/Public/TechReport/2021/louboutin2021NIPSmcte/louboutin2021NIPSmcte.pdf]\from[url29]
+
+\reference[ref-louboutin2022RHPCafa]{}%
+Louboutin, M., Siahkoohi, A., Yin, Z., Orozco, R., II, T. J. G., Zhang,
+Y., \ldots{} Herrmann, F. J. (2022, March). Abstractions for at-scale
+seismic inversion. Retrieved from
+\useURL[url30][https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2022/louboutin2022RHPCafa/RiceHPC22.pdf]\from[url30]
+
+\reference[ref-louboutin2018SEGeow]{}%
+Louboutin, M., Witte, P. A., & Herrmann, F. J. (2018, October). Effects
+of wrong adjoints for RTM in TTI media.
+doi:\goto{10.1190/segam2018-2996274.1}[url(https://doi.org/10.1190/segam2018-2996274.1)]
+
+\reference[ref-louboutin2017fwi]{}%
+Louboutin, M., Witte, P. A., Lange, M., Kukreja, N., Luporini, F.,
+Gorman, G., & Herrmann, F. J. (2017). Full-waveform inversion - part 1:
+Forward modeling. {\em The Leading Edge}, {\em 36}(12), 1033--1036.
+doi:\goto{10.1190/tle36121033.1}[url(https://doi.org/10.1190/tle36121033.1)]
+
+\reference[ref-louboutin2017fwip2]{}%
+Louboutin, M., Witte, P. A., Lange, M., Kukreja, N., Luporini, F.,
+Gorman, G., & Herrmann, F. J. (2018). Full-waveform inversion - part 2:
+Adjoint modeling. {\em The Leading Edge}, {\em 37}(1), 69--72.
+doi:\goto{10.1190/tle37010069.1}[url(https://doi.org/10.1190/tle37010069.1)]
+
+\reference[ref-louboutin2022SEGais]{}%
+Louboutin, M., Witte, P. A., Siahkoohi, A., Rizzuti, G., Yin, Z.,
+Orozco, R., & Herrmann, F. J. (2022, May). Accelerating innovation with
+software abstractions for scalable computational geophysics.
+doi:\goto{10.1190/image2022-3750561.1}[url(https://doi.org/10.1190/image2022-3750561.1)]
+
+\reference[ref-louboutin2022ML4SEISMICmos]{}%
+Louboutin, M., Yin, Z., Orozco, R., II, T. J. G., & Herrmann, F. J.
+(2022, November). ML4Seismic open-source software: Updates and
+developments. Retrieved from
+\useURL[url31][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/louboutin2022ML4SEISMICmos/index.html]\from[url31]
+
+\reference[ref-louboutin2020SEGWSspl]{}%
+Louboutin, M., Yin, Z., Zhang, Y., & Herrmann, F. J. (2020, October).
+Sparsity promoting least-squares migration for long offset sparse OBN.
+
+\reference[ref-luporini2018aap]{}%
+Luporini, F., Louboutin, M., Lange, M., Kukreja, N., Witte, P. A.,
+Hückelheim, J., \ldots{} Gorman, G. J. (2020). Architecture and
+performance of devito, a system for automated stencil computation.
+{\em ACM Trans. Math. Softw.}, {\em 46}(1).
+doi:\goto{10.1145/3374916}[url(https://doi.org/10.1145/3374916)]
+
+\reference[ref-orozco2022MIDLmei]{}%
+Orozco, R., Louboutin, M., & Herrmann, F. J. (2022a). {\em Memory
+efficient invertible neural networks for 3D photoacoustic imaging} (No.
+TR-CSE-2022-2). Retrieved from
+\useURL[url32][https://slim.gatech.edu/Publications/Public/TechReport/2022/orozco2022MIDLmei/midl_2022.html]\from[url32]
+
+\reference[ref-orozco2022ML4SEISMICnfr]{}%
+Orozco, R., Louboutin, M., & Herrmann, F. J. (2022b, November).
+Normalizing flows for regularization of 3D seismic inverse problems.
+Retrieved from
+\useURL[url33][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/orozco2022ML4SEISMICnfr/index.html]\from[url33]
+
+\reference[ref-orozco2022ML4SEISMICaos]{}%
+Orozco, R., Louboutin, M., Siahkoohi, A., Rizzuti, G., & Herrmann, F. J.
+(2022, November). Adjoint operators as summary functions in amortized
+bayesian inference frameworks. Retrieved from
+\useURL[url34][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/orozco2022ML4SEISMICaos/index.html]\from[url34]
+
+\reference[ref-peters2015SINBADFrwi]{}%
+Peters, B., Smithyman, B. R., Louboutin, M., & Herrmann, F. J. (2015).
+Regularizing waveform inversion by projections onto intersections of
+convex sets. SINBAD. Retrieved from
+\useURL[url35][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2015/Fall/peters2015SINBADFrwi/peters2015SINBADFrwi.pdf]\from[url35]
+
+\reference[ref-ren2021AGUsvi]{}%
+Ren, Y., Witte, P. A., Siahkoohi, A., Louboutin, M., Yin, Z., &
+Herrmann, F. J. (2021, December). Seismic velocity inversion and
+uncertainty quantification using conditional normalizing flows.
+Retrieved from
+\useURL[url36][https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/815883]\from[url36]
+
+\reference[ref-rizzuti2019SIAMGStwri]{}%
+Rizzuti, G., Louboutin, M., Wang, R., Daskalakis, E., & Herrmann, F. J.
+(2019a, March). A dual formulation for time-domain wavefield
+reconstruction inversion.
+
+\reference[ref-rizzuti2019SEGadf]{}%
+Rizzuti, G., Louboutin, M., Wang, R., Daskalakis, E., & Herrmann, F. J.
+(2019b, September). A dual formulation for time-domain wavefield
+reconstruction inversion.
+doi:\goto{10.1190/segam2019-3216760.1}[url(https://doi.org/10.1190/segam2019-3216760.1)]
+
+\reference[ref-rizzuti2020EAGEtwri]{}%
+Rizzuti, G., Louboutin, M., Wang, R., & Herrmann, F. J. (2020, January).
+Time-domain wavefield reconstruction inversion for large-scale seismics.
+Retrieved from
+\useURL[url37][https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2020/rizzuti2020EAGEtwri/rizzuti2020EAGEtwri.html]\from[url37]
+
+\reference[ref-rizzuti2020dfw]{}%
+Rizzuti, G., Louboutin, M., Wang, R., & Herrmann, F. J. (2021a). A dual
+formulation of wavefield reconstruction inversion for large-scale
+seismic inversion. {\em Geophysics}, {\em 86}(6), 1ND--Z3.
+doi:\goto{10.1190/geo2020-0743.1}[url(https://doi.org/10.1190/geo2020-0743.1)]
+
+\reference[ref-rizzuti2021SIAMGSwrid]{}%
+Rizzuti, G., Louboutin, M., Wang, R., & Herrmann, F. J. (2021b, June).
+Time-domain wavefield reconstruction inversion for large-scale seismic
+inversion. Retrieved from
+\useURL[url38][https://slim.gatech.edu/Publications/Public/Conferences/SIAMGS/2021/rizzuti2021SIAMGSwrid/rizzuti2021SIAMGSwrid.pdf]\from[url38]
+
+\reference[ref-rizzuti2021ML4SEISMICdfw]{}%
+Rizzuti, G., Louboutin, M., Wang, R., & Herrmann, F. J. (2021c,
+November). A dual formulation of wavefield reconstruction inversion for
+large-scale seismic inversion. Retrieved from
+\useURL[url39][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/rizzuti2021ML4SEISMICdfw/Tue-10-55-Rizzuti.pdf]\from[url39]
+
+\reference[ref-sharan2018IEEEIUSspoa]{}%
+Sharan, S., Kumar, R., Dumani, D. S., Louboutin, M., Wang, R.,
+Emelianov, S., & Herrmann, F. J. (2018, October). Sparsity-promoting
+photoacoustic imaging with source estimation.
+doi:\goto{10.1109/ULTSYM.2018.8580037}[url(https://doi.org/10.1109/ULTSYM.2018.8580037)]
+
+\reference[ref-siahkoohi2019TRnna]{}%
+Siahkoohi, A., Louboutin, M., & Herrmann, F. J. (2019a). {\em Neural
+network augmented wave-equation simulation} (No. TR-CSE-2019-1). Georgia
+Institute of Technology. Retrieved from
+\useURL[url40][https://slim.gatech.edu/Publications/Public/TechReport/2019/siahkoohi2019TRnna/siahkoohi2019TRnna.html]\from[url40]
+
+\reference[ref-siahkoohi2019itl]{}%
+Siahkoohi, A., Louboutin, M., & Herrmann, F. J. (2019b). The importance
+of transfer learning in seismic modeling and imaging. {\em Geophysics}.
+doi:\goto{10.1190/geo2019-0056.1}[url(https://doi.org/10.1190/geo2019-0056.1)]
+
+\reference[ref-siahkoohi2022SEGvcw]{}%
+Siahkoohi, A., Louboutin, M., & Herrmann, F. J. (2022, May). Velocity
+continuation with fourier neural operators for accelerated uncertainty
+quantification.
+doi:\goto{10.1190/image2022-3750475.1}[url(https://doi.org/10.1190/image2022-3750475.1)]
+
+\reference[ref-siahkoohi2018SEGcnn]{}%
+Siahkoohi, A., Louboutin, M., Kumar, R., & Herrmann, F. J. (2018,
+October). Deep convolutional neural networks in prestack seismic-two
+exploratory examples.
+doi:\goto{10.1190/segam2018-2998599.1}[url(https://doi.org/10.1190/segam2018-2998599.1)]
+
+\reference[ref-siahkoohi2021ML4SEISMICmcn]{}%
+Siahkoohi, A., Orozco, R., Rizzuti, G., Witte, P. A., Louboutin, M., &
+Herrmann, F. J. (2021a, November). Multifidelity conditional normalizing
+flows for physics-guided bayesian inference. Retrieved from
+\useURL[url41][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/siahkoohi2021ML4SEISMICmcn/Mon-11-45-Siahkoohi.pdf]\from[url41]
+
+\reference[ref-siahkoohi2021EarthMLfar]{}%
+Siahkoohi, A., Orozco, R., Rizzuti, G., Witte, P. A., Louboutin, M., &
+Herrmann, F. J. (2021b, September). Fast and reliability-aware seismic
+imaging with conditional normalizing flows. Retrieved from
+\useURL[url42][https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/siahkoohi2021EarthMLfar/siahkoohi2021EarthMLfar.pdf]\from[url42]
+
+\reference[ref-siahkoohi2020SIAMTXLAudg]{}%
+Siahkoohi, A., Rizzuti, G., Louboutin, M., & Herrmann, F. J. (2020,
+October). Unsupervised data-guided uncertainty analysis in imaging and
+horizon tracking. Retrieved from
+\useURL[url43][https://slim.gatech.edu/Publications/Public/Conferences/SIAMTXLA/2020/siahkoohi2020SIAMTXLAudg/siahkoohi2020SIAMTXLAudg_pres.pdf]\from[url43]
+
+\reference[ref-siahkoohi2021AABIpto]{}%
+Siahkoohi, A., Rizzuti, G., Louboutin, M., Witte, P. A., & Herrmann, F.
+J. (2021a, January). Preconditioned training of normalizing flows for
+variational inference in inverse problems. Retrieved from
+\useURL[url44][https://slim.gatech.edu/Publications/Public/Conferences/AABI/2021/siahkoohi2021AABIpto/siahkoohi2020ABIfab.html]\from[url44]
+
+\reference[ref-herrmann2021KAUSTdbi]{}%
+Siahkoohi, A., Rizzuti, G., Louboutin, M., Witte, P. A., & Herrmann, F.
+J. (2021b, March). Deep bayesian inference for task-based seismic
+imaging.
+
+\reference[ref-siahkoohi2020SIAMISsiu]{}%
+Siahkoohi, A., Witte, P. A., Louboutin, M., Herrmann, F. J., & Rizzuti,
+G. (2020, July). Seismic imaging with uncertainty quantification:
+Sampling from the posterior with generative networks. Retrieved from
+\useURL[url45][https://slim.gatech.edu/Publications/Public/Conferences/SIAMIS/2020/siahkoohi2020SIAMISsiu/siahkoohi2020SIAMISsiu_pres.pdf]\from[url45]
+
+\reference[ref-yin2022ML4SEISMICavc]{}%
+Siahkoohi, A., Yin, Z., Louboutin, M., & Herrmann, F. J. (2022,
+November). Amortized velocity continuation with fourier neural
+operators. Retrieved from
+\useURL[url46][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICavc/index.html]\from[url46]
+
+\reference[ref-dasilva2015SINBADFsss]{}%
+Silva, C. D., Wason, H., Louboutin, M., Peters, B., Sharan, S., Fang,
+Z., & Herrmann, F. J. (2015). Scaling SINBAD software to 3-d on yemoja.
+SINBAD. Retrieved from
+\useURL[url47][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFsss/dasilva2015SINBADFsss.pdf]\from[url47]
+
+\reference[ref-wang2017SINBADFnra]{}%
+Wang, R., Louboutin, M., Peters, B., Daskalakis, E., & Herrmann, F. J.
+(2017). Noise robust and time-domain formulations of wavefield
+reconstruction inversion. SINBAD. Retrieved from
+\useURL[url48][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/wang2017SINBADFnra/wang2017SINBADFnra.pdf]\from[url48]
+
+\reference[ref-witte2016OGHPClst]{}%
+Witte, P. A., Louboutin, M., Gorman, G., & Herrmann, F. J. (2017).
+{\em A large-scale time-domain seismic modeling and inversion workflow
+in julia} (No. TR-EOAS-2017-1). UBC. Retrieved from
+\useURL[url49][https://slim.gatech.edu/Publications/Public/TechReport/2017/witte2016OGHPClst/witte2016OGHPClst.pdf]\from[url49]
+
+\reference[ref-witte2015TRoam]{}%
+Witte, P. A., Louboutin, M., & Herrmann, F. J. (2015a). {\em Overview on
+anisotropic modeling and inversion} (No. TR-EOAS-2015-6). UBC. Retrieved
+from
+\useURL[url50][https://slim.gatech.edu/Publications/Public/TechReport/2015/witte2015TRoam/witte2015TRoam.html]\from[url50]
+
+\reference[ref-witte2015IIPFWItdf]{}%
+Witte, P. A., Louboutin, M., & Herrmann, F. J. (2015b). Time-domain FWI
+in TTI media.
+
+\reference[ref-witte2017SINBADFals]{}%
+Witte, P. A., Louboutin, M., & Herrmann, F. J. (2017a). A large-scale
+framework in julia for fast prototyping of seismic inversion algorithms.
+SINBAD. Retrieved from
+\useURL[url51][https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/witte2017SINBADFals/witte2017SINBADFals.pdf]\from[url51]
+
+\reference[ref-witte2017SIAMlsw]{}%
+Witte, P. A., Louboutin, M., & Herrmann, F. J. (2017b). Large-scale
+workflows for wave-equation based inversion in julia. Retrieved from
+\useURL[url52][https://slim.gatech.edu/Publications/Public/Conferences/SIAM/2017/witte2017SIAMlsw/witte2017SIAMlsw_pres.mov]\from[url52]
+
+\reference[ref-witte2019HOTCSEdsagip]{}%
+Witte, P. A., Louboutin, M., & Herrmann, F. J. (2019). Domain-specific
+abstractions for large-scale geophysical inverse problems. Retrieved
+from
+\useURL[url53][https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/witte2019HOTCSEdsagip/witte2019HOTCSEdsagip.pdf]\from[url53]
+
+\reference[ref-witte2019RHPCssi]{}%
+Witte, P. A., Louboutin, M., Jones, C., & Herrmann, F. J. (2020, March).
+Serverless seismic imaging in the cloud. Retrieved from
+\useURL[url54][https://slim.gatech.edu/Publications/Public/Conferences/RHPC/2019/witte2019RHPCssi/witte2019RHPCssi.html]\from[url54]
+
+\reference[ref-witte2018alf]{}%
+Witte, P. A., Louboutin, M., Kukreja, N., Luporini, F., Lange, M.,
+Gorman, G. J., & Herrmann, F. J. (2019a). A large-scale framework for
+symbolic implementations of seismic inversion algorithms in julia.
+{\em Geophysics}, {\em 84}(3), F57--F71.
+doi:\goto{10.1190/geo2018-0174.1}[url(https://doi.org/10.1190/geo2018-0174.1)]
+
+\reference[ref-witte2019ecl]{}%
+Witte, P. A., Louboutin, M., Kukreja, N., Luporini, F., Lange, M.,
+Gorman, G. J., & Herrmann, F. J. (2019b). Geophysics bright spots:
+Efficient coding of large-scale seismic inversion algorithms. {\em The
+Leading Edge}, {\em 38}(6), 482--484.
+doi:\goto{10.1190/tle38060482.1}[url(https://doi.org/10.1190/tle38060482.1)]
+
+\reference[ref-witte2018fwip3]{}%
+Witte, P. A., Louboutin, M., Lensink, K., Lange, M., Kukreja, N.,
+Luporini, F., \ldots{} Herrmann, F. J. (2018). Full-waveform inversion -
+part 3: optimization. {\em The Leading Edge}, {\em 37}(2), 142--145.
+doi:\goto{10.1190/tle37020142.1}[url(https://doi.org/10.1190/tle37020142.1)]
+
+\reference[ref-witte2018cls]{}%
+Witte, P. A., Louboutin, M., Luporini, F., Gorman, G. J., & Herrmann, F.
+J. (2019a). Compressive least-squares migration with on-the-fly fourier
+transforms. {\em Geophysics}, {\em 84}(5), R655--R672.
+doi:\goto{10.1190/geo2018-0490.1}[url(https://doi.org/10.1190/geo2018-0490.1)]
+
+\reference[ref-witte2019SIAMCSEclsmft]{}%
+Witte, P. A., Louboutin, M., Luporini, F., Gorman, G. J., & Herrmann, F.
+J. (2019b, March). Compressive least squares migration with on-the-fly
+fourier transforms.
+
+\reference[ref-witte2019SEGedw]{}%
+Witte, P. A., Louboutin, M., Modzelewski, H., Jones, C., Selvage, J., &
+Herrmann, F. J. (2019, September). Event-driven workflows for
+large-scale seismic imaging in the cloud.
+doi:\goto{10.1190/segam2019-3215069.1}[url(https://doi.org/10.1190/segam2019-3215069.1)]
+
+\reference[ref-witte2019TPDedas]{}%
+Witte, P. A., Louboutin, M., Modzelewski, H., Jones, C., Selvage, J., &
+Herrmann, F. J. (2020). An event-driven approach to serverless seismic
+imaging in the cloud. {\em IEEE Transactions on Parallel and Distributed
+Systems}, {\em 31}(9), 2032--2049.
+doi:\goto{10.1109/TPDS.2020.2982626}[url(https://doi.org/10.1109/TPDS.2020.2982626)]
+
+\reference[ref-witte2021JULIACONmedlj]{}%
+Witte, P. A., Louboutin, M., Siahkoohi, A., Rizzuti, G., Peters, B., &
+Herrmann, F. J. (2021, July). InvertibleNetworks.jl - memory efficient
+deep learning in julia. Retrieved from
+\useURL[url55][https://slim.gatech.edu/Publications/Public/Conferences/JuliaCon/2021/witte2021JULIACONmedlj/witte2021JULIACONmedlj.pdf]\from[url55]
+
+\reference[ref-witte2015IIPFWIspl]{}%
+Witte, P. A., Tu, N., Esser, E., Yang, M., Louboutin, M., & Herrmann, F.
+J. (2015). Sparsity-promoting least-square migration with linearized
+bregman and compressive sensing.
+
+\reference[ref-yin2022ML4SEISMICsfg]{}%
+Yin, Z., Erdinc, H. T., Gahlot, A. P., Louboutin, M., & Herrmann, F. J.
+(2022, November). Simulation-based framework for geological carbon
+storage monitoring. Retrieved from
+\useURL[url56][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICsfg/index.html]\from[url56]
+
+\reference[ref-yin2022TLEdgc]{}%
+Yin, Z., Erdinc, H. T., Gahlot, A. P., Louboutin, M., & Herrmann, F. J.
+(2023). Derisking geological carbon storage from high-resolution
+time-lapse seismic to explainable leakage detection. {\em The Leading
+Edge}, {\em 42}(1), 6976.
+doi:\goto{10.1190/tle42010069.1}[url(https://doi.org/10.1190/tle42010069.1)]
+
+\reference[ref-yin2021ML4SEISMICism]{}%
+Yin, Z., Louboutin, M., & Herrmann, F. J. (2021a, November). Improved
+seismic monitoring of CO2 sequestration with the weighted joint recovery
+model. Retrieved from
+\useURL[url57][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/yin2021ML4SEISMICism/Tue-11-20-Yin.html]\from[url57]
+
+\reference[ref-yin2021SEGcts]{}%
+Yin, Z., Louboutin, M., & Herrmann, F. J. (2021b, September).
+Compressive time-lapse seismic monitoring of carbon storage and
+sequestration with the joint recovery model.
+doi:\goto{10.1190/segam2021-3569087.1}[url(https://doi.org/10.1190/segam2021-3569087.1)]
+
+\reference[ref-yin2022TRANSFORMjulia]{}%
+Yin, Z., Louboutin, M., Witte, P. A., Siahkoohi, A., Rizzuti, G.,
+Orozco, R., \ldots{} Herrmann, F. J. (2022, April). Julia for
+geoscience. Retrieved from
+\useURL[url58][https://transform.softwareunderground.org/2022-julia-for-geoscience]\from[url58]
+
+\reference[ref-yin2022ML4SEISMICutc]{}%
+Yin, Z., Orozco, R., Siahkoohi, A., Louboutin, M., & Herrmann, F. J.
+(2022, November). Uncertainty-aware time-lapse CO$_2$ monitoring with
+learned end-to-end inversion. Retrieved from
+\useURL[url59][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICutc/index.html]\from[url59]
+
+\reference[ref-yin2020SEGesi]{}%
+Yin, Z., Orozco, R., Witte, P. A., Louboutin, M., Rizzuti, G., &
+Herrmann, F. J. (2020, September). Extended source imaging - a unifying
+framework for seismic and medical imaging.
+doi:\goto{10.1190/segam2020-3426999.1}[url(https://doi.org/10.1190/segam2020-3426999.1)]
+
+\reference[ref-yin2022SEGlci]{}%
+Yin, Z., Siahkoohi, A., Louboutin, M., & Herrmann, F. J. (2022, May).
+Learned coupled inversion for carbon sequestration monitoring and
+forecasting with fourier neural operators.
+doi:\goto{10.1190/image2022-3722848.1}[url(https://doi.org/10.1190/image2022-3722848.1)]
+
+\reference[ref-zhang2022SEGass]{}%
+Zhang, Y., Louboutin, M., Siahkoohi, A., Yin, Z., Kumar, R., & Herrmann,
+F. J. (2022, May). A simulation-free seismic survey design by maximizing
+the spectral gap.
+doi:\goto{10.1190/image2022-3751690.1}[url(https://doi.org/10.1190/image2022-3751690.1)]
+
+\reference[ref-zhang2022ML4SEISMICtss]{}%
+Zhang, Y., Louboutin, M., Siahkoohi, A., Yin, Z., Kumar, R., Lopez, O.,
+& Herrmann, F. J. (2022, November). Time-lapse seismic survey design by
+maximizing the spectral gap. Retrieved from
+\useURL[url60][https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/zhang2022ML4SEISMICtss/index.html]\from[url60]
+
+\reference[ref-zhang2023otl]{}%
+Zhang, Y., Yin, Z., Lopez, O., Siahkoohi, A., Louboutin, M., Kumar, R.,
+& Herrmann, F. J. (2023, January). {\em Optimized time-lapse acquisition
+design via spectral gap ratio minimization}. Retrieved from
+\useURL[url61][https://slim.gatech.edu/Publications/Public/Submitted/2023/zhang2023otl/Spectral_Gap_Paper.html]\from[url61]
+
+\stopcslreferences
+\stopsectionlevel
+
+\stoptext

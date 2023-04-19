@@ -1,0 +1,325 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=110061]
+\definecolor[rulecolor][h=110061]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd, page=no]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle, page=no]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}, page=no]
+\setuphead[subsubsection][style=\bf, page=no]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+\definemeasure[cslhangindent][1.5em]
+\definestartstop
+  [cslreferences]
+  [before={%
+     \setupnarrower[left=\measure{cslhangindent}]
+     \startnarrower[left]%
+     \setupindenting[-\leftskip,yes,first]%
+     \doindentation%
+   },
+   after=\stopnarrower]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\defineitemgroup[enumerate]
+\setupenumerate[each][fit][itemalign=left,distance=.5em,style={\feature[+][default:tnum]}]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+\startalignment[right]
+  \blank[2*big]
+  {\tfd Mathias Thibaut Louboutin}
+  \blank[3*medium]
+  {\tfa \crlf
+733 York View Dr, Auburn, 30011, GA\crlf
+mathias.louboutin@gmail.com\crlf
+404-451-6131\crlf
+\useURL[url1][mloubout.github.io]\from[url1]\crlf
+\goto{Github}[url(https://github.com/mloubout)]\crlf
+\goto{@louboutjunior}[url(https://twitter.com/Louboutjunior)]}
+  \blank[3*medium]
+\stopalignment
+
+\startsectionlevel[title={Experience},reference={experience}]
+
+\startdescription{March 2023-*}
+  {\bf Computational Imaging Scientist}: Oak Ridge National Laboratory,
+  Oak Ridge, TN {\em Scientific engagmenent, INCITE }
+
+  {\em Medical Imaging}
+
+  {\em HPC (Frontier, Summit, \ldots{})}
+\stopdescription
+
+\startdescription{July 2020-- February 2023}
+  {\bf Postdoctoral Fellow}: Georgia Institute of Technology, Atlanta,
+  GA
+
+  {\em High performance/low memory randomized linear algebra for
+  backpropagation based inverse problems}
+
+  {\em Cloud HPC for separable problems (task parallel)}
+
+  {\em Supervising the PhD and MSc students}
+
+  {\em Managing and developping the software stack for the Lab
+  (\goto{slimgroup}[url(https://github.com/slimgroup)])}
+
+  {\em Machine learning for geophysical and medical wave-equation based
+  inverse problems}
+
+  {\em HPC for machine learning}
+
+  {\em Geological Carbon Storage seismic monitoring}
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Computational
+experience},reference={computational-experience}]
+
+\startdescription{Open Source}
+  {\bf \goto{Devito}[url(https://github.com/devitocodes/devito)]}: A
+  symbolic domain specific language (DSL) for stencil computation with
+  just-in-time compilation and code generation. Achieves state of the
+  art performance while providing a high-level mathematical interface to
+  the users for the development of stencil based applications.
+
+  {\bf \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)]}: Linear
+  algebra high level API for wave-equation based inversion. This pacage
+  is built on top of Devito to have high performance wave-equation
+  solvers. A new additional Azure batch extension was developped for
+  scalability
+  \goto{JUDI4Cloud}[url(https://github.com/slimgroup/JUDI.jl)].
+
+  {\bf \goto{XConv}[url(https://github.com/slimgroup/XConv)]}: High
+  performance low memory convolutional layer. This repository implements
+  both in julia (for Flux.jl) and in python (for pytorch) a
+  convolutional layer that has virtually a zero memory imprnt for
+  training using randomized linear algebra to compute an unbiased
+  estimate of the gradient with respect to the weights. Additionaly, a
+  byte only implementation of the ReLU layer leads to memry reduction by
+  a factor of X2 for full networks.
+
+  {\bf \goto{dfno}[url(https://github.com/slimgroup/dfno)]}: Model
+  parallel (MPI model decomposition) implementation of Fourier Neural
+  Operators for PyTorch. Extension of distdl, a model parallel extension
+  of PyTorch.
+
+  {\bf \goto{InvertibleNetworks.jl}[url(https://github.com/slimgroup/InvertibleNetworks.jl)]}:
+  Native Julia implementation of invertible networks for variational
+  inference, generative models and normalizing flows.
+\stopdescription
+
+\startdescription{Programming Languages}
+  {\bf Python:} Main programming language for the development of
+  \goto{Devito}[url(https://github.com/devitocodes/devito)] and machine
+  learning applications.
+
+  {\bf Julia:} Heavy development of research software at Georgia Tech
+  (\goto{slimgroup}[url(https://github.com/slimgroup)]) in Julia
+
+  {\bf docker} Developped and automatized the deployement of
+  \goto{Devito}[url(https://github.com/devitocodes/devito)] and
+  \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)] images through
+  CI (github actions).
+
+  Knowledge of {\bf C}, {\bf Linux}, {\bf Bash}, {\bf PyTorch},
+  {\bf Azure}, {\bf Latex}, {\bf Markdown}, {\bf Matlab}, {\bf MPI},
+  {\bf OPenMP}, {\bf OpenACC}
+\stopdescription
+
+\startdescription{HPC}
+  {\bf \goto{Devito}[url(https://github.com/devitocodes/devito)]:} Weak
+  and strong scaling benchmarks of
+  \goto{Devito}[url(https://github.com/devitocodes/devito)] on
+  on-premise (Imperical college) and Cloud (Azure) hardware.
+
+  {\bf \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)]:}
+  Implementation and deployment at scale of
+  \goto{JUDI}[url(https://github.com/slimgroup/JUDI.jl)] on clusters and
+  Azure Batch (up 300 nodes).
+
+  {\bf Optimum (2015-2018):} Early PhD 50 nodes cluster. Development of
+  parallel Matlab seismic inverse problem algorithms (FWI/RTM).
+
+  {\bf YEMOJA (2017-2018):} Part of a collaboration with SENAI-CIMANTEC.
+  Scaling of our Matlab and Julia framework to hundred of nodes.
+
+  {\bf Cloud (2018-):} Serverless and clusterless framework for task
+  parallel inverse problems on AWS and Azure.
+
+  {\bf Perlmutter (2022-):} Scaling of MPI-parallel Fourier Neural
+  Operator on Perlmutter (and previously Summit).
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Education},reference={education}]
+
+\startdescription{2018--2020}
+  {\bf PhD, Computer Science}; Georgia Institute of Technology, Atlanta,
+  GA
+
+  {\em Thesis title: Modeling for inversion in exploration geophysics}
+  \goto{Link}[url(https://slim.gatech.edu/content/modeling-inversion-exploration-geophysics)]
+
+  {\em Numerical and computational methods for large scale simulation
+  based inverse problems and machine learning}
+\stopdescription
+
+\startdescription{2013--2018}
+  {\bf PhD, Earth Science}; University of British Columbia, Canada
+
+  {\em Transfered to Georgia Institute of Technology in January 2018
+  following my supervior new position there.}
+\stopdescription
+
+\startdescription{2016 Feb-Aug}
+  {\bf Visiting PhD, Computer Science}; Impertial College London, UK
+
+  {\em Automatic code generation for geophysical exploration
+  applications with finite differences}
+\stopdescription
+
+\startdescription{2011--2013}
+  {\bf MSc, Applied Mathematics}; Universite de Rennes 1, Rennes, France
+
+  {\em Valedictorian}
+
+  {\em Required coursework}: Calculus, Numerical Methods, PDE
+  Resolution, Opti- mization, C/C++ Computing, Mathematics Modeling and
+  Simulation, Finite Element Method*
+
+  {\em Elective coursework}: Fluid Mechanics, Continuum Mechanics and
+  Thermo- mechanics, Bio-mechanics, Geophysics Modeling*
+\stopdescription
+
+\startdescription{2008--2011}
+  {\bf BSc, Aeronautical Engineering,} ENSICA-ISAE, Toulouse, France
+
+  {\em Leading French Aeronautical Engineering School.}
+
+  {\em Required coursework}: Mathematics, Mechanics, Continuum
+  Mechanics, Struc- tures Mechanics, Signal Processing, Thermodynamics,
+  Fluid Mechanics, Java progamming*
+
+  {\em Elective coursework}: Estimation Methods, Earth Observation
+  Satellites, Microwaves Processing*
+\stopdescription
+
+\startdescription{2006--2008}
+  {\bf Classe Preparatoires}; Lycee Chateaubriand, Rennes, France
+
+  {\em Advanced undergraduate preparatory program for national ranking
+  entry exam.}
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Internships},reference={internships}]
+
+\startdescription{Summer 2013}
+  {\bf Research internship}; ONERA, Toulouse, France
+
+  {\em Scattering patterns of atmospheric dust clouds analysis with the
+  Discrete Dipole Approximation (DDA) method.}
+\stopdescription
+
+\startdescription{Summer 2012}
+  {\bf Research internship}; INRIA, Grenoble, France
+
+  {\em Intern in NANO-D department at INRIA-Grenoble. L2-SVM for protein
+  interactions. Runtime and accuracy improvement of the C implementation
+  and algorithmic development.}
+\stopdescription
+
+\startdescription{Summer 2011}
+  {\bf Internship, Aeroconseil}, Toulouse, France
+
+  {\em Developed an interface for aerodynamics calculus in JAVA. Reading
+  and implementation of Excel and Scilab scripts through the interface.}
+\stopdescription
+
+\stopsectionlevel
+
+\startsectionlevel[title={Additonal
+skills},reference={additonal-skills}]
+
+\startitemize
+\item
+  Languages:
+
+  \startitemize[packed]
+  \item
+    French (native speaker)
+  \item
+    English (Advanced, PhD in USA)
+  \stopitemize
+\item
+  Miscelanous CS:
+
+  \startitemize[packed]
+  \item
+    Linux, Shell script, Latex, Markdown, Github, Unix, Matlab
+  \stopitemize
+\stopitemize
+
+\stopsectionlevel
+
+\stoptext

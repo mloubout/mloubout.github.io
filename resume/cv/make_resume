@@ -1,0 +1,45 @@
+#!/bin/bash
+INPUTS=$PWD/inputs
+
+# Get my biblblio
+wget 'https://slim.gatech.edu/biblio/export/bibtex?f%5Bauthor%5D=1' -O $INPUTS/mypubs.bib
+
+for out in "resume-pubs" "resume";
+do
+       echo $out
+       # add nocite line 19
+       if [[ "$out" = "resume-pubs" ]]; then
+           gsed -i '$a\
+Publications\
+----------' resume.md
+           gsed -i '17 i bibliography: /Users/mathiaslouboutin/research/personal/resume/cv/inputs/mypubs.bib' resume.md
+           gsed -i '18 i nocite: "\@\*"' resume.md
+           gsed -i '19 i csl: /opt/SLIM/ScholarlyMarkdown/csl/apa.csl' resume.md
+       fi
+       # Make the html
+       pandoc --citeproc --standalone \
+              --include-in-header $INPUTS/chmduquesne.css \
+              --from markdown --to html \
+              --output $out.html \
+              --css $INPUTS/slim.css \
+              --metadata pagetitle=resume resume.md
+
+       # Make the pdf
+       rm -f $INPUTS/$out.tex
+
+       pandoc --verbose --citeproc --standalone \
+              --from markdown --to context --natbib \
+              --variable papersize=A4 \
+              --template $INPUTS/chmduquesne.tex \
+              --css $INPUTS/slim.css \
+              --output $INPUTS/$out.tex resume.md
+
+       mtxrun --result=$out.pdf --script context $INPUTS/$out.tex
+       rm -f $out.log $out.tuc
+
+       if [[ "$out" = "resume-pubs" ]]; then
+           gsed -i '17,19d' resume.md
+           gsed -i '$d' resume.md
+           gsed -i '$d' resume.md
+       fi
+done
