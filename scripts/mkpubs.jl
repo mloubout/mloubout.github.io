@@ -2,8 +2,8 @@ using BibTeX
 
 base="https://slim.gatech.edu/biblio/export/bibtex?f%5Bauthor%5D=1&f%5Btype%5D="
 
-keys = [108, 102, 103, 135, 103, 124]
-types = ["Thesis", "Journals", "Conferences", "Presentations", "TechReports", "Unpublished"]
+keys = [102, 103, 135, 103, 124]
+types = ["Journals", "Conferences", "Presentations", "TechReports", "Unpublished"]
 
 
 rules = Dict("{ \\textquoteright }"=> "'", "{ \\textquoteleft }"=> "'", " , "=> ", ", " ' s"=> "' s",

@@ -1,6 +1,5 @@
 ---
-title: "Welcome to my personal Scientific Research Website!
-"
+title: "Welcome to my personal Scientific Research Website!"
 ---
 
 Hello! I am Mathias Louboutin, a scientific researcher and software developer with a passion for pushing the boundaries of knowledge and innovation. With extensive expertise in various scientific domains and a strong background in software development, I am dedicated to advancing research and solving complex problems through cutting-edge technology.

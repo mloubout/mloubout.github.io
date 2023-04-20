@@ -3,9 +3,11 @@ project:
 
 website:
   title: "Mathias Louboutin"
+  image: mathias.png
   google-analytics: "G-ERCRWL13YZ"
   search: true
   navbar:
+    logo: mathias.png
     left:
       - href: index.qmd
         text: Home
@@ -23,6 +25,8 @@ website:
             href: https://github.com/mloubout
           - text: Sponsor
             href: https://github.com/sponsors/mloubout
+          - text: SLIM@gatech
+            url: https://github.com/slimgroup
       - icon: twitter
         href: https://twitter.com/Louboutjunior
       - icon: linkedin
@@ -35,7 +39,7 @@ website:
     style: "docked"
     contents:
       - href: pubs/publications.qmd
-        text: Publications
+        text: Introduction
       - title: Thesis
         href: pubs/Thesis.qmd
       - title: Journal Papers
@@ -48,11 +52,6 @@ website:
         href: pubs/TechReports.qmd
       - title: Unpublished
         href: pubs/Unpublished.qmd
-  
-  - title: Software
-    style: "docked"
-    contents: 
-      - software.qmd
 
   page-footer:
     center:
@@ -61,8 +60,8 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
+      light: spacelab
+      dark: cyborg
     css: styles.css
     toc: true
     link-external-newwindow: True
