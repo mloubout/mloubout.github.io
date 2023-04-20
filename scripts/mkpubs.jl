@@ -20,6 +20,7 @@ for (k, t) in zip(keys, types)
 ---
 title: "$(t)"
 bibliography: $(bibname)
+callout-icon: false
 nocite: |
   @*
 ---
@@ -38,7 +39,11 @@ nocite: |
 
 @$(k)  $(link)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 $(abstract)
+:::
 
 """
         content = "$(content)$(entry)"

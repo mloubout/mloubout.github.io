@@ -1,6 +1,7 @@
 ---
 title: "Journals"
 bibliography: journals.bib
+callout-icon: false
 nocite: |
   @*
 ---
@@ -9,95 +10,159 @@ nocite: |
 
 @louboutin2016ppf  [Link](https://doi.org/10.1016/j.cageo.2017.04.014)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 The life-cycle of a partial differential equation (PDE) solver is often characterized by three development phases: the development of a stable numerical discretization; development of a correct (verified) implementation; and the optimization of the implementation for different computer architectures. Often it is only after significant time and effort has been invested that the performance bottlenecks of a PDE solver are fully understood, and the precise details varies between different computer architectures. One way to mitigate this issue is to establish a reliable performance model that allows a numerical analyst to make reliable predictions of how well a numerical method would perform on a given computer architecture, before embarking upon potentially long and expensive implementation and optimization phases. The availability of a reliable performance model also saves developer effort as it both informs the developer on what kind of optimisations are beneficial, and when the maximum expected performance has been reached and optimisation work should stop. We show how discretization of a wave-equation can be theoretically studied to understand the performance limitations of the method on modern computer architectures. We focus on the roofline model, now broadly used in the high-performance computing community, which considers the achievable performance in terms of the peak memory bandwidth and peak floating point performance of a computer with respect to algorithmic choices. A first principles analysis of operational intensity for key time-stepping finite-difference algorithms is presented. With this information available at the time of algorithm design, the expected performance on target computer systems can be used as a driver for algorithm design.
+:::
 
 ## A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion
 
 @rizzuti2020dfw  [Link](10.1190/geo2020-0743.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Many of the seismic inversion techniques currently proposed that focus on robustness with respect to the background model choice are not apt to large-scale 3D applications, and the methods that are computationally feasible for industrial problems, such as full waveform inversion, are notoriously limited by convergence stagnation and require adequate starting models. We propose a novel solution that is both scalable and less sensitive to starting models or inaccurate parameters (such as anisotropy) that are typically kept fixed during inversion. It is based on a dual reformulation of the classical wavefield reconstruction inversion, whose empirical robustness with respect to these issues is well documented in the literature. While the classical version is not suited to 3D, as it leverages expensive frequency-domain solvers for the wave equation, our proposal allows the deployment of state-of-the-art time-domain finite-difference methods, and is potentially mature for industrial-scale problems.
+:::
 
 ## Geophysics Bright Spots: Efficient coding of large-scale seismic inversion algorithms
 
 @witte2019ecl  [Link](10.1190/tle38060482.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 In " A large-scale framework for symbolic implementations of seismic inversion algorithms in Julia, " Witte et al. describe new developments in how to code complex geophysical algorithms in a concise way. Subsurface seismic imaging and parameter estimation are among the most computationally challenging problems in the scientific community. Codes for solving seismic inverse problems, such as FWI or least-squares reverse time migration (LS-RTM), need to be highly optimized, but at the same time, facilitate the implementation of complex optimization algorithms. Traditionally, production-level codes in the oil and gas industry were exclusively written in low-level languages, such as C or Fortran, with extensive amounts of manual performance optimizations, thus making code maintenance, debugging, and adoption of new algorithms prohibitively challenging. Witte et al. present a paradigm of software engineering for seismic inverse problems based on symbolic user interfaces and code generation with automated performance optimization. Inspired by recent deep learning frameworks, the Julia Devito inversion framework (JUDI; an open-source software package) combines high-level abstractions for expressing seismic inversion algorithms with a domain-specific language compiler called Devito for solving the underlying wave equations. Devito ' s generated code is compiled just in time and outperforms codes with manual performance optimizations. JUDI utilizes Julia ' s high-level parallelization, making the software easily adaptable to a variety of computing environments such as densely connected HPC clusters or the cloud. The numerical examples (Figure 3) demonstrate the ability to implement a variety of complex algorithms for FWI and LS-RTM in a few lines of Julia code and run it on large-scale 3D models. The paper concludes that abstractions and performance are not mutually exclusive, and use of symbolic user interfaces can facilitate the implementation of new and innovative seismic inversion algorithms.
+:::
 
 ## Compressive least-squares migration with on-the-fly Fourier transforms
 
 @witte2018cls  [Link](10.1190/geo2018-0490.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Least-squares reverse-time migration is a powerful approach for true amplitude seismic imaging of complex geological structures, but the successful application of this method is currently hindered by its enormous computational cost, as well as high memory requirements for computing the gradient of the objective function. We tackle these problems by introducing an algorithm for low-cost sparsity-promoting least-squares migration using on-the-fly Fourier transforms. We formulate the least-squares migration objective function in the frequency domain and compute gradients for randomized subsets of shot records and frequencies, thus significantly reducing data movement and the number of overall wave equations solves. By using on-the-fly Fourier transforms, we can compute an arbitrary number of monochromatic frequency-domain wavefields with a time-domain modeling code, instead of having to solve individual Helmholtz equations for each frequency, which quickly becomes computationally infeasible when moving to high frequencies. Our numerical examples demonstrate that compressive imaging with on-the-fly Fourier transforms provides a fast and memory-efficient alternative to time-domain imaging with optimal checkpointing, whose memory requirements for a fixed background model and source wavelet is independent of the number of time steps. Instead, memory and additional computational cost grow with the number of frequencies and determine the amount of subsampling artifacts and crosstalk. In contrast to optimal checkpointing, this offers the possibility to trade both memory and computational cost for image quality or a larger number of iterations and is advantageous in new computing environments such as the cloud, where compute is often cheaper than memory and data movement.
+:::
 
 ## Full-Waveform Inversion - Part 1: forward modeling
 
 @louboutin2017fwi  [Link](10.1190/tle36121033.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Since its re-introduction by Pratt (1999), full-waveform inversion (FWI) has gained a lot of attention in geophysical exploration because of its ability to build high resolution velocity models more or less automatically in areas of complex geology. While there is an extensive and growing literature on the topic, publications focus mostly on technical aspects, making this topic inaccessible for a broader audience due to the lack of simple introductory resources for newcomers to geophysics. We will accomplish this by providing a hands-on walkthrough of FWI using Devito (Lange et al. 2016), a system based on domain-specific languages that automatically generates code for time-domainfinite-differences.
+:::
 
 ## Full-Waveform Inversion - Part 3: optimization
 
 @witte2018fwip3  [Link](10.1190/tle37020142.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 This tutorial is the third part of a full-waveform inversion (FWI) tutorial series with a step-by-step walkthrough of setting up forward and adjoint wave equations and building a basic FWI inversion framework. For discretizing and solving wave equations, we use Devito, a Python-based domain-specific language for automated generation of finite-difference code (Lange et al., 2016). The first two parts of this tutorial (Louboutin et al., 2017, 2018) demonstrated how to solve the acoustic wave equation for modeling seismic shot records and how to compute the gradient of the FWI objective function using the adjoint-state method. With these two key ingredients, we will now build an inversion framework that can be used to minimize the FWI least-squares objective function.
+:::
 
 ## Architecture and performance of Devito , a system for automated stencil computation
 
 @luporini2018aap  [Link](10.1145/3374916)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Stencil computations are a key part of many high-performance computing applications, such as image processing, convolutional neural networks, and finite-difference solvers for partial differential equations. Devito is a framework capable of generating highly-optimized code given symbolic equations expressed in Python, specialized in, but not limited to, affine (stencil) codes. The lowering process { \textendash } from mathematical equations down to C++ code { \textendash } is performed by the Devito compiler through a series of intermediate representations. Several performance optimizations are introduced, including advanced common sub-expressions elimination, tiling and parallelization. Some of these are obtained through well-established stencil optimizers, integrated in the back-end of the Devito compiler. The architecture of the Devito compiler, as well as the performance optimizations that are applied when generating code, are presented. The effectiveness of such performance optimizations is demonstrated using operators drawn from seismic imaging applications.
+:::
 
 ## Derisking geological carbon storage from high-resolution time-lapse seismic to explainable leakage detection
 
 @yin2022TLEdgc  [Link](10.1190/tle42010069.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Geological carbon storage represents one of the few truly scalable technologies capable of reducing the CO$_2$ concentration in the atmosphere. While this technology has the potential to scale, its success hinges on our ability to mitigate its risks. An important aspect of risk mitigation concerns assurances that the injected CO$_2$ remains within the storage complex. Amongst the different monitoring modalities, seismic imaging stands out with its ability to attain high resolution and high fidelity images. However, these superior features come, unfortunately, at prohibitive costs and time-intensive efforts potentially rendering extensive seismic monitoring undesirable. To overcome this shortcoming, we present a methodology where time-lapse images are created by inverting non-replicated time-lapse monitoring data jointly. By no longer insisting on replication of the surveys to obtain high fidelity time-lapse images and differences, extreme costs and time-consuming labor are averted. To demonstrate our approach, hundreds of noisy time-lapse seismic datasets are simulated that contain imprints of regular CO$_2$ plumes and irregular plumes that leak. These time-lapse datasets are subsequently inverted to produce time-lapse difference images used to train a deep neural classifier. The testing results show that the classifier is capable of detecting CO$_2$ leakage automatically on unseen data and with a reasonable accuracy.
+:::
 
 ## Lossy Checkpoint Compression in Full Waveform Inversion
 
 @kukreja2020lcc  [Link](10.5194/gmd-15-3815-2022)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 This paper proposes a new method that combines check-pointing methods with error-controlled lossy compression for large-scale high-performance Full-Waveform Inversion (FWI), an inverse problem commonly used in geophysical exploration. This combination can significantly reduce data movement, allowing a reduction in run time as well as peak memory. In the Exascale computing era, frequent data transfer (e.g., memory bandwidth, PCIe bandwidth for GPUs, or network) is the performance bottleneck rather than the peak FLOPS of the processing unit. Like many other adjoint-based optimization problems, FWI is costly in terms of the number of floating-point operations, large memory footprint during backpropagation, and data transfer overheads. Past work for adjoint methods has developed checkpointing methods that reduce the peak memory requirements during backpropagation at the cost of additional floating-point computations. Combining this traditional checkpointing with error-controlled lossy compression, we explore the three-way tradeoff between memory, precision, and time to solution. We investigate how approximation errors introduced by lossy compression of the forward solution impact the objective function gradient and final inverted solution. Empirical results from these numerical experiments indicate that high lossy-compression rates (compression factors ranging up to 100) have a relatively minor impact on convergence rates and the quality of the final solution.
+:::
 
 ## The importance of transfer learning in seismic modeling and imaging
 
 @siahkoohi2019itl  [Link](10.1190/geo2019-0056.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Accurate forward modeling is essential for solving inverse problems in exploration seismology. Unfortunately, it is often not possible to afford being physically or numerically accurate. To overcome this conundrum, we make use of raw and processed data from nearby surveys. We propose to use this data, consisting of shot records or velocity models, to pre-train a neural network to correct for the effects of, for instance, the free surface or numerical dispersion, both of which can be considered as proxies for incomplete or inaccurate physics. Given this pre-trained neural network, we apply transfer learning to finetune this pre-trained neural network so it performs well on its task of mapping low-cost, but low-fidelity, solutions to high-fidelity solutions for the current survey. As long as we can limit ourselves during finetuning to using only a small fraction of high-fidelity data, we gain processing the current survey while using information from nearby surveys. We demonstrate this principle by removing surface-related multiples and ghosts from shot records and the effects of numerical dispersion from migrated images and wave simulations
+:::
 
 ## A large-scale framework for symbolic implementations of seismic inversion algorithms in Julia
 
 @witte2018alf  [Link](10.1190/geo2018-0174.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Writing software packages for seismic inversion is a very challenging task, since problems such as full-waveform inversion or least-squares imaging are both algorithmically and computationally demanding due to the large number of unknown parameters and the fact that we are propagating waves over many wavelengths. Software frameworks therefore need to combine both versatility and performance to provide geophysicists with the means and flexibility to implement complex algorithms that scale to exceedingly large 3D problems. Following these principles, we introduce the Julia Devito Inversion framework, an open-source software package in Julia for large-scale seismic modeling and inversion based on Devito, a domain-specific language compiler for automatic code generation. The framework consists of matrix-free linear operators for implementing seismic inversion algorithms that closely resembles the mathematical notation, a flexible resilient parallelization and an interface to Devito for generating optimized stencil code to solve the underlying wave equations. In comparison to many manually optimized industry codes written in low-level languages, our software is built on the idea of independent layers of abstractions and user interfaces with symbolic operators, making it possible to manage both the complexity of algorithms and performance optimizations, while preserving modularity, which allows for a level of expressiveness needed to formulate a broad range of wave-equation-based inversion problems. Through a series of numerical examples, we demonstrate that this allows users to implement algorithms for waveform inversion and imaging as simple Julia scripts that scale to large-scale 3D problems; thus providing a truly performant research and production framework.
+:::
 
 ## Devito (v3.1.0): an embedded domain-specific language for finite differences and geophysical exploration
 
 @louboutin2018dae  [Link](10.5194/gmd-12-1165-2019)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 We introduce Devito, a new domain-specific language for implementing high-performance finite difference partial differential equation solvers. The motivating application is exploration seismology where methods such as Full-Waveform Inversion and Reverse-Time Migration are used to invert terabytes of seismic data to create images of the earth ' s subsurface. Even using modern supercomputers, it can take weeks to process a single seismic survey and create a useful subsurface image. The computational cost is dominated by the numerical solution of wave equations and their corresponding adjoints. Therefore, a great deal of effort is invested in aggressively optimizing the performance of these wave-equation propagators for different computer architectures. Additionally, the actual set of partial differential equations being solved and their numerical discretization is under constant innovation as increasingly realistic representations of the physics are developed, further ratcheting up the cost of practical solvers. By embedding a domain-specific language within Python and making heavy use of SymPy, a symbolic mathematics library, we make it possible to develop finite difference simulators quickly using a syntax that strongly resembles the mathematics. The Devito compiler reads this code and applies a wide range of analysis to generate highly optimized and parallel code. This approach can reduce the development time of a verified and optimized solver from months to days.
+:::
 
 ## An Event-Driven Approach to Serverless Seismic Imaging in the Cloud
 
 @witte2019TPDedas  [Link](10.1109/TPDS.2020.2982626)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Adapting the cloud for high-performance computing (HPC) is a challenging task, as software for HPC applications hinges on fast network connections and is sensitive to hardware failures. Using cloud infrastructure to recreate conventional HPC clusters is therefore in many cases an infeasible solution for migrating HPC applications to the cloud. As an alternative to the generic lift and shift approach, we consider the specific application of seismic imaging and demonstrate a serverless and event-driven pproach for running large-scale instances of this problem in the cloud. Instead of permanently running compute instances, our workflow is based on a serverless architecture with high throughput batch computing and event-driven computations, in which computational resources are only running as long as they are utilized. We demonstrate that this approach is very flexible and allows for resilient and nested levels of parallelization, including domain decomposition for solving the underlying partial differential equations. While the event-driven approach introduces some overhead as computational resources are repeatedly restarted, it inherently provides resilience to instance shut-downs and allows a significant reduction of cost by avoiding idle instances, thus making the cloud a viable alternative to on-premise clusters for large-scale seismic imaging.
+:::
 
 ## Optimized time-lapse acquisition design via spectral gap ratio minimization
 
 @zhang2023otl  [Link](https://slim.gatech.edu/Publications/Public/Submitted/2023/zhang2023otl/Spectral_Gap_Paper.html)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Modern-day reservoir management and monitoring of geological carbon storage increasingly call for costly time-lapse seismic data collection. In this letter, we show how techniques from graph theory can be used to optimize acquisition geometries for low-cost sparse 4D seismic. Based on midpoint-offset domain connectivity arguments, the proposed algorithm automatically produces sparse non-replicated time-lapse acquisition geometries that favor wavefield recovery.
+:::
 
 ## Full-Waveform Inversion - Part 2: adjoint modeling
 
 @louboutin2017fwip2  [Link](10.1190/tle37010069.1)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 This tutorial is the second part of a three part tutorial series on full-waveform inversion (FWI), in which we provide a step by step walk through of setting up forward and adjoint wave equation solvers and an optimization framework for inversion. In part 1 (Louboutin et al., 2017), we demonstrated how to discretize the acoustic wave equation and how to set up a basic forward modeling scheme using Devito, a domain-specific language (DSL) in Python for automated finite-difference (FD) computations (Lange et al., 2016). Devito allows us to define wave equations as symbolic Python expressions (Meurer et al., 2017), from which optimized FD stencil code is automatically generated at run time. In part 1, we show how we can use Devito to set up and solve acoustic wave equations with (impulsive) seismic sources and sample wavefields at the receiver locations to model shot records.
+:::
 
 ## Combining checkpointing and data compression to accelerate adjoint-based optimization problems
 
 @kukreja2019PASCccd  [Link](10.1007/978-3-030-29400-7_7)
 
+::: {.callout-note collapse="true"}
+# Abstract
+
 Seismic inversion and imaging are adjoint-based optimization problems that processes up to terabytes of data, regularly exceeding the memory capacity of available computers. Data compression is an effective strategy to reduce this memory requirement by a certain factor, particularly if some loss in accuracy is acceptable. A popular alternative is checkpointing, where data is stored at selected points in time, and values at other times are recomputed as needed from the last stored state. This allows arbitrarily large adjoint computations with limited memory, at the cost of additional recomputations. In this paper we combine compression and checkpointing for the first time to compute a realistic seismic inversion. The combination of checkpointing and compression allows larger adjoint computations compared to using only compression, and reduces the recomputation overhead significantly compared to using only checkpointing.
+:::
 
