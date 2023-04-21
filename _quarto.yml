@@ -6,17 +6,24 @@ website:
   image: mathias.png
   google-analytics: "G-ERCRWL13YZ"
   search: true
+
+  page-footer:
+    center:
+      - text: "2023 Copyright (c) Mathias Louboutin"
+    right:
+      - icon: twitter
+        href: https://twitter.com/Louboutjunior
+        aria-label: Twitter
+      - icon: github
+        href: https://github.com/mloubout
+        aria-label: GitHub
+      - icon: envelope-at-fill
+        href: mailto:mathias.louboutin@gmail.com
+
   navbar:
     logo: mathias.png
-    left:
-      - href: index.qmd
-        text: Home
-      - href: pubs/publications.qmd
-        text: Publications
-      - href: software.qmd
-        text: Software
-      - href: resume.qmd
-        text: Resume
+    collapse-below: lg
+    background: light
 
     tools:
       - icon: github
@@ -34,28 +41,46 @@ website:
       - icon: envelope-at-fill
         href: mailto:mathias.louboutin@gmail.com
 
-  sidebar:
-  - title: Publications
-    style: "docked"
-    contents:
+    left:
+      - href: index.qmd
+        text: Home
       - href: pubs/publications.qmd
-        text: Introduction
-      - title: Thesis
-        href: pubs/Thesis.qmd
-      - title: Journal Papers
-        href: pubs/Journals.qmd
-      - title: Conferences
-        href: pubs/Conferences.qmd
-      - title: Presentations
-        href: pubs/Presentations.qmd
-      - title: Technical Reports
-        href: pubs/TechReports.qmd
-      - title: Unpublished
-        href: pubs/Unpublished.qmd
+        text: Publications
+      - href: software.qmd
+        text: Software
+      - href: resume.qmd
+        text: Resume
 
-  page-footer:
-    center:
-      - text: "2023 Copyright (c) Mathias Louboutin"
+  sidebar:
+    - id: pubs
+      title: "Publications"
+      style: "floating"
+      collapse-level: 1
+      contents:
+        - href: pubs/publications.qmd
+          text: Introduction
+        - title: Thesis
+          href: pubs/Thesis.qmd
+        - title: Journal Papers
+          href: pubs/Journals.qmd
+        - title: Conferences
+          href: pubs/Conferences.qmd
+        - title: Presentations
+          href: pubs/Presentations.qmd
+        - title: Technical Reports
+          href: pubs/TechReports.qmd
+        - title: Unpublished
+          href: pubs/Unpublished.qmd
+
+    - id: soft
+      title: Resume
+      contents:
+        - href: resume.qmnd
+
+    - id: cv
+      title: Software
+      contents:
+        - href: Software.qmnd
 
 format:
   html:
