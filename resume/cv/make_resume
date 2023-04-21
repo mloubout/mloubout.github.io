@@ -12,7 +12,7 @@ do
            gsed -i '$a\
 Publications\
 ----------' resume.md
-           gsed -i '17 i bibliography: /Users/mathiaslouboutin/research/personal/resume/cv/inputs/mypubs.bib' resume.md
+           gsed -i "17 i bibliography: ${INPUTS}/mypubs.bib" resume.md
            gsed -i '18 i nocite: "\@\*"' resume.md
            gsed -i '19 i csl: /opt/SLIM/ScholarlyMarkdown/csl/apa.csl' resume.md
        fi

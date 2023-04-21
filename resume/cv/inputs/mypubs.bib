@@ -1,3 +1,44 @@
+@unpublished {zhang2023IMAGEssd,
+	title = {3D seismic survey design by maximizing the spectral gap},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {The massive cost of 3D acquisition calls for methods to reduce the number of receivers by designing optimal receiver sampling masks. Recent studies on 2D seismic showed that maximizing the spectral gap of the subsampling mask leads to better wavefield reconstruction results. We enrich the current study by proposing a simulation-free method to generate optimal 3D acquisition by maximizing the spectral gap of the subsampling mask via a simulated annealing algorithm. Numerical experiments confirm improvement of the proposed method over receiver sampling locations obtained by jittered sampling.},
+	keywords = {CCS, classifier, deep learning, leakage detection},
+	url = {https://slimgroup.github.io/IMAGE2023/zhang2023IMAGEsg/abstract.html},
+	author = {Yijun Zhang and Ziyi Yin and Oscar Lopez and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann}
+}
+@unpublished {orozco2023IMAGEabf,
+	title = {Amortized Bayesian Full Waveform Inversion and Experimental Design with Normalizing Flows},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {Probabilistic approaches to Full-Waveform Inversion (FWI), such as Bayesian ones, traditionally require expensive computations involving many wave-equation solves. To reduce the computational burden at test time, we propose to amortize the computational cost with offline training. After training, we aim to efficiently generate probabilistic FWI solutions with uncertainty. This aim is achieved by exploiting the ability of networks (i.e Normalizing Flows) to learn distributions, such as the Bayesian posterior. The posterior uncertainty is used during training to optimize the receiver sampling.},
+	keywords = {bayesian, experimental design, FWI, Normalizing flows, Uncertainty quantification},
+	url = {https://slimgroup.github.io/IMAGE2023/BayesianFWI/abstract.html},
+	author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann}
+}
+@conference {orozco2023MIDLanf,
+	title = {Amortized normalizing flows for transcranial ultrasound with uncertainty quantification},
+	booktitle = {Medical Imaging with Deep Learning},
+	year = {2023},
+	note = {(MIDL, Nashville)},
+	month = {07},
+	abstract = {We present a novel approach to transcranial ultrasound computed tomography that utilizes normalizing flows to improve the speed of imaging and provide Bayesian uncertainty quantification. Our method combines physics-informed methods and data-driven methods to accelerate the reconstruction of the final image. We make use of a physics-informed summary statistic to incorporate the known ultrasound physics with the goal of compressing large incoming observations. This compression enables efficient training of the normalizing flow and standardizes the size of the data regardless of imaging configurations. The combinations of these methods results in fast uncertainty-aware image reconstruction that generalizes to a variety of transducer configurations. We evaluate our approach with in silico experiments and demonstrate that it can significantly improve the imaging speed while quantifying uncertainty. We validate the quality of our image reconstructions by comparing against the traditional physics-only method and also verify that our provided uncertainty is calibrated with the error.},
+	keywords = {Bayesian Estimation, invertible networks, medical imaging, MIDL, Physics and Machine Learning Hybrid, Uncertainty quantification},
+	url = {https://slim.gatech.edu/Publications/Public/Conferences/MIDL/2023/orozco2023MIDLanf/paper.pdf},
+	author = {Rafael Orozco and Mathias Louboutin and Ali Siahkoohi and Gabrio Rizzuti and Tristan van Leeuwen and Felix J. Herrmann}
+}
+@unpublished {yin2023IMAGEcpi,
+	title = {Coupled physics inversion for geological carbon storage monitoring},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {Understanding CO2 plume behavior is key to the success of geological carbon storage projects. While two-phase flow equations provide a good model to make predictions on future CO2 plume behavior, these equations rely on having access to the true permeability model. Unfortunately, accurate information on the permeability is unavailable, which greatly jeopardizes our ability to predict CO2 plume behavior. To overcome this problem, we estimate the permeability from time-lapse seismic data via a coupled inversion methodology that improve as more monitoring data becomes available over time.},
+	keywords = {CCS, coupled inversion, end-to-end, fluid-flow, inversion, monitoring},
+	url = {https://slimgroup.github.io/IMAGE2023/yin2023IMAGEend2end/abstract.html},
+	author = {Ziyi Yin and Mathias Louboutin and Olav M{\o}yner and Felix J. Herrmann}
+}
 @article {yin2022TLEdgc,
 	title = {Derisking geological carbon storage from high-resolution time-lapse seismic to explainable leakage detection},
 	journal = {The Leading Edge},
@@ -14,14 +55,105 @@
 	software = {https://github.com/slimgroup/GCS-CAM},
 	author = {Ziyi Yin and Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann}
 }
-@unpublished {zhang2023otl,
-	title = {Optimized time-lapse acquisition design via spectral gap ratio minimization},
+@unpublished {erdinc2023IMAGEecl,
+	title = {Enhancing CO2 Leakage Detectability via Dataset Augmentation},
 	year = {2023},
-	month = {01},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {Previous work showed that neural classifiers can be trained to detect CO2 leakage from time-lapse seismic images. While this result is crucial to the global deployment of geological carbon storage (GCS), its success depends on relatively dense non-replicated time-lapse data acquisition. In this study, we show that by augmenting the training set with various coarse receiver samplings and corresponding seismic images, we can improve the leakage detection capabilities and accuracy while increasing the robustness with respect to low-cost coarse receiver samplings, e.g. ocean bottom nodes (OBNs).},
+	keywords = {CCS, classifier, deep learning, leakage detection},
+	url = {https://slimgroup.github.io/IMAGE2023/DetectabilityWithVision/abstract.html},
+	author = {Huseyin Tuna Erdinc and Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann}
+}
+@unpublished {orozco2023IMAGEgsk,
+	title = {Generative Seismic Kriging with Normalizing Flows},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {The objective is to demonstrate the applicability of Normalizing Flows (NFs) to subsurface kriging from wells. We will show that after supervised training, we can generate multiple realistic samples of plausible earth models that match the observed wells. We observe that these samples produce uncertainty statistics that are correlated with the complex parts of the model. The applicability of this method is for areas nearby the original survey used for training. Finally, we compare the speed and quality of our solutions with those obtained using a traditional variogram approach.},
+	keywords = {kriging, Normalizing flows, Uncertainty quantification},
+	url = {https://slimgroup.github.io/IMAGE2023/BayesianKrig/abstract.html},
+	author = {Rafael Orozco and Mathias Louboutin and Felix J. Herrmann}
+}
+@unpublished {louboutin2023lmi,
+	title = {Learned multiphysics inversion with differentiable programming and machine learning},
+	year = {2023},
+	month = {04},
+	abstract = {We present the Seismic Laboratory for Imaging and Modeling/Monitoring (SLIM) open-source software framework for computational geophysics and, more generally, inverse problems involving the wave-equation (e.g., seismic and medical ultrasound), regularization with learned priors, and learned neural surrogates for multiphase flow simulations. By integrating multiple layers of abstraction, our software is designed to be both readable and scalable. This allows researchers to easily formulate their problems in an abstract fashion while exploiting the latest developments in high-performance computing. We illustrate and demonstrate our design principles and their benefits by means of building a scalable prototype for permeability inversion from time-lapse crosswell seismic data, which aside from coupling of wave physics and multiphase flow, involves machine learning.},
+	keywords = {CCS, deep learning, Fourier neural operators, GCS, Imaging, inversion, invertible networks, machine learning, monitoring, multiphysics, Normalizing flows, SLIM, software, time-lapse},
+	url = {https://slim.gatech.edu/Publications/Public/Submitted/2023/louboutin2023lmi/le_software.html},
+	author = {Mathias Louboutin and Ziyi Yin and Rafael Orozco and Thomas J. Grady II and Ali Siahkoohi and Gabrio Rizzuti and Philipp A. Witte and Olav M{\o}yner and Gerard J. Gorman and Felix J. Herrmann}
+}
+@unpublished {louboutin2023IMAGEloi,
+	title = {Learned non-linear simultenous source and corresponding supershot for seismic imaging.},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {Seismic imaging{\textquoteright}s main limiting factor is the scale of the involved dataset and the number of independent wave-equation solves required to migrate thousands of shots. To tackle this dimensionality curse, we introduce a learned framework that extends the conventional computationally reductive linear source superposition (e.g., via random simultaneous-source encoding) to a nonlinear learned source superposition and its corresponding learned supershot. With this method, we can image the subsurface at the cost of a one-shot migration by learning the most informative superposition of shots.},
+	keywords = {deep learning, Imaging, simultaneous},
+	url = {https://slimgroup.github.io/IMAGE2023/OneShot/abstract.html},
+	author = {Mathias Louboutin and Rafael Orozco and Ali Siahkoohi and Felix J. Herrmann}
+}
+@unpublished {yu2023IMAGEmsc,
+	title = {Monitoring Subsurface CO2 Plumes with Sequential Bayesian Inference},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {To monitor and predict CO2 plume dynamics during geological carbon storage, reservoir engineers usually perform two-phase flow simulations. While these simulations may provide useful insights, their usefulness is limited due to numerous complicating factors including uncertainty in the dynamics of the plume itself. To study this phenomenon, we consider stochasticity in the dynamic caused by unknown random changes in the injection rate. By conditioning the CO2 plume predictions on seismic observations, we correct the CO2 plume predictions and quantify uncertainty with machine learning.},
+	keywords = {Bayesian inference, CCS, deep learning, Imaging, monitoring, Uncertainty quantification},
+	url = {https://slimgroup.github.io/IMAGE2023/SequentialBayes/abstract.html},
+	author = {Ting-ying Yu and Rafael Orozco and Ziyi Yin and Mathias Louboutin and Felix J. Herrmann}
+}
+@conference {herrmann2023SIAMCSEtns,
+	title = {The Next Step: Interoperable Domain-Specific Programming},
+	booktitle = {SIAM Conference on Computational Science and Engineering},
+	year = {2023},
+	note = {(SIAM CSE, Amsterdam)},
+	month = {02},
+	abstract = {Even though domain-specific programming approaches allow for readable, scalable, and maintainable software without sacrificing performance, the new paradigm of learned physics-informed models calls for an interdisciplinary approach typically involving multiple domain-specific languages. Take for example the problem of inverting for the fluid-flow properties from time-lapse seismic data, which entails domain-specific programming on the intersection of wave simulators, matrix-free linear algebra, learned neural surrogates for two-phase flow, and prior and posterior distributions for the fluid-flow properties. While domain-specific solutions exist for each of these sub-disciplines, integrating these approaches {\textendash} which may involve different programming languages {\textendash} into a single coupled scalable inversion framework that supports algorithmic differentiation can be a challenge. However, we show that challenges like this can be met when working with proper abstractions. In our inversion example, this involves math-inspired symbolic abstractions for numerical solutions of the wave equation (Devito), matrix-free implementations for its Jacobians (JUDI.jl), abstractions for Automatic Differentiation (ChainRules.jl), and homegrown implementations for conditional Invertible Neural Networks (InvertibleNetworks.jl) and Fourier Neural Operators (ParametricOperators.jl).},
+	keywords = {algorithms, deep learning, devito, end-to-end, Fourier neural operators, GCS, JUDI, Jutul, SIAM, software, workshop},
+	url = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMCSE/2023/herrmann2023SIAMCSEtns/index.html},
+	author = {Felix J. Herrmann and Mathias Louboutin and Thomas J. Grady II and Ziyi Yin and Rishi Khan}
+}
+@article {zhang2023otl,
+	title = {Optimized time-lapse acquisition design via spectral gap ratio minimization},
+	journal = {Geophysics},
+	year = {2023},
+	note = {(Geophysics, just accepted)},
+	month = {04},
 	abstract = {Modern-day reservoir management and monitoring of geological carbon storage increasingly call for costly time-lapse seismic data collection. In this letter, we show how techniques from graph theory can be used to optimize acquisition geometries for low-cost sparse 4D seismic. Based on midpoint-offset domain connectivity arguments, the proposed algorithm automatically produces sparse non-replicated time-lapse acquisition geometries that favor wavefield recovery.},
 	keywords = {Acquisition, JRM, matrix factorization, spectral gap, survey design, time-lapse, wavefield reconstruction},
 	url = {https://slim.gatech.edu/Publications/Public/Submitted/2023/zhang2023otl/Spectral_Gap_Paper.html},
 	author = {Yijun Zhang and Ziyi Yin and Oscar Lopez and Ali Siahkoohi and Mathias Louboutin and Rajiv Kumar and Felix J. Herrmann}
+}
+@unpublished {gahlot2023IMAGEtsm,
+	title = {Time-lapse seismic monitoring of geological carbon storage with the nonlinear joint recovery model},
+	year = {2023},
+	note = {Submitted to IMAGE 2023},
+	month = {03},
+	abstract = {During time-lapse seismic monitoring, weak 4D signal below the level of inversion or migration artifacts poses challenges. To address these, low-cost randomized non-replicated acquisitions and linear joint recovery model (JRM) have been introduced to take advantage of the shared information between different vintages in the time-lapse seismic data and subsurface structure undergoing localized changes. Since the relationship between seismic data and subsurface properties is seldomly linear, we propose a more versatile nonlinear JRM, which extends linear JRM to nonlinear forward modeling.},
+	keywords = {CCS, JRM, monitoring},
+	url = {https://slimgroup.github.io/IMAGE2023/NonLinear-JRM/abstract.html},
+	author = {Abhinav Prakash Gahlot and Mathias Louboutin and Felix J. Herrmann}
+}
+@conference {yin2023EMIutm,
+	title = {Uncertainty-aware time-lapse monitoring of geological carbon storage with learned surrogates},
+	booktitle = {Engineering Mechanics Institute Conference},
+	year = {2023},
+	note = {(EMI, Atlanta)},
+	month = {06},
+	abstract = {Time-lapse seismic monitoring of CO2 sequestration is computationally expensive as it involves modeling of both fluid-flow physics and wave physics. It also requires differentiation through the solvers with respect to properties of interest in the subsurface. In this talk, we present a learned end-to-end inversion framework, which uses a pre-trained Fourier neural operator as a learned surrogate for the fluid-flow simulator in order to greatly reduces the cost associated with fluid-flow modeling and differentiation through the solver. Through synthetic experiments, we demonstrate the efficacy of this framework on inverting the subsurface permeability of the reservoir and on monitoring CO2 plumes. We further quantify the uncertainty of the permeability and CO2 plumes with conditional normalizing flow. With this framework, we can also forecast the growth of CO2 plumes in the future with uncertainty estimation without any acquired seismic data.},
+	keywords = {amortized Bayes, conditional normalizing flows, deep learning, EMI, end-to-end, Fourier neural operators, GCS, inversion, machine learning, Normalizing flows, time-lapse, uncertain quantification},
+	author = {Ziyi Yin and Rafael Orozco and Mathias Louboutin and Ali Siahkoohi and Felix J. Herrmann}
+}
+@unpublished {louboutin2023rte,
+	title = {Wave-based inversion at scale on GPUs with randomized trace estimation},
+	year = {2023},
+	month = {03},
+	abstract = {Thanks to continued performance improvements in software and hardware, wave-equation based imaging technologies, such full-waveform inversion and reverse-time migration, are becoming more common place. However, wide-spread adaptation of these advanced imaging modalities has not yet materialized because current implementations are not able to reap the full benefits from accelerators, in particular those offered by memory-scarce graphics processing units. Through the use of randomized trace estimation, we overcome the memory bottleneck of this type of hardware. At the cost of limited computational overhead and controllable incoherent errors in the gradient, the memory footprint of adjoint-state methods is reduced drastically. Thanks to this relatively simple to implement memory reduction via an approximate imaging condition, we are able to benefit from graphics processing units without memory offloading. We demonstrate the performance of the proposed algorithm on acoustic 2- and 3-D full-waveform inversion examples and on the formation of image gathers in transverse tilted isotropic media.},
+	keywords = {CIG, FWI, GPUs, Random trace, stochastic},
+	url = {https://slim.gatech.edu/Publications/Public/Submitted/2023/louboutin2023rte/paper.html},
+	author = {Mathias Louboutin and Felix J. Herrmann}
 }
 @conference {louboutin2022SEGWSaaa,
 	title = {Abstractions and algorithms for efficient seismic inversion on accelerators},
@@ -293,6 +425,15 @@
 	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/KAUST/2021/herrmann2021KAUSTdbi/Kaust.pdf},
 	author = {Ali Siahkoohi and Gabrio Rizzuti and Mathias Louboutin and Philipp A. Witte and Felix J. Herrmann}
 }
+@presentation {rizzuti2021ML4SEISMICdfw,
+	title = {A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion},
+	year = {2021},
+	month = {11},
+	abstract = {Many of the seismic inversion techniques currently proposed that focus on robustness with respect to the background model choice are not apt to large-scale 3D applications, and the methods that are computationally feasible for industrial problems, such as full waveform inversion, are notoriously limited by convergence stagnation and require adequate starting models. We propose a novel solution that is both scalable and less sensitive to starting models or inaccurate parameters (such as anisotropy) that are typically kept fixed during inversion. It is based on a dual reformulation of the classical wavefield reconstruction inversion, whose empirical robustness with respect to these issues is well documented in the literature. While the classical version is not suited to 3D, as it leverages expensive frequency-domain solvers for the wave equation, our proposal allows the deployment of state-of-the-art time-domain finite-difference methods, and is potentially mature for industrial-scale problems.},
+	keywords = {FWI, ML4SEISMIC, SLIM, wave-equation, WRI},
+	url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/rizzuti2021ML4SEISMICdfw/Tue-10-55-Rizzuti.pdf},
+	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann}
+}
 @article {rizzuti2020dfw,
 	title = {A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion},
 	journal = {Geophysics},
@@ -306,15 +447,6 @@
 	keywords = {3D, finite-difference, Full-waveform inversion, wave equation},
 	doi = {10.1190/geo2020-0743.1},
 	url = {https://slim.gatech.edu/Publications/Public/Journals/Geophysics/2021/rizzuti2020dfw/rizzuti2020dfw.html},
-	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann}
-}
-@presentation {rizzuti2021ML4SEISMICdfw,
-	title = {A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion},
-	year = {2021},
-	month = {11},
-	abstract = {Many of the seismic inversion techniques currently proposed that focus on robustness with respect to the background model choice are not apt to large-scale 3D applications, and the methods that are computationally feasible for industrial problems, such as full waveform inversion, are notoriously limited by convergence stagnation and require adequate starting models. We propose a novel solution that is both scalable and less sensitive to starting models or inaccurate parameters (such as anisotropy) that are typically kept fixed during inversion. It is based on a dual reformulation of the classical wavefield reconstruction inversion, whose empirical robustness with respect to these issues is well documented in the literature. While the classical version is not suited to 3D, as it leverages expensive frequency-domain solvers for the wave equation, our proposal allows the deployment of state-of-the-art time-domain finite-difference methods, and is potentially mature for industrial-scale problems.},
-	keywords = {FWI, ML4SEISMIC, SLIM, wave-equation, WRI},
-	url = {https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/rizzuti2021ML4SEISMICdfw/Tue-10-55-Rizzuti.pdf},
 	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Felix J. Herrmann}
 }
 @conference {siahkoohi2021EarthMLfar,
@@ -705,6 +837,17 @@
 	url = {https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/witte2019HOTCSEdsagip/witte2019HOTCSEdsagip.pdf},
 	author = {Philipp A. Witte and Mathias Louboutin and Felix J. Herrmann}
 }
+@conference {rizzuti2019SIAMGStwri,
+	title = {A dual formulation for time-domain wavefield reconstruction inversion},
+	booktitle = {SIAM Conference on Mathematical and Computational Issues in the Geosciences},
+	year = {2019},
+	note = {(SIAM GS)},
+	month = {03},
+	abstract = {Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.},
+	keywords = {WRI},
+	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMGS/2019/rizzuti2019SIAMGStwri/rizzuti2019SIAMGStwri.pdf},
+	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann}
+}
 @conference {rizzuti2019SEGadf,
 	title = {A dual formulation for time-domain wavefield reconstruction inversion},
 	booktitle = {SEG Technical Program Expanded Abstracts},
@@ -718,17 +861,6 @@
 	url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html},
 	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/rizzuti2019SEGadf/rizzuti2019SEGadf_pres.pdf},
 	software = {https://github.com/slimgroup/Software.rizzuti2019SEGadf},
-	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann}
-}
-@conference {rizzuti2019SIAMGStwri,
-	title = {A dual formulation for time-domain wavefield reconstruction inversion},
-	booktitle = {SIAM Conference on Mathematical and Computational Issues in the Geosciences},
-	year = {2019},
-	note = {(SIAM GS)},
-	month = {03},
-	abstract = {Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.},
-	keywords = {WRI},
-	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMGS/2019/rizzuti2019SIAMGStwri/rizzuti2019SIAMGStwri.pdf},
 	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann}
 }
 @conference {witte2019SEGedw,
