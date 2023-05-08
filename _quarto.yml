@@ -41,6 +41,10 @@ website:
       - icon: envelope-at-fill
         href: mailto:mathias.louboutin@gmail.com
 
+    right:
+      - href: https://scholar.google.com/citations?user=RGVC664AAAAJ&hl=en
+        icon: Google_Scholar_logo.svg
+
     left:
       - href: index.qmd
         text: Home
