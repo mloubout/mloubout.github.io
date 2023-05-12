@@ -6,6 +6,7 @@ website:
   image: mathias.png
   google-analytics: "G-ERCRWL13YZ"
   search: true
+  page-navigation: true
 
   page-footer:
     center:

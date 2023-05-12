@@ -46,10 +46,11 @@ Programming Languages
 HPC
 :   **[Devito]:** Weak and strong scaling benchmarks of [Devito] on on-premise (Imperical college) and Cloud (Azure) hardware.
 :   **[JUDI]:** Implementation and deployment at scale of [JUDI] on clusters and Azure Batch (up 300 nodes).
-:   **Optimum (2015-2018):** Early PhD 50 nodes cluster. Development of parallel Matlab seismic inverse problem algorithms (FWI/RTM). 
-:   **YEMOJA (2017-2018):** Part of a collaboration with SENAI-CIMANTEC. Scaling of our Matlab and Julia framework to hundred of nodes.
+:   **DGX A100**: Slurm configuration and maintenance of the Lab's DGX A100-40GB (8x).
 :   **Cloud (2018-):** Serverless and clusterless framework for task parallel inverse problems on AWS and Azure.
 :   **Perlmutter (2022-):** Scaling of MPI-parallel Fourier Neural Operator on Perlmutter (and previously Summit).
+:   **Optimum (2015-2018):** Early PhD 50 nodes cluster. Development of parallel Matlab seismic inverse problem algorithms (FWI/RTM). 
+:   **YEMOJA (2017-2018):** Part of a collaboration with SENAI-CIMANTEC. Scaling of our Matlab and Julia framework to hundred of nodes.
 
 Education
 ---------
