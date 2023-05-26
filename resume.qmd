@@ -1,26 +1,35 @@
 ---
 title: Resume
+author:
+  - name: Mathias Louboutin*
+    orcid: "0000-0002-1255-2107"
+    email: mathias@devitocodes.com
+    url: https://mloubout.github.io
 ---
 
 Experience
 ----------
 
-July 2020– February 2023
+July 2023-*
+:   **Senior Solution Architect**: DevitoCodes Ltd.
+
+- Core developer of [Devito] and DevitoPro
+- Symbolic API for stencil computation
+- Cross-platform code generation
+- Training and educational material development
+- Client support and maintenance
+- CI/CD
+
+July 2020– June 2023
 :   **Postdoctoral Fellow**: Georgia Institute of Technology, Atlanta, GA
 
-    *High performance/low memory randomized linear algebra for backpropagation based inverse problems*
-
-    *Cloud HPC for separable problems (task parallel)*
-
-    *Supervising the PhD and MSc students*
-
-    *Managing and developping the software stack for the Lab ([slimgroup])*
-
-    *Machine learning for geophysical and medical wave-equation based inverse problems*
-
-    *HPC for machine learning*
-
-    *Geological Carbon Storage seismic monitoring*
+- High performance/low memory randomized linear algebra for backpropagation based inverse problems
+- Cloud HPC for separable problems (task parallel)
+- Supervising the PhD and MSc students
+- Managing and developing the software stack for the Lab ([slimgroup])
+- Machine learning for geophysical and medical wave-equation based inverse problems
+- HPC for machine learning
+- Geological Carbon Storage seismic monitoring
 
 
 Computational experience

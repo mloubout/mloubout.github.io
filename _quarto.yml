@@ -40,7 +40,11 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/mathias-louboutin-a116b957/
       - icon: envelope-at-fill
-        href: mailto:mathias.louboutin@gmail.com
+        menu:
+          - text: Personal
+            href: mailto:mathias.louboutin@gmail.com
+          - text: Professional
+            href: mailto:mathias@devitocodes.com
 
     right:
       - href: https://scholar.google.com/citations?user=RGVC664AAAAJ&hl=en
