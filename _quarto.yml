@@ -7,6 +7,8 @@ website:
   google-analytics: "G-ERCRWL13YZ"
   search: true
   page-navigation: true
+  twitter-card: 
+    site: "@Louboutjunior"
 
   page-footer:
     center:
@@ -45,17 +47,15 @@ website:
             href: mailto:mathias.louboutin@gmail.com
           - text: Professional
             href: mailto:mathias@devitocodes.com
-
-    right:
-      - href: https://scholar.google.com/citations?user=RGVC664AAAAJ&hl=en
-        icon: Google_Scholar_logo.svg
+      - icon: slack
+        href: https://join.slack.com/t/devitocodes/shared_invite/zt-gtd2yxj9-Y31YKk_7lr9AwfXeL2iMFg
 
     left:
       - href: index.qmd
         text: Home
       - href: pubs/publications.qmd
         text: Publications
-      - href: software.qmd
+      - href: software/software.qmd
         text: Software
       - href: resume.qmd
         text: Resume
@@ -68,8 +68,6 @@ website:
       contents:
         - href: pubs/publications.qmd
           text: Introduction
-        - title: Thesis
-          href: pubs/Thesis.qmd
         - title: Journal Papers
           href: pubs/Journals.qmd
         - title: Conferences
@@ -82,14 +80,14 @@ website:
           href: pubs/Unpublished.qmd
 
     - id: soft
+      title: "Software"
+      contents:
+        - software/software.qmd
+    
+    - id: cv
       title: Resume
       contents:
-        - href: resume.qmnd
-
-    - id: cv
-      title: Software
-      contents:
-        - href: Software.qmnd
+        - href: resume.qmd
 
 format:
   html:
@@ -100,6 +98,7 @@ format:
     toc: true
     link-external-newwindow: True
     code-copy: true
+    code-fold: true
 
 execute:
   freeze: auto
