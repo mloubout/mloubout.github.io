@@ -22,7 +22,9 @@ website:
         aria-label: GitHub
       - icon: envelope-at-fill
         href: mailto:mathias.louboutin@gmail.com
-
+      - icon: globe
+        href: https://www.devitocodes.com/
+  
   navbar:
     logo: mathias.png
     collapse-below: lg
@@ -49,6 +51,8 @@ website:
             href: mailto:mathias@devitocodes.com
       - icon: slack
         href: https://join.slack.com/t/devitocodes/shared_invite/zt-gtd2yxj9-Y31YKk_7lr9AwfXeL2iMFg
+      - icon: globe
+        href: https://www.devitocodes.com/
 
     left:
       - href: index.qmd
