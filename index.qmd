@@ -4,7 +4,7 @@ title: "Welcome to my personal Scientific Research Website!"
 
 Hello! I am Mathias Louboutin, a scientific researcher and software developer with a passion for pushing the boundaries of knowledge and innovation. With extensive expertise in various scientific domains and a strong background in software development, I am dedicated to advancing research and solving complex problems through cutting-edge technology.
 
-I am a Postdoctoral Fellow at Georgia Institute of Technology, where I specialize in exploration geophysics and open source software development. My expertise lies in programming with Python and Julia, as well as utilizing Cloud computing platforms such as AWS and Azure.
+I am a Senior Solution Architect at [Devito Codes Ltd](https://www.devitocodes.com/) where I specialize in exploration geophysics and hpc open source software development for PDE constraints inverse problems. My expertise lies in programming with Python and Julia, as well as utilizing Cloud computing platforms such as AWS and Azure.
 
 ## Research Interests
 
