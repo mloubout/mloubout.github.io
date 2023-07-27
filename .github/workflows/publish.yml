@@ -43,6 +43,10 @@ jobs:
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+      
+      - name: Academic icons
+        run: |
+           quarto install extension schochastics/academicons --no-prompt
 
       - name: Setup Pages
         uses: actions/configure-pages@v1
