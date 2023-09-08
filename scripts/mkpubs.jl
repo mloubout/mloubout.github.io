@@ -26,6 +26,7 @@ nocite: |
 ---
 
 """
+    entries = [] 
     for (k, v) in b
         abstract = get(v, "abstract", nothing)
         if isnothing(abstract)
@@ -46,8 +47,22 @@ $(abstract)
 :::
 
 """
-        content = "$(content)$(entry)"
+        push!(entries, (get(v, "year", 0), entry))
     end
+
+    # Sort by year
+    sort!(entries, by=first, rev=true)
+    
+    years = unique(first.(entries))
+    split = [[e for e in entries if e[1] == y] for y in years]
+
+    for (y, s) in zip(years, split)
+        content = "$(content) \n# $(y) \n"
+        for e in s
+            content = "$(content) \n$(e[2])"
+        end
+    end
+
     write("pubs/$(t).qmd", content)
 end
 
