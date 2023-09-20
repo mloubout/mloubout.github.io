@@ -1,42 +1,35 @@
 ---
-title: Mathias Thibaut Louboutin
-author: 
-  \
-
-  733 York View Dr, Auburn, 30011, GA \
-
-  mathias.louboutin@gmail.com \
-
-  404-451-6131 \
-
-  [mloubout.github.io](mloubout.github.io) \
-
-  [Github](https://github.com/mloubout) \
-
-  [\@louboutjunior](https://twitter.com/Louboutjunior)
-
-company: Georgia Institute of Technology
+title: Resume
+author:
+  - name: Mathias Louboutin*
+    orcid: "0000-0002-1255-2107"
+    email: mathias@devitocodes.com
+    url: https://mloubout.github.io
 ---
 
 Experience
 ----------
 
-July 2020– July 2023
+July 2023-*
+:   **Senior Solution Architect**: DevitoCodes Ltd.
+
+- Core developer of [Devito] and DevitoPro
+- Symbolic API for stencil computation
+- Cross-platform code generation
+- Training and educational material development
+- Client support and maintenance
+- CI/CD
+
+July 2020– June 2023
 :   **Postdoctoral Fellow**: Georgia Institute of Technology, Atlanta, GA
 
-    *High performance/low memory randomized linear algebra for backpropagation based inverse problems*
-
-    *Cloud HPC for separable problems (task parallel)*
-
-    *Supervising the PhD and MSc students*
-
-    *Managing and developping the software stack for the Lab ([slimgroup])*
-
-    *Machine learning for geophysical and medical wave-equation based inverse problems*
-
-    *HPC for machine learning*
-
-    *Geological Carbon Storage seismic monitoring*
+- High performance/low memory randomized linear algebra for backpropagation based inverse problems
+- Cloud HPC for separable problems (task parallel)
+- Supervising the PhD and MSc students
+- Managing and developing the software stack for the Lab ([slimgroup])
+- Machine learning for geophysical and medical wave-equation based inverse problems
+- HPC for machine learning
+- Geological Carbon Storage seismic monitoring
 
 
 Computational experience
@@ -44,11 +37,12 @@ Computational experience
 
 Open Source
 :   **[Devito]**: A symbolic domain specific language (DSL) for stencil computation with just-in-time compilation and code generation. Achieves state of the art performance while providing a high-level mathematical interface to the users for the development of stencil based applications.
-:   **[JUDI]**: Linear algebra high level API for wave-equation based inversion. This pacage is built on top of Devito to have high performance wave-equation solvers. A new additional Azure batch extension was developped for scalability [JUDI4Cloud].
-:   **[XConv]**: High performance low memory convolutional layer. This repository implements both in julia (for Flux.jl) and in python (for pytorch) a convolutional layer that has virtually a zero memory imprnt for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionaly, a byte only implementation of the ReLU layer leads to memry reduction by a factor of X2 for full networks.
+:   **[JUDI]**: Linear algebra high level API for wave-equation based inversion. This package is built on top of Devito to have high performance wave-equation solvers. A new additional Azure batch extension was developed for scalability [JUDI4Cloud].
+:   **[XConv]**: High performance low memory convolutional layer. This repository implements both in julia (for Flux.jl) and in python (for pytorch) a convolutional layer that has virtually a zero memory imprnt for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionally, a byte only implementation of the ReLU layer leads to memry reduction by a factor of X2 for full networks.
 :   **[dfno]**: Model parallel (MPI model decomposition) implementation of Fourier Neural Operators for PyTorch. Extension of distdl, a model parallel extension of PyTorch.
 :   **[InvertibleNetworks.jl]**: Native Julia implementation of invertible networks for variational inference, generative models and normalizing flows.
 
+---
 
 Programming Languages
 :   **Python:** Main programming language for the development of [Devito] and machine learning applications.
@@ -56,13 +50,16 @@ Programming Languages
 :   **docker** Developped and automatized the deployement of [Devito] and [JUDI] images through CI (github actions).
 :   Knowledge of **C**, **Linux**, **Bash**, **PyTorch**, **Azure**, **Latex**, **Markdown**, **Matlab**, **MPI**, **OPenMP**, **OpenACC**
 
+---
+
 HPC
-:   **[Devito]:** Weak and strong scaling benchmarks of [Devito] on on-premise (Imperical college) and Cloud (Azure) hardware.
+:   **[Devito]:** Weak and strong scaling benchmarks of [Devito] on on-premise (Imperial college) and Cloud (Azure) hardware.
 :   **[JUDI]:** Implementation and deployment at scale of [JUDI] on clusters and Azure Batch (up 300 nodes).
-:   **Optimum (2015-2018):** Early PhD 50 nodes cluster. Development of parallel Matlab seismic inverse problem algorithms (FWI/RTM). 
-:   **YEMOJA (2017-2018):** Part of a collaboration with SENAI-CIMANTEC. Scaling of our Matlab and Julia framework to hundred of nodes.
+:   **DGX A100**: Slurm configuration and maintenance of the Lab's DGX A100-40GB (8x).
 :   **Cloud (2018-):** Serverless and clusterless framework for task parallel inverse problems on AWS and Azure.
 :   **Perlmutter (2022-):** Scaling of MPI-parallel Fourier Neural Operator on Perlmutter (and previously Summit).
+:   **Optimum (2015-2018):** Early PhD 50 nodes cluster. Development of parallel Matlab seismic inverse problem algorithms (FWI/RTM). 
+:   **YEMOJA (2017-2018):** Part of a collaboration with SENAI-CIMANTEC. Scaling of our Matlab and Julia framework to hundred of nodes.
 
 Education
 ---------
@@ -77,10 +74,10 @@ Education
 2013–2018
 :   **PhD, Earth Science**; University of British Columbia, Canada
 
-    *Transfered to Georgia Institute of Technology in January 2018 following my supervior new position there.*
+    *Transfered to Georgia Institute of Technology in January 2018 following my supervisor new position there.*
 
 2016 Feb-Aug
-:   **Visiting PhD, Computer Science**; Impertial College London, UK
+:   **Visiting PhD, Computer Science**; Imperial College London, UK
 
     *Automatic code generation for geophysical exploration applications with finite differences*
 
@@ -89,7 +86,7 @@ Education
 
     *Valedictorian*
 
-    *Required coursework*: Calculus, Numerical Methods, PDE Resolution, Opti- mization, C/C++ Computing, Mathematics Modeling and Simulation, Finite Element Method*
+    *Required coursework*: Calculus, Numerical Methods, PDE Resolution, Optimization, C/C++ Computing, Mathematics Modeling and Simulation, Finite Element Method*
 
     *Elective coursework*: Fluid Mechanics, Continuum Mechanics and Thermo- mechanics, Bio-mechanics, Geophysics Modeling*
 
@@ -98,7 +95,7 @@ Education
 
     *Leading French Aeronautical Engineering School.*
 
-    *Required coursework*: Mathematics, Mechanics, Continuum Mechanics, Struc- tures Mechanics, Signal Processing, Thermodynamics, Fluid Mechanics, Java progamming*
+    *Required coursework*: Mathematics, Mechanics, Continuum Mechanics, Structures Mechanics, Signal Processing, Thermodynamics, Fluid Mechanics, Java programming*
 
     *Elective coursework*: Estimation Methods, Earth Observation Satellites, Microwaves Processing*
 

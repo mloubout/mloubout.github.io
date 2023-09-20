@@ -1,35 +1,42 @@
 ---
-title: Resume
-author:
-  - name: Mathias Louboutin*
-    orcid: "0000-0002-1255-2107"
-    email: mathias@devitocodes.com
-    url: https://mloubout.github.io
+title: Mathias Thibaut Louboutin
+author: 
+  \
+
+  Atlanta, GA \
+
+  mathias.louboutin@gmail.com \
+
+  404-451-6131 \
+
+  [mloubout.github.io](mloubout.github.io) \
+
+  [Github](https://github.com/mloubout) \
+
+  [\@louboutjunior](https://twitter.com/Louboutjunior)
+
+company: DevitoCodes Ltd
 ---
 
 Experience
 ----------
 
-July 2023-*
-:   **Senior Solution Architect**: DevitoCodes Ltd.
-
-- Core developer of [Devito] and DevitoPro
-- Symbolic API for stencil computation
-- Cross-platform code generation
-- Training and educational material development
-- Client support and maintenance
-- CI/CD
-
-July 2020– June 2023
+July 2020– July 2023
 :   **Postdoctoral Fellow**: Georgia Institute of Technology, Atlanta, GA
 
-- High performance/low memory randomized linear algebra for backpropagation based inverse problems
-- Cloud HPC for separable problems (task parallel)
-- Supervising the PhD and MSc students
-- Managing and developing the software stack for the Lab ([slimgroup])
-- Machine learning for geophysical and medical wave-equation based inverse problems
-- HPC for machine learning
-- Geological Carbon Storage seismic monitoring
+    *High performance/low memory randomized linear algebra for backpropagation based inverse problems*
+
+    *Cloud HPC for separable problems (task parallel)*
+
+    *Supervising the PhD and MSc students*
+
+    *Managing and developping the software stack for the Lab ([slimgroup])*
+
+    *Machine learning for geophysical and medical wave-equation based inverse problems*
+
+    *HPC for machine learning*
+
+    *Geological Carbon Storage seismic monitoring*
 
 
 Computational experience
@@ -42,7 +49,6 @@ Open Source
 :   **[dfno]**: Model parallel (MPI model decomposition) implementation of Fourier Neural Operators for PyTorch. Extension of distdl, a model parallel extension of PyTorch.
 :   **[InvertibleNetworks.jl]**: Native Julia implementation of invertible networks for variational inference, generative models and normalizing flows.
 
----
 
 Programming Languages
 :   **Python:** Main programming language for the development of [Devito] and machine learning applications.
@@ -50,16 +56,13 @@ Programming Languages
 :   **docker** Developped and automatized the deployement of [Devito] and [JUDI] images through CI (github actions).
 :   Knowledge of **C**, **Linux**, **Bash**, **PyTorch**, **Azure**, **Latex**, **Markdown**, **Matlab**, **MPI**, **OPenMP**, **OpenACC**
 
----
-
 HPC
 :   **[Devito]:** Weak and strong scaling benchmarks of [Devito] on on-premise (Imperical college) and Cloud (Azure) hardware.
 :   **[JUDI]:** Implementation and deployment at scale of [JUDI] on clusters and Azure Batch (up 300 nodes).
-:   **DGX A100**: Slurm configuration and maintenance of the Lab's DGX A100-40GB (8x).
-:   **Cloud (2018-):** Serverless and clusterless framework for task parallel inverse problems on AWS and Azure.
-:   **Perlmutter (2022-):** Scaling of MPI-parallel Fourier Neural Operator on Perlmutter (and previously Summit).
 :   **Optimum (2015-2018):** Early PhD 50 nodes cluster. Development of parallel Matlab seismic inverse problem algorithms (FWI/RTM). 
 :   **YEMOJA (2017-2018):** Part of a collaboration with SENAI-CIMANTEC. Scaling of our Matlab and Julia framework to hundred of nodes.
+:   **Cloud (2018-):** Serverless and clusterless framework for task parallel inverse problems on AWS and Azure.
+:   **Perlmutter (2022-):** Scaling of MPI-parallel Fourier Neural Operator on Perlmutter (and previously Summit).
 
 Education
 ---------

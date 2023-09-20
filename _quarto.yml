@@ -3,10 +3,14 @@ project:
 
 website:
   title: "Mathias Louboutin"
-  image: mathias.png
+  image: images/banner.png
   google-analytics: "G-ERCRWL13YZ"
+  repo-url: https://github.com/mloubout/mloubout.github.io
+  repo-actions: [issue]
   search: true
   page-navigation: true
+  reader-mode: true
+
   twitter-card: 
     site: "@Louboutjunior"
 
@@ -26,7 +30,7 @@ website:
         href: https://www.devitocodes.com/
   
   navbar:
-    logo: mathias.png
+    logo: images/devito-logo.svg
     collapse-below: lg
     background: light
 
@@ -57,11 +61,11 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: pubs/publications.qmd
+      - href: content/pubs/publications.qmd
         text: Publications
-      - href: software/software.qmd
+      - href: content/software/software.qmd
         text: Software
-      - href: resume.qmd
+      - href: content/resume.qmd
         text: Resume
 
   sidebar:
@@ -70,35 +74,35 @@ website:
       style: "floating"
       collapse-level: 1
       contents:
-        - href: pubs/publications.qmd
+        - href: content/pubs/publications.qmd
           text: Introduction
         - title: Journal Papers
-          href: pubs/Journals.qmd
+          href: content/pubs/Journals.qmd
         - title: Conferences
-          href: pubs/Conferences.qmd
+          href: content/pubs/Conferences.qmd
         - title: Presentations
-          href: pubs/Presentations.qmd
+          href: content/pubs/Presentations.qmd
         - title: Technical Reports
-          href: pubs/TechReports.qmd
+          href: content/pubs/TechReports.qmd
         - title: Unpublished
-          href: pubs/Unpublished.qmd
+          href: content/pubs/Unpublished.qmd
 
     - id: soft
       title: "Software"
       contents:
-        - software/software.qmd
+        - content/software/software.qmd
     
-    - id: cv
+    - id: resume
       title: Resume
       contents:
-        - href: resume.qmd
+        - href: content/resume.qmd
 
 format:
   html:
     theme:
       light: spacelab
       dark: cyborg
-    css: styles.css
+    css: assets/styles.css
     toc: true
     link-external-newwindow: True
     code-copy: true

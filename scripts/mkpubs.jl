@@ -11,9 +11,9 @@ rules = Dict("{ \\textquoteright }"=> "'", "{ \\textquoteleft }"=> "'", " , "=> 
 
 for (k, t) in zip(keys, types)
     bibname = "$(lowercase(t)).bib"
-    download("$(base)$k", "./pubs/$(bibname)")
+    download("$(base)$k", "./content/pubs/$(bibname)")
 
-    _, b = open("./pubs/$(bibname)", "r") do file
+    _, b = open("./content/pubs/$(bibname)", "r") do file
         parse_bibtex(read(file, String))
     end
     content = """
@@ -68,6 +68,6 @@ $(abstract)
         end
     end
 
-    write("pubs/$(t).qmd", content)
+    write("content/pubs/$(t).qmd", content)
 end
 

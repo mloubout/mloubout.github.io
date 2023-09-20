@@ -2,17 +2,17 @@
 size: 11pt
 draft: no
 head:
-    city: Auburn (Atlanta)
+    city: Atlanta
     state: GA
     zip: 30011
     phone: '\(404\) 451-6131'
-    email: 'mlouboutin3@gatech.edu'
-    dept: School of Earth Science, Georgia Institute of Technology
+    email: 'mathias@devitocodes.com'
+    dept: DevitoCodes Ltd
 sig:
  include: yes
  sign: yes
  name: Mathias Louboutin, PhD
- post: Postdoctoral Fellow
+ post: Senior Solution Architect
 ---
 
 \today
