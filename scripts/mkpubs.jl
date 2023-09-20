@@ -33,7 +33,12 @@ nocite: |
             continue
         end
         abstract = replace(abstract, rules...)
-        url = get(v, "doi", get(v, "url", nothing))
+        url = try
+            doi = v["doi"]
+            "https://doi.org/$(doi)"
+        catch KeyError
+            get(v, "url", nothing)
+        end
         link = isnothing(url) ? "" : "[Link]($(url))"
         entry = """
 ## $(v["title"])
