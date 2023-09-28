@@ -1,0 +1,14 @@
+---
+title: Tutorials
+---
+
+
+I provide here a few tutorials from my main software for quick access and illustrative purposes. Checkout the software pages for additional information.
+
+- [Devito API](devitoapi/00_sympy.html) contains API description notebooks to get started wiith [Devito]
+- [Devito tutorials](devitotutos/01_modelling.html) Examples of seismic propagation and imaging using [Devito]
+- [JUDI tutorials](judituto/01_intro.html) Examples of modeling and inversion using [JUDI]
+
+
+[Devito]:https://github.com/devitocodes/devito
+[JUDI]:https://github.com/slimgroup/JUDI.jl

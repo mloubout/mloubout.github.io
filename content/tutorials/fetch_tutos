@@ -1,0 +1,37 @@
+#!/bin/bash
+
+
+rm -rf devitoapi
+rm -rf devitotutos
+rm -rf judituto
+# devito
+git clone --depth=1 https://github.com/devitocodes/devito
+mv devito/examples/userapi devitoapi
+mv devito/examples/seismic/tutorials devitotutos
+rm -rf devito
+
+# JUDI
+git clone --depth=1 https://github.com/slimgroup/JUDI.jl JUDI
+mv JUDI/examples/notebooks judituto
+rm -rf JUDI
+
+# convert to quarto
+# for dir in devitoapi devitotutos judituto
+# do
+#     cd $dir
+#     for f in *.ipynb
+#     do
+#         quarto convert $f -o ${f%.*}.qmd &
+#     done
+#     wait
+#     rm *.ipynb
+#     cd ..
+# done
+
+
+# # Fix faulty file
+# if [[ "$OSTYPE" == "darwin"* ]]; then
+#     gsed -i 's/)```/)\n```/' devitotutos/04_dask_pickling.qmd
+# else
+#     sed -i 's/)```/)\n```/' devitotutos/04_dask_pickling.qmd
+# fi

@@ -28,7 +28,7 @@ website:
         href: mailto:mathias.louboutin@gmail.com
       - icon: globe
         href: https://www.devitocodes.com/
-  
+
   navbar:
     logo: images/devito-logo.svg
     collapse-below: lg
@@ -67,6 +67,8 @@ website:
         text: Software
       - href: content/resume.qmd
         text: Resume
+      - href: content/tutorials/tutorials.qmd
+        text: Tutorials
 
   sidebar:
     - id: pubs
@@ -93,9 +95,24 @@ website:
         - content/software/software.qmd
     
     - id: resume
-      title: Resume
+      title: "Resume"
       contents:
         - href: content/resume.qmd
+
+    - id: tuto
+      style: "docked"
+      title: "Tutorials"
+      collapse-level: 0
+      contents:
+        - section: "Tutorials"
+          href: content/tutorials/tutorials.qmd
+          contents:
+            - section: "Devito API"
+              contents: content/tutorials/devitoapi/*.ipynb
+            - section: "Devito tutorials"
+              contents: content/tutorials/devitotutos/*.ipynb
+            - section: "JUDI tutorials"
+              contents: content/tutorials/judituto/*.ipynb
 
 format:
   html:
@@ -106,7 +123,10 @@ format:
     toc: true
     link-external-newwindow: True
     code-copy: true
-    code-fold: true
+    code-fold: false
+    execute: 
+      enabled: false
+
 
 execute:
   freeze: auto
