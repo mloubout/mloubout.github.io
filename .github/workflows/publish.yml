@@ -51,6 +51,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
 
+      - name: Generate tutorial pages
+        run: |
+            chmod +x fetch_tutos
+            ./fetch_tutos
+        working-directory: content/tutorials
+
       - name: Render Website
         run: quarto render
 
