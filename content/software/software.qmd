@@ -8,7 +8,6 @@ Currently, I manage the software stack of our Lab at Georgia Tech, which include
 
 Below are some of my most relevant contributions to open source software:
 
-
 # Main contributor
 
 ## Devito
@@ -136,7 +135,6 @@ Key features include:
   PyTorch.
 
 
-
 ## JUDI
 
 [JUDI](https://github.com/slimgroup/JUDI.jl), and its derived packages, is a julia framework for PDE constraints optimization that provides a high-level linear algebra user interface while providing state of the art computational performance through the use of [Devito](https://github.com/devitocodes/devito).
@@ -219,6 +217,6 @@ I am the main mainainer and manager of our software stack (CI, versionning, juli
 # Minor contributions
 
 [Sympy](https://github.com/sympy/sympy):
-Minor pull request contributions mostly related to bugs found through [Devito](https://github.com/devitocodes/devito).
+Minor pull request contributions over the years mostly related to bugs found through [Devito](https://github.com/devitocodes/devito).
 
 - Various minor bug fixes in several Julia packages
