@@ -14,11 +14,12 @@ July 2023-*
 :   **Senior Solution Architect**: DevitoCodes Ltd.
 
 - Core developer of [Devito] and DevitoPro
-- Symbolic API for stencil computation
-- Cross-platform code generation
+- Symbolic and functional API for stencil computation
+- Cross-platform code generation (MPI, OpenMP, OpenACC, CUDA, HIP, SYCL)
 - Training and educational material development
 - Client support and maintenance
 - CI/CD
+- Applications development (wave-based inverse problems)
 
 July 2020– June 2023
 :   **Postdoctoral Fellow**: Georgia Institute of Technology, Atlanta, GA

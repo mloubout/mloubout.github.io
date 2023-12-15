@@ -10,6 +10,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 
 on:
   workflow_dispatch:
@@ -49,7 +50,7 @@ jobs:
            quarto install extension schochastics/academicons --no-prompt
 
       - name: Setup Pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v4
 
       - name: Generate tutorial pages
         run: |
@@ -61,10 +62,10 @@ jobs:
         run: quarto render
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v3
