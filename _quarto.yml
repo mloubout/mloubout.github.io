@@ -16,7 +16,7 @@ website:
 
   page-footer:
     center:
-      - text: "2023 Copyright (c) Mathias Louboutin"
+      - text: "Copyright (c) Mathias Louboutin 2023-2024"
     right:
       - icon: twitter
         href: https://twitter.com/Louboutjunior
