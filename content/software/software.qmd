@@ -186,12 +186,12 @@ JUDI4Cloud is an extension of [JUDI] that runs the core computation, which is th
 
 **[TimeProbeSeismic](https://github.com/slimgroup/TimeProbeSeismic.jl)**
 
-This repository implements a high-performance, low-memory convolutional layer in both Julia (for Flux.jl) and Python (for PyTorch). The convolutional layer has virtually zero memory imprint for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionally, a byte-only implementation of the ReLU layer leads to a memory reduction by a factor of X2 for full networks.
+Wave-equation based inversion with random trace estimation based gradient computation. This method drastically reduces the memory imprint of adjoint-state while managing the loss of accuracy via carefully choosing the probing vector in the range of the wavefield.
 
 **[ImageGather](https://github.com/slimgroup/ImageGather.jl)**
 
 ImageGather is a simple surface offset gather software used for quality control on seismic inverted models. This software implements the double-migration method using [JUDI](https://github.com/slimgroup/JUDI.jl) and
-[Devito](https://github.com/devitocodes/devito) for surface gathers and the standard extended Born modeling for subsurface offset gathers.
+[Devito](https://github.com/devitocodes/devito) for surface gathers and the extended Born modeling for subsurface offset gathers.
 
 **[PhotoAcoustic.jl](https://github.com/slimgroup/PhotoAcoustic.jl)**
 
@@ -200,10 +200,11 @@ Photocacoustic imaging and iversion sofware. This software is built on top of [J
 ## Others
 
 [XConv](https://github.com/slimgroup/XConv.jl):
+
 This repository implements a high-performance, low-memory convolutional layer in both Julia (for Flux.jl) and Python (for PyTorch). The convolutional layer has virtually zero memory imprint for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionally, a byte-only implementation of the ReLU layer leads to a memory reduction by a factor of X2 for full networks.
 
 [SlimOptim](https://github.com/slimgroup/SlimOptim.jl):
-This softwares is a translation in julia of three of our main optimization algorithms: SPG, PQN and Linearized Bregman. The implementation is not aimed to computationnaly optimal for small problems but to be used in the context of PDE constrained optimization where the cost of the PDE solves is the main computational cost. The SPG and PQN implementation are inspired from and adapted from [minConf](https://www.cs.ubc.ca/~schmidtm/Software/minConf.html).
+This softwares is a translation in julia of three of our main optimization algorithms: SPG, PQN and Linearized Bregman. The implementation is not aimed to computational optimal for small problems but to be used in the context of PDE constrained optimization where the cost of the PDE solves is the main computational cost. The SPG and PQN implementation are inspired from and adapted from [minConf](https://www.cs.ubc.ca/~schmidtm/Software/minConf.html).
 
 
 # Contributor
@@ -212,7 +213,7 @@ This softwares is a translation in julia of three of our main optimization algor
 Julia implementation of invertible networks. Invertible networks are fully reversible and do not need to store intermediate state variable for training making them virtually memory free.
 
 [SLIM softwares](https://github.com/slimgroup):
-I am the main mainainer and manager of our software stack (CI, versionning, julia regsitration, ....).
+I am the main mainainer and manager of our software stack (CI, versioning, julia registration, ....).
 
 # Minor contributions
 
