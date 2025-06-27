@@ -197,6 +197,11 @@ ImageGather is a simple surface offset gather software used for quality control 
 
 Photocacoustic imaging and iversion sofware. This software is built on top of [JUDI.jl](https://github.com/slimgroup/JUDI.jl) and [Devito](https://github.com/devitocodes/devito) to offer a high-level interface and state-of-the art computational performance. It also designed to be used in combination with machine learning framework with differentiation rules defined to use the photacoustic propagators as layers/summaries.
 
+**[pysegy][https://github.com/mloubout/pysegy]**
+
+
+A Python implementation of [SegyIO.jl](https://github.com/slimgroup/SegyIO.jl) that provides a high-level interface to read, write and scan SEGY files. This softwaqre is intended to enable the handling of large scale datasets through lazy data loading and header based indexing. It is fully compatible with any File System compatible with the `fsspec` Python package, such as Azure Blob Storage, S3, and others. It is also compatible with the [Dask](https://dask.org/) framework to enable parallel processing of large datasets.
+
 ## Others
 
 [XConv](https://github.com/slimgroup/XConv.jl):
