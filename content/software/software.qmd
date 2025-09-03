@@ -2,9 +2,9 @@
 title: "Software"
 ---
 
-I strongly advocate for the use of open source software. Throughout my PhD, I have interacted with several industrial partners who have relied on proprietary software, while also expecting thorough and comparative results. Despite these challenges, I have consistently promoted the use of open source software and am proud of my contribution towards improving computing software, no matter how small it may be. All of my repositories can be found on my [github](https://github.com/mloubout).
+I strongly advocate for the use of open source software. Throughout my PhD, I have interacted with several industrial partners who have relied on proprietary software, while also expecting thorough and comparative results. Despite these challenges, I have consistently promoted the use of open-source software and am proud of my contributions towards improving computing software, no matter how small they may be. All of my repositories can be found on my [GitHub](https://github.com/mloubout).
 
-Currently, I manage the software stack of our Lab at Georgia Tech, which includes CI, Julia registry, custom registry, and others. I am also the main developer for several open source software projects that focus on wave-equation based inversion, data interpolation, and machine learning for the scientific community. Our team aims to create portable and extensible software, and you can find all of our projects at [SlimGroup](https://github.com/slimgroup). 
+Currently, I manage the software stack of our Lab at Georgia Tech, which includes CI, Julia registry, custom registry, and others. I am also the main developer for several open-source software projects that focus on wave-equation-based inversion, data interpolation, and machine learning for the scientific community. Our team aims to create portable and extensible software. You can find all of our projects at [SlimGroup](https://github.com/slimgroup). 
 
 Below are some of my most relevant contributions to open source software:
 
@@ -12,14 +12,14 @@ Below are some of my most relevant contributions to open source software:
 
 ## Devito
 
-[Devito](https://github.com/devitocodes/devito) is a Finite-difference/stencil DSL and just-in-time compiler that facilitates high-performance stencil computation. Devito's interface and high-level API are based on SymPy for symbolic manipulation. The compiler generates high-performance C-code and supports standard openMP, MPI, GPU offloading via OpenACC or OpenMP, and MPI+GPU.
+[Devito](https://github.com/devitocodes/devito) is a Finite-difference/stencil DSL and just-in-time compiler that facilitates high-performance stencil computation. Devito's interface and high-level API are based on SymPy for symbolic manipulation. The compiler generates high-performance C code and supports standard OpenMP, MPI, GPU offloading via OpenACC or OpenMP, as well as MPI+GPU.
 
 Devito provides a functional language to implement sophisticated operators that
 can be made up of multiple stencil computations, boundary conditions, sparse
 operations (e.g., interpolation), and much more.  A typical use case is
 explicit finite difference methods for approximating partial differential
 equations. For example, a 2D diffusion operator may be implemented with Devito
-as follows
+as follows.
 
 ```python
 from devito import *
@@ -36,7 +36,7 @@ example above being for a single equation). The code for the above operator can 
 print(op)
 ```
 
-which prints the generated code that will be compiled at runtime (in this case C openmp code from the simple devito CPU configuration)
+which prints the generated code that will be compiled at runtime (in this case, C OpenMP code from the simple devito CPU configuration)
 
 ::: {.callout-tip collapse="true"}
 ## Expand to see the generated C code
@@ -111,7 +111,7 @@ op(t=timesteps, dt=dt)
 ```
 
 There is virtually no limit to the complexity of an `Operator` -- the Devito
-compiler will automatically analyze the input, detect and apply optimizations
+compiler will automatically analyze the input, detect, and apply optimizations
 (including single- and multi-node parallelism), and eventually generate code
 with suitable loops and expressions.
 
@@ -124,7 +124,7 @@ Key features include:
 * Seamless support for boundary conditions and adjoint operators.
 * A flexible API to define custom stencils, sub-domains, sub-sampling,
   and staggered grids.
-* Generation of highly optimized parallel code (SIMD vectorization, CPU and
+* Generation of highly optimized parallel code (SIMD vectorization, CPU, and
   GPU parallelism via OpenMP and OpenACC, multi-node parallelism via MPI,
   blocking, aggressive symbolic transformations for FLOP reduction, etc.).
 * Distributed NumPy arrays over multi-node (MPI) domain decompositions.
@@ -137,9 +137,9 @@ Key features include:
 
 ## JUDI
 
-[JUDI](https://github.com/slimgroup/JUDI.jl), and its derived packages, is a julia framework for PDE constraints optimization that provides a high-level linear algebra user interface while providing state of the art computational performance through the use of [Devito](https://github.com/devitocodes/devito).
+[JUDI](https://github.com/slimgroup/JUDI.jl) and its derived packages are a Julia framework for PDE constraints optimization that provides a high-level linear algebra user interface, while delivering state-of-the-art computational performance through the use of [Devito](https://github.com/devitocodes/devito).
 
-As an illustrative example we show below how JUDI can be used to solve a linearized least-square inversion for the acoustic wave-equation. You can find more information in the [JUDI Documentation](https://slimgroup.github.io/JUDI.jl/dev/)
+As an illustrative example, we show below how JUDI can be used to solve a linearized least-square inversion for the acoustic wave equation. You can find more information in the [JUDI Documentation](https://slimgroup.github.io/JUDI.jl/dev/)
 
 
 ```julia
@@ -177,16 +177,16 @@ for j=1:niter
 end
 ```
 
-Form this base package, a few extensions have been developed to extend the capabilities and applications.
+From this base package, several extensions have been developed to enhance the capabilities and applications.
 
 
 **[JUDI4Cloud](https://github.com/slimgroup/JUDI4Cloud.jl)**
 
-JUDI4Cloud is an extension of [JUDI] that runs the core computation, which is the task-parallel wave equation solves, on Azure using Azure Batch. This software interfaces with [AzureClusterlessHPC.jl] for the Julia interface with Azure Batch.
+JUDI4Cloud is an extension of [JUDI] that runs the core computation, which is the task-parallel wave equation solver, on Azure using Azure Batch. This software interfaces with [AzureClusterlessHPC.jl] for the Julia interface with Azure Batch.
 
 **[TimeProbeSeismic](https://github.com/slimgroup/TimeProbeSeismic.jl)**
 
-Wave-equation based inversion with random trace estimation based gradient computation. This method drastically reduces the memory imprint of adjoint-state while managing the loss of accuracy via carefully choosing the probing vector in the range of the wavefield.
+Wave-equation-based inversion with random trace estimation-based gradient computation. This method drastically reduces the memory imprint of the adjoint state while managing the loss of accuracy by carefully choosing the probing vector within the range of the wavefield.
 
 **[ImageGather](https://github.com/slimgroup/ImageGather.jl)**
 
@@ -195,34 +195,33 @@ ImageGather is a simple surface offset gather software used for quality control 
 
 **[PhotoAcoustic.jl](https://github.com/slimgroup/PhotoAcoustic.jl)**
 
-Photocacoustic imaging and iversion sofware. This software is built on top of [JUDI.jl](https://github.com/slimgroup/JUDI.jl) and [Devito](https://github.com/devitocodes/devito) to offer a high-level interface and state-of-the art computational performance. It also designed to be used in combination with machine learning framework with differentiation rules defined to use the photacoustic propagators as layers/summaries.
+Photocacoustic imaging and inversion software. This software is built on top of [JUDI.jl](https://github.com/slimgroup/JUDI.jl) and [Devito](https://github.com/devitocodes/devito) to offer a high-level interface and state-of-the-art computational performance. It is also designed to be used in combination with a machine learning framework, with differentiation rules defined to use the photacoustic propagators as layers/summaries.
 
 **[pysegy][https://github.com/mloubout/pysegy]**
 
-
-A Python implementation of [SegyIO.jl](https://github.com/slimgroup/SegyIO.jl) that provides a high-level interface to read, write and scan SEGY files. This softwaqre is intended to enable the handling of large scale datasets through lazy data loading and header based indexing. It is fully compatible with any File System compatible with the `fsspec` Python package, such as Azure Blob Storage, S3, and others. It is also compatible with the [Dask](https://dask.org/) framework to enable parallel processing of large datasets.
+A Python implementation of [SegyIO.jl](https://github.com/slimgroup/SegyIO.jl) that provides a high-level interface to read, write, and scan SEGY files. This software is intended to enable the handling of large-scale datasets through lazy data loading and header-based indexing. It is fully compatible with any File System compatible with the `fsspec` Python package, such as Azure Blob Storage, S3, and others. It is also compatible with the [Dask](https://dask.org/) framework, enabling parallel processing of large datasets.
 
 ## Others
 
 [XConv](https://github.com/slimgroup/XConv.jl):
 
-This repository implements a high-performance, low-memory convolutional layer in both Julia (for Flux.jl) and Python (for PyTorch). The convolutional layer has virtually zero memory imprint for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionally, a byte-only implementation of the ReLU layer leads to a memory reduction by a factor of X2 for full networks.
+This repository implements a high-performance, low-memory convolutional layer in both Julia (for Flux.jl) and Python (for PyTorch). The convolutional layer has virtually zero memory imprint for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionally, a byte-only implementation of the ReLU layer results in a memory reduction by a factor of 2 for full networks.
 
 [SlimOptim](https://github.com/slimgroup/SlimOptim.jl):
-This softwares is a translation in julia of three of our main optimization algorithms: SPG, PQN and Linearized Bregman. The implementation is not aimed to computational optimal for small problems but to be used in the context of PDE constrained optimization where the cost of the PDE solves is the main computational cost. The SPG and PQN implementation are inspired from and adapted from [minConf](https://www.cs.ubc.ca/~schmidtm/Software/minConf.html).
+This software is a translation of three of our main optimization algorithms in Julia: SPG, PQN, and Linearized Bregman. The implementation is not aimed at computational optimality for minor problems, but rather for use in the context of PDE-constrained optimization, where the cost of solving the PDE is the primary computational expense. The SPG and PQN implementations are inspired by and adapted from [minConf](https://www.cs.ubc.ca/~schmidtm/Software/minConf.html).
 
 
 # Contributor
 
 [InvertibleNetworks](https://github.com/slimgroup/InvertibleNetworks.jl):
-Julia implementation of invertible networks. Invertible networks are fully reversible and do not need to store intermediate state variable for training making them virtually memory free.
+Julia's implementation of invertible networks. Invertible networks are fully reversible and do not need to store intermediate state variables for training, making them virtually memory-free.
 
 [SLIM softwares](https://github.com/slimgroup):
-I am the main mainainer and manager of our software stack (CI, versioning, julia registration, ....).
+I am the primary maintainer and manager of our software stack (CI, versioning, Julia registration,...).
 
 # Minor contributions
 
 [Sympy](https://github.com/sympy/sympy):
-Minor pull request contributions over the years mostly related to bugs found through [Devito](https://github.com/devitocodes/devito).
+Minor pull request contributions over the years, mostly related to bugs found through [Devito](https://github.com/devitocodes/devito).
 
 - Various minor bug fixes in several Julia packages
