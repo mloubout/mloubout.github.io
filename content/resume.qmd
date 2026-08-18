@@ -1,25 +1,38 @@
 ---
-title: Resume
-author:
-  - name: Mathias Louboutin*
-    orcid: "0000-0002-1255-2107"
-    email: mathias@devitocodes.com
-    url: https://mloubout.github.io
+title: "Résumé"
+subtitle: "Scientific computing researcher and software architect"
+toc-depth: 1
+body-classes: resume-page
 ---
+
+::: {.resume-summary}
+::: {.resume-summary-copy}
+I specialize in high-performance scientific software, numerical methods for
+inverse problems, and scalable computing across CPUs, GPUs, clusters, and cloud
+platforms.
+:::
+
+::: {.resume-actions}
+[Download PDF](resume/cv/resume.pdf){.btn .btn-primary}
+[Email me](mailto:mathias.louboutin@gmail.com){.btn .btn-outline-primary}
+[ORCID](https://orcid.org/0000-0002-1255-2107){.resume-text-link}
+:::
+:::
 
 Experience
 ----------
 
-July 2023-*
+July 2023–Present
 :   **Senior Solution Architect**: DevitoCodes Ltd.
 
-- Core developer of [Devito] and DevitoPro
+- Core developer of [Devito] and [DevitoPro]
 - Symbolic and functional API for stencil computation
-- Cross-platform code generation (MPI, OpenMP, OpenACC, CUDA, HIP, SYCL)
+- Cross-platform code generation (MPI, OpenMP, OpenACC, CUDA, HIP, SYCL) for high performance computing
 - Training and educational material development
 - Client support and maintenance
 - CI/CD
 - Applications development (wave-based inverse problems)
+- Cloud computing (AWS, Azure) and orchestration
 
 July 2020– June 2023
 :   **Postdoctoral Fellow**: Georgia Institute of Technology, Atlanta, GA
@@ -39,7 +52,9 @@ Computational experience
 Open Source
 :   **[Devito]**: A symbolic domain specific language (DSL) for stencil computation with just-in-time compilation and code generation. Achieves state of the art performance while providing a high-level mathematical interface to the users for the development of stencil based applications.
 :   **[JUDI]**: Linear algebra high level API for wave-equation based inversion. This package is built on top of Devito to have high performance wave-equation solvers. A new additional Azure batch extension was developed for scalability [JUDI4Cloud].
-:   **[XConv]**: High performance low memory convolutional layer. This repository implements both in julia (for Flux.jl) and in python (for pytorch) a convolutional layer that has virtually a zero memory imprnt for training using randomized linear algebra to compute an unbiased estimate of the gradient with respect to the weights. Additionally, a byte only implementation of the ReLU layer leads to memry reduction by a factor of X2 for full networks.
+:   **[XConv]**: High-performance, low-memory convolutional layers for Julia
+    (Flux.jl) and Python (PyTorch). Randomized linear algebra provides an
+    unbiased gradient estimate with a minimal training-memory footprint.
 :   **[dfno]**: Model parallel (MPI model decomposition) implementation of Fourier Neural Operators for PyTorch. Extension of distdl, a model parallel extension of PyTorch.
 :   **[InvertibleNetworks.jl]**: Native Julia implementation of invertible networks for variational inference, generative models and normalizing flows.
 
@@ -48,13 +63,16 @@ Open Source
 Programming Languages
 :   **Python:** Main programming language for the development of [Devito] and machine learning applications.
 :   **Julia:** Heavy development of research software at  Georgia Tech ([slimgroup]) in Julia
-:   **docker** Developped and automatized the deployement of [Devito] and [JUDI] images through CI (github actions).
-:   Knowledge of **C**, **Linux**, **Bash**, **PyTorch**, **Azure**, **Latex**, **Markdown**, **Matlab**, **MPI**, **OPenMP**, **OpenACC**
+:   **Docker:** Developed and automated the deployment of [Devito] and [JUDI]
+    images through CI with GitHub Actions.
+:   Knowledge of **C**, **Linux**, **Bash**, **PyTorch**, **Azure**, **LaTeX**,
+    **Markdown**, **Matlab**, **MPI**, **OpenMP**, and **OpenACC**.
 
 ---
 
 HPC
-:   **[Devito]:** Weak and strong scaling benchmarks of [Devito] on on-premise (Imperial college) and Cloud (Azure) hardware.
+:   **[Devito]:** Weak and strong scaling benchmarks on on-premises
+    (Imperial College) and cloud (Azure) hardware.
 :   **[JUDI]:** Implementation and deployment at scale of [JUDI] on clusters and Azure Batch (up 300 nodes).
 :   **DGX A100**: Slurm configuration and maintenance of the Lab's DGX A100-40GB (8x).
 :   **Cloud (2018-):** Serverless and clusterless framework for task parallel inverse problems on AWS and Azure.
@@ -75,7 +93,8 @@ Education
 2013–2018
 :   **PhD, Earth Science**; University of British Columbia, Canada
 
-    *Transfered to Georgia Institute of Technology in January 2018 following my supervisor new position there.*
+    *Transferred to Georgia Institute of Technology in January 2018 following
+    my supervisor’s move there.*
 
 2016 Feb-Aug
 :   **Visiting PhD, Computer Science**; Imperial College London, UK
@@ -125,7 +144,7 @@ Summer 2011
     *Developed an interface for aerodynamics calculus in JAVA. Reading and implementation of Excel and Scilab scripts through the interface.*
 
 
-Additonal skills
+Additional skills
 ----------------------------------------
 
 * Languages:
@@ -133,11 +152,12 @@ Additonal skills
      * French (native speaker)
      * English (Advanced, PhD in USA)
 
-* Miscelanous CS:
+* Additional computing:
 
-     * Linux, Shell script, Latex, Markdown, Github, Unix, Matlab
+     * Linux, shell scripting, LaTeX, Markdown, GitHub, Unix, and Matlab
 
 [Devito]:https://github.com/devitocodes/devito
+[DevitoPro]:https://www.devitocodes.com/
 [slimgroup]:https://github.com/slimgroup
 [JUDI]:https://github.com/slimgroup/JUDI.jl
 [JUDI4Cloud]:https://github.com/slimgroup/JUDI.jl

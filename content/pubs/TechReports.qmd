@@ -1,0 +1,114 @@
+---
+title: "Technical Reports"
+subtitle: "Reports, preprints, and other research outputs"
+bibliography: techreports.bib
+callout-icon: false
+toc-depth: 1
+body-classes: publication-list-page
+nocite: |
+  @*
+---
+
+# 2022
+
+## Memory Efficient Invertible Neural Networks for 3D Photoacoustic Imaging
+
+@orozco2022MIDLmei  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2022/orozco2022MIDLmei/midl_2022.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Photoacoustic imaging (PAI) can image high-resolution structures of clinical interest such as vascularity in cancerous tumor monitoring. When imaging human subjects, geometric restrictions force limited-view data retrieval causing imaging artifacts. Iterative physical model based approaches reduce artifacts but require prohibitively time consuming PDE solves. Machine learning (ML) has accelerated PAI by combining physical models and learned networks. However, the depth and overall power of ML methods is limited by memory intensive training. We propose using invertible neural networks (INNs) to alleviate memory pressure. We demonstrate INNs can image 3D photoacoustic volumes in the setting of limited-view, noisy, and subsampled data. The frugal constant memory usage of INNs enables us to train an arbitrary depth of learned layers on a consumer GPU with 16GB RAM.
+:::
+
+# 2021
+
+## Low-memory stochastic backpropagation with multi-channel randomized trace estimation
+
+@louboutin2021NIPSmcte  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2021/louboutin2021NIPSmcte/louboutin2021NIPSmcte.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Thanks to the combination of state-of-the-art accelerators and highly optimized open software frameworks, there has been tremendous progress in the performance of deep neural networks. While these developments have been responsible for many breakthroughs, progress towards solving large-scale problems, such as video encoding and semantic segmentation in 3D, is hampered because access to on-premise memory is often limited. Instead of relying on (optimal) checkpointing or invertibility of the network layers { \textendash } -to recover the activations during backpropagation { \textendash } -we propose to approximate the gradient of convolutional layers in neural networks with a multi-channel randomized trace estimation technique. Compared to other methods, this approach is simple, amenable to analyses, and leads to a greatly reduced memory footprint. Even though the randomized trace estimation introduces stochasticity during training, we argue that this is of little consequence as long as the induced errors are of the same order as errors in the gradient due to the use of stochastic gradient descent. We discuss the performance of networks trained with stochastic backpropagation and how the error can be controlled while maximizing memory usage and minimizing computational overhead.
+:::
+
+# 2020
+
+## Scaling through abstractions { \textendash } high-performance vectorial wave simulations for seismic inversion with Devito
+
+@louboutin2020SCsta  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SCsta/louboutin2020SCsta.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+[Devito] is an open-source Python project based on domain-specific language and compiler technology. Driven by the requirements of rapid HPC applications development in exploration seismology, the language and compiler have evolved significantly since inception. Sophisticated boundary conditions, tensor contractions, sparse operations and features such as staggered grids and sub-domains are all supported; operators of essentially arbitrary complexity can be generated. To accommodate this flexibility whilst ensuring performance, data dependency analysis is utilized to schedule loops and detect computational-properties such as parallelism. In this article, the generation and simulation of MPI-parallel propagators (along with their adjoints) for the pseudo-acoustic wave-equation in tilted transverse isotropic media and the elastic wave-equation are presented. Simulations are carried out on industry scale synthetic models in a HPC Cloud system and reach a performance of 28TFLOP/s, hence demonstrating Devito ' s suitability for production-grade seismic inversion problems.
+:::
+
+## Time-domain Wavefield Reconstruction Inversion in a TTI medium
+
+@louboutin2020SEGtwri  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2020/louboutin2020SEGtwri/louboutin2020SEGtwri.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We introduce a generalization of time-domain wavefield reconstruction inversion to anisotropic acoustic modeling. Wavefield reconstruction inversion has been extensively researched in recent years for its ability to mitigate cycle skipping. The original method was formulated in the frequency domain with acoustic isotropic physics. However, frequency-domain modeling requires sophisticated iterative solvers that are difficult to scale to industrial-size problems and more realistic physical assumptions, such as tilted transverse isotropy, object of this study. The work presented here is based on a recently proposed dual formulation of wavefield reconstruction inversion, which allows time-domain propagator that are suitable to both large scales and more accurate physics.
+:::
+
+# 2019
+
+## Neural network augmented wave-equation simulation
+
+@siahkoohi2019TRnna  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2019/siahkoohi2019TRnna/siahkoohi2019TRnna.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Accurate forward modeling is important for solving inverse problems. An inaccurate wave-equation simulation, as a forward operator, will offset the results obtained via inversion. In this work, we consider the case where we deal with incomplete physics. One proxy of incomplete physics is an inaccurate discretization of Laplacian in simulation of wave equation via finite-difference method. We exploit intrinsic one-to-one similarities between timestepping algorithm with Convolutional Neural Networks (CNNs), and propose to intersperse CNNs between low-fidelity timesteps. Augmenting neural networks with low-fidelity timestepping algorithms may allow us to take large timesteps while limiting the numerical dispersion artifacts. While simulating the wave-equation with low-fidelity timestepping algorithm, by correcting the wavefield several time during propagation, we hope to limit the numerical dispersion artifact introduced by a poor discretization of the Laplacian. As a proof of concept, we demonstrate this principle by correcting for numerical dispersion by keeping the velocity model fixed, and varying the source locations to generate training and testing pairs for our supervised learning algorithm.
+:::
+
+# 2017
+
+## A large-scale time-domain seismic modeling and inversion workflow in Julia
+
+@witte2016OGHPClst  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2017/witte2016OGHPClst/witte2016OGHPClst.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present our initial steps towards the development of a large-scale seismic modeling workflow in Julia that provides a framework for wave equation based inversion methods like full waveform inversion or least squares migration. Our framework is based on the Devito, a finite difference domain specific language compiler that generates highly optimized and parallel code. We develop a flexible workflow that is based on abstract matrixfree linear operators and enables developers to write code that closely resembles the underlying math, while at the same time leveraging highly optimized wave equation solvers, allowing us to solve large-scale three-dimensional inverse problems.
+:::
+
+## Optimizing the computational performance of time-domain modelling { \textendash } -leveraging multiple right-hand-sides
+
+@louboutin2016OGHPCocp  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2017/louboutin2016OGHPCocp/louboutin2016OGHPCocp.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Exploration geophysics heavily relies upon fast solvers for the wave-equation and its adjoint. The main computational cost of a wave-equation solver is to compute the Laplacian, or more complex finite-difference operators, at every time step. The performance of many discretizations is limited by the relatively low operational intensity (number of floating point operations divided by memory traffic) of the finite-difference stencil. Solving the wave-equation for multiple sources/right-hand-sides (RHSs) at once mitigates this problem by increasing the operational intensity. This is implemented by rewriting the classical matrix-vector product into a matrix-matrix product where each column of the second matrix represent the solution wavefield for each given source. This minor modification to the solver is shown to achieve a 2-4 times speedup compared to a single source solver. We concentrate in this paper on acoustic modelling, but our approach can easily be extended to anisotropic or elastic cases for both forward and adjoint modelling.
+:::
+
+# 2016
+
+## Optimizing the computational performance and maintainability of time-domain modelling { \textendash } -leveraging multiple right-hand-sides
+
+@louboutin2016SEGocp  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2016/louboutin2016SEGocp/louboutin2016SEGocp.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Numerical solvers for the wave equation are a key component of Full-Waveform Inversion (FWI) and Reverse-Time Migration (RTM). The main computational cost of a wave-equation solver stems from the computation of the Laplacian at each time step. When using a finite difference discretization this can be characterized as a structured grid computation within Colella ' s Seven Dwarfs. Independent of the degree of parallelization the performance will be limited by the relatively low operational intensity (number of operations divided by memory traffic) of finite-difference stencils, that is so say that the method is memory bandwidth bound. For this reason many developers have focused on porting their code to platforms that have higher memory bandwidth, such as GPU ' s, or put significant effort into highly intrusive optimisations. However, these optimisations rarely strike the right performance vs productivity balance as the software becomes less maintainable and extensible. By solving the wave equation for multiple sources/right-hand-sides (RHSs) at once, we overcome this problem arriving at a time-stepping solver with higher operational intensity. In essence, we arrive at this result by turning the usual matrix-vector products into a matrix-matrix products where the first matrix implements the discretized wave equation and each column of the second matrix contain separate wavefields for each given source. By making this relatively minor change to the solver we readily achieved a $\times2$ speedup. While we limit ourselves to acoustic modeling, our approach can easily be extended to the anisotropic or elastic cases.
+:::
+
+# 2015
+
+## Overview on anisotropic modeling and inversion
+
+@witte2015TRoam  [Link](https://slim.gatech.edu/Publications/Public/TechReport/2015/witte2015TRoam/witte2015TRoam.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+This note provides an overview on strategies for modeling and inversion with the anisotropic wave equation. Since linear and non-linear inversion methods like least squares RTM and Full Waveform Inversion depend on matching observed field data with synthetically modelled data, accounting for anisotropy effects is necessary in order to accurately match waveforms at long offsets and propagation times. In this note, the two main strategies for anisotropic modelling by solving either a pseudo acoustic wave equation or a pure quasi-P-wave equation are discussed and an inversion workflow using the pure quasi-P-wave equation is provided. In particular, we derive the exact adjoint of the anisotropic forward modelling and jacobian operator and give a detailled describtion of their implementation. The anistropic FWI workflow is tested on a sythetic data example.
+:::

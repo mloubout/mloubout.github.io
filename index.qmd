@@ -1,26 +1,150 @@
 ---
-title: "Welcome to my personal Scientific Research Website!"
+title: "Mathias Louboutin"
+toc: false
+page-layout: full
 ---
 
-Hello! I am Mathias Louboutin, a scientific researcher and software developer with a passion for pushing the boundaries of knowledge and innovation. With extensive expertise in various scientific domains and a strong background in software development, I am dedicated to advancing research and solving complex problems through cutting-edge technology.
+::: {.home-page}
+::: {.home-hero}
+::: {.hero-copy}
+<p class="eyebrow">Scientific computing · Open source · Inverse problems</p>
 
-I am a Senior Solution Architect at [Devito Codes Ltd](https://www.devitocodes.com/) where I specialize in exploration geophysics and hpc open source software development for PDE constraints inverse problems. My expertise lies in programming with Python and Julia, as well as utilizing Cloud computing platforms such as AWS and Azure.
+# Turning complex science into usable software
 
-## Research Interests
+I’m **Mathias Louboutin**, a scientific researcher and software developer
+building high-performance tools for wave-based imaging, optimization, and
+machine learning.
 
-My research interests range from applied mathematics to exascale HPC. Some of my current research topics and software developments include:
+::: {.hero-actions}
+[Explore my research](content/pubs/publications.qmd){.btn .btn-primary}
+[View software](content/software/software.qmd){.btn .btn-outline-primary}
+:::
 
-- Machine Learning: I am actively working on developing computational methods for machine learning, particularly leveraging randomized linear algebra techniques to enhance the performance and applications of machine learning algorithms in diverse scientific domains.
-- High-Performance Computing (HPC): With a focus on HPC for task parallel exascale problems, such as photoacoustic or seismic imaging, I am dedicated to developing cutting-edge HPC solutions to accelerate scientific simulations and data processing for large-scale scientific problems.
-- Domain-Specific Languages (DSLs): As one of the primary developers of [Devito], specifically its symbolic APIs, and the main developer of [JUDI], a linear algebra DSL for PDE constraints optimization built on top of [Devito], I am passionate about creating domain-specific languages (DSLs) for scientific computing to streamline complex workflows and optimize code efficiency.
-- PDE-Constrained Optimization and Inverse Problems: I specialize in developing methods and algorithms for solving wave-equation-based inverse problems, such as photoacoustic and ultrasound imaging in medical applications, or subsurface imaging in exploration geophysics, by utilizing state-of-the-art PDE-constrained optimization techniques.
-- Cloud Computing: Given my extensive experience in developing large-scale algorithms for cloud computing, particularly on the Azure platform, I have been actively involved in leveraging cloud resources to accelerate computations for industry-sized problems in scientific research.
+<p class="hero-note">
+Senior Solution Architect at
+<a href="https://www.devitocodes.com/">Devito Codes</a> · Python, Julia, HPC,
+and cloud computing
+</p>
+:::
 
-## Contact Me
+::: {.hero-portrait}
+<img class="portrait-image" src="images/mathias.png" alt="Mathias Louboutin">
 
-I am always eager to collaborate on research projects, discuss ideas, and explore new opportunities. Please feel free to reach out to me by [email](mailto:mathias.louboutin@gmail.com) to connect or inquire about potential collaborations. Let's work together to drive scientific research and software development forward!
+<div class="portrait-caption">
+<span class="status-dot" aria-hidden="true"></span>
+<span>Open to research collaborations</span>
+</div>
+:::
+:::
 
+::: {.home-section .intro-section}
+<p class="section-kicker">What I work on</p>
 
-[Devito]: https://github.com/devitocodes/devito
-[JUDI]: https://github.com/slimgroup/JUDI.jl
+## Research at the intersection of mathematics and computing
 
+I develop computational methods and open-source software that make demanding
+scientific problems easier to express, scale, and solve—from a laptop to the
+cloud.
+
+::: {.research-grid}
+::: {.research-card}
+<span class="card-index">01</span>
+
+### Inverse problems
+
+PDE-constrained optimization for seismic, photoacoustic, and ultrasound
+imaging, with an emphasis on practical large-scale solvers.
+:::
+
+::: {.research-card}
+<span class="card-index">02</span>
+
+### High-performance computing
+
+Task-parallel methods for exascale simulations, large scientific datasets,
+and performance-portable numerical workloads.
+:::
+
+::: {.research-card}
+<span class="card-index">03</span>
+
+### Scientific software
+
+Domain-specific languages and symbolic APIs that let researchers describe
+complex models without sacrificing computational performance.
+:::
+
+::: {.research-card}
+<span class="card-index">04</span>
+
+### Machine learning
+
+Randomized linear algebra and memory-efficient methods that connect modern
+learning systems with physics-based computation.
+:::
+:::
+:::
+
+::: {.home-section .work-section}
+::: {.section-heading}
+<div>
+<p class="section-kicker">Featured work</p>
+
+## Open tools for ambitious science
+</div>
+
+[See all software →](content/software/software.qmd){.text-link}
+:::
+
+::: {.project-grid}
+::: {.project-card .project-card-primary}
+<p class="project-label">Python · Compiler · HPC</p>
+
+### Devito
+
+A symbolic finite-difference domain-specific language and just-in-time
+compiler that generates optimized C for CPUs and GPUs.
+
+[Visit the Devito project →](https://github.com/devitocodes/devito)
+:::
+
+::: {.project-card}
+<p class="project-label">Julia · Linear algebra · Imaging</p>
+
+### JUDI
+
+A matrix-free framework for PDE-constrained optimization that combines a
+high-level Julia interface with Devito’s computational performance.
+
+[Explore JUDI →](https://github.com/slimgroup/JUDI.jl)
+:::
+
+::: {.project-card}
+<p class="project-label">Learning · Efficiency · Open source</p>
+
+### Memory-efficient ML
+
+Methods and software for scalable learning, including randomized gradients,
+reversible networks, and low-memory scientific workflows.
+
+[Browse my publications →](content/pubs/publications.qmd)
+:::
+:::
+:::
+
+::: {.home-section .connect-section}
+::: {.connect-copy}
+<p class="section-kicker">Let’s collaborate</p>
+
+## Have a difficult computational problem?
+
+I enjoy working with researchers and engineering teams on scientific software,
+large-scale simulation, imaging, and high-performance computing.
+:::
+
+::: {.connect-actions}
+[Start a conversation](mailto:mathias.louboutin@gmail.com){.btn .btn-light}
+[View my résumé](content/resume.qmd){.connect-link}
+:::
+:::
+:::

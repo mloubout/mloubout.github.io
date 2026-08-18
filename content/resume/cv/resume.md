@@ -21,6 +21,25 @@ company: DevitoCodes Ltd
 Experience
 ----------
 
+July 2023-*
+:   **Senior Solution Architect**: DevitoCodes Ltd.
+
+    *Core developer of [Devito] and [DevitoPro]*
+
+    *Symbolic and functional API for stencil computation*
+
+    *Cross-platform code generation (MPI, OpenMP, OpenACC, CUDA, HIP, SYCL) for high performance computing*
+
+    *Training and educational material development*
+
+    *Client support and maintenance*
+
+    *CI/CD (github actions, docker, etc)*
+
+    *Applications development (wave-based inverse problems)*
+
+    *Cloud computing (AWS, Azure) and orchestration*
+
 July 2020– July 2023
 :   **Postdoctoral Fellow**: Georgia Institute of Technology, Atlanta, GA
 
@@ -54,7 +73,7 @@ Programming Languages
 :   **Python:** Main programming language for the development of [Devito] and machine learning applications.
 :   **Julia:** Heavy development of research software at  Georgia Tech ([slimgroup]) in Julia
 :   **docker** Developped and automatized the deployement of [Devito] and [JUDI] images through CI (github actions).
-:   Knowledge of **C**, **Linux**, **Bash**, **PyTorch**, **Azure**, **Latex**, **Markdown**, **Matlab**, **MPI**, **OPenMP**, **OpenACC**
+:   Knowledge of **C**, **Linux**, **Bash**, **PyTorch**, **Azure**, **AWS**, **Latex**, **Markdown**, **Matlab**, **MPI**, **OpenMP**, **OpenACC**, **CUDA**, **HIP**, **SYCL**.
 
 HPC
 :   **[Devito]:** Weak and strong scaling benchmarks of [Devito] on on-premise (Imperical college) and Cloud (Azure) hardware.
@@ -133,11 +152,8 @@ Additonal skills
 * Languages:
 
      * French (native speaker)
-     * English (Advanced, PhD in USA)
+     * English (Fluent)
 
-* Miscelanous CS:
-
-     * Linux, Shell script, Latex, Markdown, Github, Unix, Matlab
 
 [Devito]:https://github.com/devitocodes/devito
 [slimgroup]:https://github.com/slimgroup

@@ -1,14 +1,108 @@
 ---
-title: Tutorials
+title: "Tutorials"
+subtitle: "Hands-on notebooks for scientific modeling and inversion"
+toc: false
+sidebar: false
+body-classes: tutorials-overview-page
 ---
 
+::: {.section-intro}
+Learn the symbolic APIs, numerical modeling concepts, and inversion workflows
+behind Devito and JUDI. Each track is made from executable notebooks and can be
+followed in order or used as a reference.
+:::
 
-I provide here a few tutorials from my main software for quick access and illustrative purposes. Checkout the software pages for additional information.
+::: {.tutorial-track-grid}
+::: {.tutorial-track-card .tutorial-track-primary}
+<span class="track-number">01 · API foundations</span>
 
-- [Devito API](devitoapi/00_sympy.html) contains API description notebooks to get started wiith [Devito]
-- [Devito tutorials](devitotutos/01_modelling.html) Examples of seismic propagation and imaging using [Devito]
-- [JUDI tutorials](judituto/01_intro.html) Examples of modeling and inversion using [JUDI]
+## Devito API
 
+Start with symbolic mathematics, then learn equations, operators, subdomains,
+boundary conditions, and conditional dimensions.
 
-[Devito]:https://github.com/devitocodes/devito
-[JUDI]:https://github.com/slimgroup/JUDI.jl
+<p class="track-level">Best for · New Devito users</p>
+
+[Start with symbolic mathematics](devitoapi/00_sympy.html)
+:::
+
+::: {.tutorial-track-card}
+<span class="track-number">02 · Modeling series</span>
+
+## Modeling and imaging
+
+Build acoustic and elastic propagators, reverse-time migration, full-waveform
+inversion, and advanced high-performance workflows.
+
+<p class="track-level">Best for · Computational scientists</p>
+
+[Start with seismic modeling](devitotutos/01_modelling.html)
+:::
+
+::: {.tutorial-track-card}
+<span class="track-number">03 · JUDI series</span>
+
+## JUDI workflows
+
+Express modeling and inverse problems with matrix-free Julia operators,
+optimization packages, constraints, and automatic differentiation.
+
+<p class="track-level">Best for · Inverse-problem researchers</p>
+
+[Start with JUDI](judituto/01_intro.html)
+:::
+:::
+
+::: {.tutorial-paths}
+<p class="section-kicker">Suggested paths</p>
+
+## Pick a goal and start building
+
+::: {.tutorial-path-grid}
+::: {.tutorial-path-card}
+<span class="path-icon">A</span>
+
+### Understand the Devito DSL
+
+1. [Symbolic mathematics](devitoapi/00_sympy.html)
+2. [The Devito DSL](devitoapi/01_dsl.html)
+3. [Operators and execution](devitoapi/02_apply.html)
+4. [Subdomains](devitoapi/03_subdomains.html)
+:::
+
+::: {.tutorial-path-card}
+<span class="path-icon">B</span>
+
+### Build an imaging workflow
+
+1. [Seismic modeling](devitotutos/01_modelling.html)
+2. [Reverse-time migration](devitotutos/02_rtm.html)
+3. [Full-waveform inversion](devitotutos/03_fwi.html)
+4. [Least-squares RTM](devitotutos/13_LSRTM_acoustic.html)
+:::
+
+::: {.tutorial-path-card}
+<span class="path-icon">C</span>
+
+### Solve an inverse problem in Julia
+
+1. [Introduction to JUDI](judituto/01_intro.html)
+2. [FWI with optimization](judituto/02_fwi_example_NLopt.html)
+3. [Constrained FWI](judituto/03_constrained_fwi.html)
+4. [Automatic differentiation](judituto/06_automatic_differentiation.html)
+:::
+:::
+:::
+
+::: {.tutorial-note}
+<div>
+<p class="section-kicker">Need the underlying projects?</p>
+
+### Read the source, report issues, or contribute
+</div>
+
+<div class="tutorial-project-links">
+[Devito on GitHub](https://github.com/devitocodes/devito)
+[JUDI on GitHub](https://github.com/slimgroup/JUDI.jl)
+</div>
+:::

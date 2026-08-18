@@ -1,0 +1,94 @@
+name: Update External Content
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 6 * * 1"
+
+concurrency:
+  group: content-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Julia
+        uses: julia-actions/setup-julia@v2
+        with:
+          version: "1"
+
+      - name: Install validation tools
+        run: |
+          python -m pip install flake8 pytest
+          julia -e 'using Pkg; Pkg.add("BibTeX")'
+
+      - name: Refresh tutorials
+        run: python scripts/update_tutorials.py
+
+      - name: Refresh publication archives
+        run: julia scripts/mkpubs.jl
+
+      - name: Refresh Google Scholar snapshot
+        run: python scripts/update_scholar.py
+
+      - name: Run regression tests
+        run: |
+          python -m pytest
+          python -m flake8 scripts tests
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Validate the website
+        run: quarto render
+
+      - name: Create or update the content pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          changed_files=$(git status --porcelain content/pubs content/tutorials)
+          if [[ -z "$changed_files" ]]; then
+              echo "External content is already current."
+              exit 0
+          fi
+
+          update_branch="automation/content-update"
+          git config user.name "github-actions[bot]"
+          git config user.email \
+              "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$update_branch"
+          git add content/pubs content/tutorials
+          git commit -m "Update tutorials and publications"
+          git fetch origin \
+              "$update_branch:refs/remotes/origin/$update_branch" || true
+          git push --force-with-lease origin "$update_branch"
+
+          pull_request=$(gh pr list \
+              --head "$update_branch" \
+              --state open \
+              --json number \
+              --jq '.[0].number')
+          if [[ -z "$pull_request" ]]; then
+              gh pr create \
+                  --base main \
+                  --head "$update_branch" \
+                  --title "Update tutorials and publications" \
+                  --body "Automated weekly refresh of upstream tutorials, \
+                  publication archives, and the Google Scholar snapshot."
+          fi

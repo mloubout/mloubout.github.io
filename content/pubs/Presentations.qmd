@@ -1,0 +1,416 @@
+---
+title: "Presentations"
+subtitle: "Invited talks, workshops, and conference presentations"
+bibliography: presentations.bib
+callout-icon: false
+toc-depth: 1
+body-classes: publication-list-page
+nocite: |
+  @*
+---
+
+# 2026
+
+## Amortized Full-Waveform Inference w/ Learned Summary Statistics
+
+@herrmann2026SEGWSfwi  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SEG/2026/herrmann2026SEGWSfwi)
+
+# 2024
+
+## Digital Twins in the era of generative AI - Application to Geological CO2 Storage
+
+@gahlot2024ICLdtg  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ICL/2024/gahlot2024ICLdtg)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Our industry is experiencing significant changes due to AI and the challenges of the energy transition. While some view these changes as threats, recent advances in AI offer unique opportunities, especially in the context of Digital Twins for subsurface monitoring and control. IBM defines " A digital twin is a virtual representation of an object or system that spans its lifecycle, is updated from real-time data, and uses simulation, machine learning and reasoning to help decision-making. " During this talk, I will explore these concepts and their significance in addressing the challenges of monitoring \& control of geological CO2 storage projects. This talk also aims to illustrate how Digital Twins can serve as a platform to integrate the seemingly disparate and siloed fields of geophysics and reservoir engineering.
+:::
+
+## Digital Twins in the Era of Generative AI: Application to Geological CO2 Storage
+
+@herrmann2024dt4gcs  [Link](https://slim.gatech.edu/Publications/Public/Conferences/Halliburton/2024/herrmann2024dt4gcs)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Our industry is experiencing significant changes due to AI and the challenges of the energy transition. While some view these changes as threats, recent advances in AI offer unique opportunities, especially in the context of Digital Twins for subsurface monitoring and control. IBM defines " A digital twin is a virtual representation of an object or system that spans its lifecycle, is updated from real-time data, and uses simulation, machine learning and reasoning to help decision-making. " During this talk, I will explore these concepts and their significance in addressing the challenges of monitoring \& control of geological CO 2 storage projects. This talk also aims to illustrate how Digital Twins can serve as a platform to integrate the seemingly disparate and siloed fields of geophysics and reservoir engineering.
+:::
+
+## Enhancing Full-Waveform Variational Inference through Stochastic Resampling
+
+@zeng2024ML4SEISMICefv  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2024/zeng2024ML4SEISMICefv)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Recent developments in simulation-based inference, like the full-waveform variational inference via subsurface extensions (WISE), enable rapid online estimation of subsurface velocities by leveraging pre-trained models. To achieve this, WISE employs subsurface-offset common image gathers to convert shot data into physics-informed summary statistics. While common image gathers effectively retain critical information even when initial velocity estimates are inaccurate, WISE ' s performance still depends on the assumption that the initial migration-velocity model is a single 1D velocity model. In this work, we present experiments using both 1D and 2D velocity models and develop a stochastic resampling method to generate variations of initial migration-velocity models. This technique allows us to systematically infer alternative velocity models that are consistent with the observed data, while enhancing the posterior sample quality and reducing dependency on the initial velocity model compared to the standard WISE approach.
+:::
+
+## Generative AI for full-waveform variational inference
+
+@yin2024GTwise  [Link](https://slim.gatech.edu/Publications/Public/Lectures/GTseminar/2024/yin2024GTwise)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We introduce a probabilistic technique for full-waveform inversion, employing variational inference and conditional normalizing flows to quantify uncertainty in migration-velocity models and its impact on imaging. Our approach integrates generative artificial intelligence with physics-informed common-image gathers, reducing reliance on accurate initial velocity models. Considered case studies demonstrate its efficacy producing realizations of migration-velocity models conditioned by the data. These models are used to quantify amplitude and positioning effects during subsequent imaging.
+:::
+
+## Neural wave-based imaging with amortized uncertainty quantification
+
+@orozco2024ICLnwi  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ICL/2024/orozco2024ICLnwi)
+
+# 2023
+
+## End-to-end permeability inversion from prestack time-lapse seismic data: a case study on Compass model
+
+@yin2023ML4SEISMICe2e  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/yin2023ML4SEISMICe2e)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Effective geological carbon storage hinges on a deep understanding of CO2 plume behavior. The dynamics of these plumes can be modeled using multiphase flow equations, but their accuracy is tied to a precise permeability model. A significant challenge is that we often lack detailed permeability data, limiting our predictive capabilities. To bridge this gap, we ' ve developed a multiphysics inversion method. This technique inverts for the permeability from observed time-lapse seismic data. Through a case study on the Compass model, we ' ve compared this approach with traditional 4D FWI in forecasting CO2 plume movements. Additionally, our research delves into how different initial permeability models, acquisition setups, and survey frequencies affect the results. Across the board, the inversion method not only enhances our current estimations but also provides valuable insights into future plume dynamics, even without continuous monitoring.
+:::
+
+## Improved automatic seismic CO2 leakage detection via dataset augmentation
+
+@erdinc2023ML4SEISMICias  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/erdinc2023ML4SEISMICias)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Previous works showed that neural classifiers can be trained to detect CO2 leakage from time-lapse seismic images. While this result is crucial to the global deployment of geological carbon storage (GCS), its success depends on relatively dense non-replicated time-lapse data acquisition. In this study, we present an approach to enhance the detection accuracy and robustness of CO2 leakage detection by augmenting the training dataset with a variety of coarsely sampled receiver data and their corresponding receiver numbers. This augmentation strategy is particularly beneficial for scenarios where low-cost coarse receiver samplings, such as with ocean bottom nodes (OBNs), are utilized. Furthermore, we explore interpretability of the classifier ' s decisions by generating saliency maps for further analysis.
+:::
+
+## Monitoring subsurface CO2 plumes with learned sequential Bayesian inference
+
+@herrmann2023ML4SEISMICmsc  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/herrmann2023ML4SEISMICmsc)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Reservoir engineers frequently employ two-phase flow simulations and history-matching to oversee and anticipate the behavior of CO2 plumes within geological carbon storage. These simulations, while valuable for gaining insights, face limitations due to several complex factors, such as uncertainties surrounding the plume ' s dynamics. To investigate this phenomenon more comprehensively, we introduce the concept of stochasticity in the dynamics, accounting for uncertainties in the underlying permeability of the reservoir. To enhance the accuracy of CO2 plume predictions and quantify the uncertainties involved, we utilize machine learning techniques to condition these predictions on time-lapse seismic and well observations. This framework works on the principle of sequential Bayesian inference that continuously assimilates information from time-lapse observations, updates the CO2 plume predictions, and characterizes uncertainties about the plumes.
+:::
+
+## Solving PDE-based inverse problems with learned surrogates and constraints
+
+@yin2023HOTCSEspi  [Link](https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2023/yin2023HOTCSEspi)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+In this presentation, I will introduce a learned inversion algorithm for solving inverse problems with computationally expensive forward operators. We tackle this challenge by combining learned surrogates (Fourier neural operators) with learned constraints (normalizing flows). After jointly training these networks with the same samples, the learned surrogates lead to computationally efficient surrogate-assisted inversion. Meanwhile, the learned constraints safeguard the accuracy of the surrogates by forcing the model iterates to remain in-distribution. By combining the two, we come up with a homotopy / continuation scheme where the constraints are relaxed slowly so that the data misfit objective can be minimized while the model iterates always remain in the statistical distribution on which the surrogates are trained. We demonstrate the efficacy of our learned inversion algorithm through carefully selected experiments centered around the problem of geological carbon storage monitoring.
+:::
+
+## Time-lapse seismic monitoring of geological carbon storage with the nonlinear joint recovery model
+
+@gahlot2023ML4SEISMICtsm  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/gahlot2023ML4SEISMICtsm)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+During time-lapse seismic monitoring of CO2 plumes, a weak 4D signal below the level of inversion or migration artifacts poses challenges. To address these, low-cost randomized non-replicated acquisitions and a linear joint recovery model (JRM) have been introduced. It takes advantage of the shared information between different vintages in the time-lapse seismic data and subsurface structure undergoing localized changes. Since the relationship between seismic data and subsurface properties is seldom linear, we propose a more versatile nonlinear JRM (nJRM) to invert for the squared slowness of the vintages. The nJRM takes advantage of the full nonlinear relation between these squared slownesses and time-lapse data through the wave equation. Also, careful derivation of the gradients makes the computational cost of nJRM equivalent to the independent recovery. We present a synthetic study for geological carbon storage (GCS) which shows that the non-replication can be beneficial to time-lapse imaging, making seismic monitoring of GCS less costly for the long term sustainability of the technology.
+:::
+
+## Towards generative seismic kriging with normalizing flows
+
+@orozco2023ML4SEISMICtgs  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/orozco2023ML4SEISMICtgs)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Our goal is to build realistic parameterized (acoustic, velocity, permeability etc) earth models where the training and testing phase of our method uses only data that is available in the field. We first demonstrate the expressive power of normalizing flows to generate detailed realistic earth models by training on supervised pairs of full earth models and borehole wells. Our results are compared with traditional variogram kriging to show that our generated models can be used in parameterizations of various downstream tasks such as simulations of realistic acoustic waves and fluid flow for reservoir simulations. Then we introduce a novel unsupervised training objective that can train normalizing flows to generate full earth models without needing training pairs of the full earth models. By using a known proxy earth model as a testbed, we make preliminary prescriptions on how many wells our method needs to generate permissible earth models in a target area.
+:::
+
+## Uncertainty quantification so what? Leveraging probabilistic seismic inversion for experimental design
+
+@orozco2023ML4SEISMICuqs  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/orozco2023ML4SEISMICuqs)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Combining physics with recent developments of generative machine learning enables a scalable probabilistic framework for tackling seismic inversion problems including Full-Waveform Inversion. These probabilistic results can be proven to be from the Bayesian posterior but how exactly can we use them for practical downstream tasks? In this talk, we answer the question with a practical application of the probabilistic framework towards designing ocean bottom node placement of seismic imaging. With a simple adjustment to the original training objective, we show that jointly optimizing for an experimental design corresponds to maximizing the expected information gain used by the Bayesian community. After verifying this novel joint optimization with a stylized problem, we demonstrate its application for optimizing the placement of ocean bottom nodes in a synthetic seismic imaging experiment.
+:::
+
+## WISE: Full-waveform Inference with Subsurface Extensions
+
+@yin2023ML4SEISMICwise  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2023/yin2023ML4SEISMICwise)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Quantifying uncertainty in full-waveform inversion is complex given the large sizes of both the model and data. A previous approach employed a variational inference framework, leveraging reverse-time migration to summarize observed data and approximate the posterior distribution through conditional normalizing flows. While reverse-time migration effectively summarizes the data when the background model is close to the true one, its accuracy diminishes with a less accurate background model. In our study, we suggest utilizing subsurface offset gathers as the summary statistics for the variational inference of full-waveform inversion. These gathers retain all the information in seismic data, even when the background model is cycle-skipped or fails to flatten the gathers. Through a case study on Compass model, we confirm our framework ' s effectiveness and show that subsurface offset gathers offer a better summary statistic than just reverse-time migration.
+:::
+
+# 2022
+
+## Adjoint operators as summary functions in amortized Bayesian inference frameworks
+
+@orozco2022ML4SEISMICaos  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/orozco2022ML4SEISMICaos/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+An important concern in seismic inverse problems is the large and varying size of observed data. The large size can cause computational cost concerns and its varying size (such as when changing receiver geometries) implies the need to rerun inference algorithms from scratch for each new observation. Motivated by these two problems, we take inspiration from the statistics literature which commonly relies on summary statistic of observed data. Summary statistic compress the observed data leaving only information needed for inference. In this work, we argue that the adjoint operator provides a natural candidate for a summary function in the context of physics-based inverse problems. We first mathematically show that for certain general assumptions transforming data under the adjoint operator defines a new conditional distribution which preserves the expectations of the original posterior. We validate our hypothesis by evaluating our framework in a learned amortized inference algorithm. Our seismic and medical synthetic experiments show computational gains and increased quality of point estimates using our framework. We discuss statistical metrics that show our learned posterior is well calibrated therefore justifying its use in uncertainty quantification.
+:::
+
+## Amortized velocity continuation with Fourier neural operators
+
+@yin2022ML4SEISMICavc  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICavc/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Velocity continuation aims to map the migration image using one background model to the image using another background model. It is of great importance to quantify the uncertainty in seismic imaging result from various background models. With Fourier neural operators as a learned surrogate, this continuation from a given background model to an unseen background model can be quite accurately estimated with near-zero cost. However, the limitation of the prior art is that the input background model and the survey area are assumed to be fixed. The main contribution of this work is to extend the Fourier neural operator surrogate to be amortized over different given background models and survey areas. We verify the effectiveness of our learned surrogates by a realistic example on different areas of Parihaka dataset against different background models.
+:::
+
+## De-risking GCS projects with explainable CO$_2$ leakage detection in time-lapse seismic images
+
+@erdinc2022ML4SEISMICdgp  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/erdinc2022ML4SEISMICdgp/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+With the global deployment of Carbon, capture and storage (CCS) technology to combat climate change, there is an associated risk of contamination with CO2 leaking back to the atmosphere. Thus, it requires continuous monitoring of CO2 after the injection stops at the storage site. In this work, we generated synthetic CO2 plume development data with both leakage and no leakage scenarios. We trained a convolutional neural network (CNN) discriminative classifier and also a generative classifier and compared their performances in CO2 leakage detection. The accuracy of our discriminative classifier on the test data is 85\% and that of the generative classifier is 90\%. The Class Activation Mapping (CAM) results of the discriminative classifier and the latent space representation of our dataset in the case of generative classifier strengthens our claims about trustworthy leakage classification.
+:::
+
+## Effective scaling of numerical surrogates via domain-decomposed Fourier neural operators
+
+@grady2022ML4SEISMICesn  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/grady2022ML4SEISMICesn/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Numerical surrogates are models which learn to mimic a complex physical process (such as the solution to a PDE produced by a solver) from a set of input/output pairs. Fourier neural operators (FNOs) are a specific type of numerical surrogate which use a learned matched filter to quickly approximate solutions to relatively smooth complex physical processes. In the case of carbon capture sequestration (CCS) technology, FNOs have been shown to well-approximate solutions to the two-phase flow equations, with speedups of 1, 000 to 10, 000 times at inference time versus a tradtitional solver. This speed combined with the fact that FNOs are differentiable with respect to their input parameters allows for inverse and uncertainty quantification problems to theoretically be solved on real 3D data, a previously intractible task. However, due to the size of the input data, network weights, and optimizer state, FNOs have thus far been limited to small to medium 2D and 3D problems, well below the size of an industry standard such as the Sleipner benchmark. Here we alleviate this problem by proposing a model-parallel FNO which makes use of domain decomposition of the input data and network weights, and exploits architectural features of FNOs to also include a natural form of asynchronous pipeline parallelism. Our network can scale to arbitrary problem sizes on CPU and GPU systems.
+:::
+
+## Julia for Geoscience
+
+@yin2022TRANSFORMjulia  [Link](https://transform.softwareunderground.org/2022-julia-for-geoscience)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+In this tutorial, we will introduce the Julia programming language to the geoscience community, covering topics such as I/O, data processing, inversion, and machine learning. We will begin by installing Julia and relevant packages. Through a series of tutorials, we will demonstrate Julia ' s abstraction power and show how to load and plot data, write your own functions/operators, form and solve a geophysical inverse problem, and demonstrate how to integrate wave-equation solvers in Julia with machine learning frameworks. The intent of this presentation is to provide an introductory level tutorial that will be useful to members of the geoscience community.
+:::
+
+## Learned extensions for wave-based simulation and inversion
+
+@louboutin2022ML4SEISMIClew  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/louboutin2022ML4SEISMIClew/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We introduce a new method that explores velocities as an operator (extended velocities) for wave-equation based inversion. Through this extended formulation, we obtain the known benefits of working with subsurface offset volumes. The offset-dependence of these volumes has been studied in the linear case, i.e as part of extended Born scattering and extended least-squares reverse-time migration, but has been avoided for non-linear inversion due to computational concderns and challenges. By using techniques from randomized linear algebra, we will show that we can work with extended velocities for inversion while maintaining an acceptable computational cost much lower than solving one PDE per extended velocity model.
+:::
+
+## ML4Seismic open-source software: updates and developments
+
+@louboutin2022ML4SEISMICmos  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/louboutin2022ML4SEISMICmos/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Software is at the core of research and development in inverse problems. At SLIM, we have experience developing scalable and performant software, such as our legacy parallel MATLAB framework. With ML4Seismic, we are dedicated to build on this experience to develop HPC open source software (OSS) for the scientific community in collaboration with our partners. In this talk, we will describe our OSS Julia and Python environment, our high-level abstraction principles, and the range of solutions we offer for seismic processing and inversion and for machine learning. We will emphasize our aim to provide scalable software that can be easily applied to industrial problems.
+:::
+
+## Normalizing flows for regularization of 3D seismic inverse problems
+
+@orozco2022ML4SEISMICnfr  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/orozco2022ML4SEISMICnfr/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present the first known exploration of a normalizing flow (NF) for generative 3D volumes. First, we tackle computational issues surrounding the high dimensionality of our desired 3D volume output. This is of particular concern in normalizing flows since their invertibility constraint implies equal dimension of output and input. Our findings show that by " freezing " expensive layers we can efficiently train a normalizing flow on 3D volumes. Using this NF architecture, we train a generative model on volume sections of the 3D BG compass model. Our method produces visually plausible generative samples which are efficient to produce. We demonstrate its practical use by using our trained generative model as an implicit prior in a Maximum A Posteriori (MAP) framework. We evaluate this MAP framework by estimating the solution of a inverse problem in seismic imaging. Our method results in higher SNR estimates than the baseline and in less iterations, importantly saving the computational cost of evaluating the expensive 3D PDE solver during optimization. Finally, through scaling analysis of training cost, we show that NF convolutional layers allow this approach to scale favorably to larger volumes.
+:::
+
+## Simulation-based framework for geological carbon storage monitoring
+
+@yin2022ML4SEISMICsfg  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICsfg/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+While various monitoring modalities exist to track the behavior of CO2 plumes to ensure safe operations and compliance with regulatory requirements, active 3D time-lapse seismic monitoring has proven superior but costly. At SLIM, we aim to reduce the operating costs by optimizing acquisition design, to help drive innovations in seismic monitoring acquisition design and imaging, and to test novel time-lapse acquisition and imaging technologies in silico at scale. In this talk, we will introduce our open-source software platform simulation-based monitoring design framework. We demonstrate how to make use of proxy models for seismic properties derived from real 3D imaged seismic and well data to conduct realistic synthetic geological carbon storage projects. Furthermore, we discuss our proposed sparse non-replicated seismic acquisition and cutting-edge methodology to recover the dense data or to directly image the sparse non-replicated via joint recovery model. This automatic workflow ends with deep neural classifiers to detect potential CO2 leakage over seal through pressure-induced fault openings. We envisage the development of an automatic workflow to handle the large number of continuously monitored CO2 injection sites needed to help combat climate change.
+:::
+
+## Time-lapse seismic survey design by maximizing the spectral gap
+
+@zhang2022ML4SEISMICtss  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/zhang2022ML4SEISMICtss/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+While time-lapse seismic has been applied successfully to CO2 sequestration monitoring, it remains a challenging problem since replicated dense surveys come at a very high cost in the field. Wavefield reconstruction based on matrix completion (MC) from randomized subsampled data is an efficient way to reduce operational costs. This technique allows for accurate time-lapse reconstruction by employing the joint recovery model (JRM), which capitalizes on the fact that different vintages share a common component. However, combining JRM with optimal time-lapse acquisition survey design remains an unexplored area of research. In expander graph theory, spectral gap (SG) reveals the source-receiver layout connectivity and is related to reconstruction quality during MC. Building on these insights, we proposed a simulation free time-lapse survey design based on JRM that aims to get similar reconstructed quality without insisting on replicate surveys, which significantly reduces the cost in the field. This approach uses the simulated annealing algorithm to find subsampling masks for each vintage. Numerical experiments confirm a direct correlation between increased spectral gap and promising time-lapse reconstruction quality.
+:::
+
+## Uncertainty-aware time-lapse CO$_2$ monitoring with learned end-to-end inversion
+
+@yin2022ML4SEISMICutc  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2022/yin2022ML4SEISMICutc/index.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Seismic monitoring of CO2 sequestration is computationally expensive as it involves modeling of both fluid-flow physics modeling and wave physics and differentiation through the solvers with respect to the subsurface properties of interest. In this talk, we demonstrate the effectiveness of learned coupled inversion framework using a pre-trained Fourier neural operator as a learned surrogate for the fluid-flow simulator, which greatly reduces the cost associated with fluid-flow modeling and differentiation through the solver. We study the effectiveness and correctness of inversion based on Fourier neural operator surrogate and a normalizing flow prior. We also demonstrate the efficacy of this framework on monitoring the growth of CO2 plumes during sequestration, and on uncertainty quantification of the permeability and CO2 plumes with conditional normalizing flow. With this framework, we can further forecast the CO2 plume in the future without any acquired seismic data with uncertainty estimation.
+:::
+
+# 2021
+
+## A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion
+
+@rizzuti2021ML4SEISMICdfw  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/rizzuti2021ML4SEISMICdfw/Tue-10-55-Rizzuti.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Many of the seismic inversion techniques currently proposed that focus on robustness with respect to the background model choice are not apt to large-scale 3D applications, and the methods that are computationally feasible for industrial problems, such as full waveform inversion, are notoriously limited by convergence stagnation and require adequate starting models. We propose a novel solution that is both scalable and less sensitive to starting models or inaccurate parameters (such as anisotropy) that are typically kept fixed during inversion. It is based on a dual reformulation of the classical wavefield reconstruction inversion, whose empirical robustness with respect to these issues is well documented in the literature. While the classical version is not suited to 3D, as it leverages expensive frequency-domain solvers for the wave equation, our proposal allows the deployment of state-of-the-art time-domain finite-difference methods, and is potentially mature for industrial-scale problems.
+:::
+
+## Improved seismic monitoring of CO2 sequestration with the weighted joint recovery model
+
+@yin2021ML4SEISMICism  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/yin2021ML4SEISMICism/Tue-11-20-Yin.html)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Time-lapse seismic monitoring of CO2 sequestration is challenging because the time-lapse signature of CO2 plumes is weak in amplitude and often contaminated by imaging artifacts due to coarsely sampled, noisy, and non-replicated surveys. In this talk, we present a sparsity-promoting least-squares imaging method where the baseline, and the current and past monitor surveys are inverted jointly. We demonstrate that the sensitivity of seismic monitoring can be improved by inverting for the common component { \textemdash } i.e., the component shared by all vintages, and innovations with respect to this common component. Combining this joint approach with weighted l1, 2-norm minimization leads to a monitoring scheme capable of detecting irregular CO2-plume growth in a realistic geological setting.
+:::
+
+## ML4Seismic open source software environment
+
+@louboutin2021ML4SEISMICmos  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/louboutin2021ML4SEISMICmos/Mon-10-10-Louboutin.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Software is at the core of research and development in inverse problems. At SLIM, we have experience developing scalable and performant software, such as our legacy parallel MATLAB framework. With ML4Seismic, we are dedicated to build on this experience to develop HPC open source software (OSS) for the scientific community in collaboration with our partners. In this talk, we will describe our OSS Julia and Python environment, our high-level abstraction principles, and the range of solutions we offer for seismic processing and inversion and for machine learning. We will emphasize our aim to provide scalable software that can be easily applied to industrial problems.
+:::
+
+## Multifidelity conditional normalizing flows for physics-guided Bayesian inference
+
+@siahkoohi2021ML4SEISMICmcn  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/siahkoohi2021ML4SEISMICmcn/Mon-11-45-Siahkoohi.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We introduce a scalable Bayesian inference approach that combines techniques from deep learning with a physic-based variational inference formulation. Bayesian inference for ill-posed inverse problems is challenged by the high-dimensionality of the unknown, computationally expensive forward operator, and choosing a prior distribution that accurately encodes prior knowledge on the unknown. To handle this situation and to assess uncertainty, we propose to approximate the posterior distribution using a pretrained conditional normalizing flow, which is trained on existing low- and high-fidelity estimations of the unknown. To further improve the accuracy of this approximation, we use transfer learning and finetune this normalizing flow by minimizing the Kullback-Leibler divergence between the predicted and the desired high-fidelity posterior density. This amounts to minimizing a physic-based variational inference objective with respect to the network weights, which we believe might scale better than Bayesian inference with Markov Chain sampling methods. We apply the proposed Bayesian inference approach to seismic imaging where we use quasi-real data obtained from the Parihaka dataset.
+:::
+
+## Randomized linear algebra for inversion
+
+@louboutin2021ML4SEISMICrla  [Link](https://slim.gatech.edu/Publications/Public/Conferences/ML4SEISMIC/2021/louboutin2021ML4SEISMICrla/Tue-10-20-Louboutin.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Inverse problems in exploration geophysics or machine learning heavily relies on linear algebra and large matrices manipulations. To tackle the growing cost of storing these matrices, randomized algorithms have been developed to obtain information from these matrices via randomized sketching. Inspired by previous work on extended image volumes, we will first show in this talk how the seismic imaging condition can be expressed in a randomized linear algebra framework leading to drastic memory savings. In a second part, we will extend this idea to convolutional neural networks to reduce the memory cost of training by orders of magnitude. We will demonstrate the practicality of these methods on representative examples.
+:::
+
+# 2019
+
+## Domain-specific abstractions for large-scale geophysical inverse problems
+
+@witte2019HOTCSEdsagip  [Link](https://slim.gatech.edu/Publications/Public/Lectures/HotCSE/2019/witte2019HOTCSEdsagip/witte2019HOTCSEdsagip.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+During these times of sustained low oil prices, it is essential to look for new innovative ways to collect (time-lapse) seismic data at reduced costs and preferably also at reduced environmental impact. By now, there is an increasing body of corroborating evidence { \textemdash } whether these are simulated case studies or actual acquisitions on land and marine { \textemdash } that seismic acquisition based on the principles of compressive sensing delivers on this premise by removing the need to acquire replicated dense surveys. Up to ten-fold increases in acquisition efficiency have been reported by industry while there are indications that this breakthrough is only the beginning of a paradigm shift where full-azimuth time-lapse processing will become a reality. To familiarize the audience with this new technology, I will first describe the basics of compressive sensing, how it relates to missing-trace interpolation and simultaneous source acquisition, followed by how this technology is driving innovations in full-azimuth (time-lapse) acquisition, yielding high-fidelity data with a high degree of repeatability and at a fraction of the costs.
+:::
+
+# 2017
+
+## A large-scale framework in Julia for fast prototyping of seismic inversion algorithms
+
+@witte2017SINBADFals  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/witte2017SINBADFals/witte2017SINBADFals.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present our progress on a large-scale seismic modeling workflow in Julia for wave-equation based inversion. The software offers a range of high-level abstractions to easily express PDE constrained optimization problems in terms of linear algebra expressions, while utilizing the DSL Devito to symbolically express the underlying PDEs and to generate fast and parallel code for solving them. Data containers and linear operators can be set up without much effort from input SEG-Y data and scale to large-scale 3D applications. This talk provides an overview of the basic functionalities of our software and applications to least squares imaging and 3D FWI.
+:::
+
+## Data driven Gradient Sampling for seismic inversion
+
+@louboutin2017SINBADFddg  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/louboutin2017SINBADFddg/louboutin2017SINBADFddg.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present in this work an extension of the Gradient Sampling algorithm presented at the last EAGE in Paris. We previously showed the potential of this algorithm playing with implicit time-shifts to represent the wavefield of a slightly perturbed velocity model. We introduce an extension where the weights of the Gradient Sampling algorithm are obtained with the solve of data-based quadratic subproblem instead of at random. The update direction is the a more accurate representation of the true Gradient Sampling update direction.
+:::
+
+## Latest developments in Devito
+
+@louboutin2017SINBADFldi  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/louboutin2017SINBADFldi/louboutin2017SINBADFldi.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present an overview of the latest developments in Devito. We introduced Devito in the previous meeting as a prototype finite-difference DSL for seismic modelling and inversion. We are presenting here the latest improvements and functionalities of Devito. We will also discuss the current future plans as well as non-supported features that the audience may be interested in. This presentation will be followed by/mixed with a hands-in tutorial if the time and resources allows it.
+:::
+
+## Noise robust and time-domain formulations of Wavefield Reconstruction Inversion
+
+@wang2017SINBADFnra  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2017/Fall/wang2017SINBADFnra/wang2017SINBADFnra.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We propose a wave-equation-based subsurface inversion method that in many cases is more robust than conventional Full-Waveform Inversion. The new formulation is written in a denoising form that allows the synthetic data to match the observed ones up to a small error. Compared to regular Full-Waveform Inversion, our method treats the noise arising from the data meassuring/recording process and that from the synthetic modelling process separately. Compared to Wavefields Reconstruction Inversion, the new formulation mitigates the difficulty of choosing the penalty parameter λ. To solve the proposed optimization problem, we develop an efficient frequency domain algorithm that alternatively updates the model and the data. Numerical experiments confirm strong stability of the proposed method by comparisons between the results of our algorithm with that from both plain FWI and a weighted formulation of the FWI. We also discuss a new memory efficient time-domain formulation for Wavefield Reconstruction Inversion based on duality.
+:::
+
+# 2016
+
+## High-performance seismic applications of OPESCI
+
+@louboutin2016SINBADFhps  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2016/Fall/louboutin2016SINBADFhps/louboutin2016SINBADFhps.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present our latest geophysical applications built on OPESCI. By using a high-level symbolic API, we allow for fast development and easy implementation of various (acoustic, VT, TTI) wave propagators relevant to exploration geophysics. We start by highlighting possibilities in an acoustic setting including classical operators such as forward modelling and linearised forward (Born) modelling as well as more advanced operators deriving from wave equations with double dipoles and the application of the PDE to a wavefield instead of applying its inverse. We will also show that the performance (time to solution) of this code is on par with industrial software libraries (10\% faster on the full SEAM model). We finally present our implementation of 3D TTI modelling and its adjoint including out comprehensive testing framework. This is joint work with Gerard Gorman
+:::
+
+## Open Performance portablE SeismiC Imaging { \textendash } -OPESCI
+
+@gorman2016SINBADFopp  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2016/Fall/gorman2016SINBADFopp/gorman2016SINBADFopp.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+In this project, we introduce OPESCI-FD, a Python package built on symbolic mathematics to automatically generate Finite Difference models from a high-level description of the model equations. We investigate applying this framework to generate the propagator program used in seismic imaging. We implement the 3D acoustic and anisotropic FD scheme as an example and demonstrate the advantages of usability, flexibility and accuracy of the framework. The design of OPESCI-FD aims to allow rapid development, analysis and optimisation of Finite Difference programs. OPESCI-FD is the foundation for continuing development by the OPESCI project team, building on the research presented in this report. This talk concludes by reviewing the further developments that are already under way, as well as the scope for extension to cater for other equations and numerical schemes. This joint work with SINBAD and SENAI CIMATEC and has received additional funding from Intel.
+:::
+
+# 2015
+
+## Extending the search space of time-domain adjoint-state FWI w/ randomized implicit time shifts
+
+@louboutin2015SINBADFess  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2015/Fall/louboutin2015SINBADFess/louboutin2015SINBADFess.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We introduce a modified adjoint-state method for time domain FWI that allows us to extend the research space. As a result, we arrive at a formulation where the sensitivity to cycle skipping is reduced. Our method obtains results with the same computational costs as FWI (The PDE solved is the same) but with significantly reduced memory costs. We use new results in non-convex optimization to justify the method as well as new regularization techniques and stochastic optimization to improve the behavior of the algorithm.
+:::
+
+## Regularizing waveform inversion by projections onto intersections of convex sets
+
+@peters2015SINBADFrwi  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2015/Fall/peters2015SINBADFrwi/peters2015SINBADFrwi.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+Common strategies to regularize waveform inversion (and other geophysical inverse problems) are adding quadratic penalty terms to the objective function or filtering the gradients used to update the model estimate. An example are penalties or filters to prevent/filter spurious high spatial frequency oscillations in the model while working with low frequency data. We present an alternative way of regularization, which works by projecting the model onto an intersection of convex sets, where each sets encodes certain desired model properties. This approach has certain theoretical and practical advantages over quadratic penalties or gradient filters. Some examples of useful convex sets in various challenging waveform inversion settings are shown on both real and synthetic data.
+:::
+
+## Scaling SINBAD software to 3-D on Yemoja
+
+@dasilva2015SINBADFsss  [Link](https://slim.gatech.edu/Publications/Public/Conferences/SINBAD/2015/Fall/dasilva2015SINBADFsss/dasilva2015SINBADFsss.pdf)
+
+::: {.callout-note collapse="true"}
+# Abstract
+
+We present early results on the scalability of SINBAD ' s wavefield reconstruction and wave-equation based inversion technologies on Yemoja, a 17k core cluster made available to us by BG Group at SENAI CIMATEC Supercomputing Centre in Brazil.
+:::

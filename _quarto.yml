@@ -16,7 +16,7 @@ website:
 
   page-footer:
     center:
-      - text: "Copyright (c) Mathias Louboutin 2023-2024"
+      - text: "© Mathias Louboutin 2023–2026"
     right:
       - icon: twitter
         href: https://twitter.com/Louboutjunior
@@ -61,44 +61,36 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: content/pubs/publications.qmd
-        text: Publications
+      - text: Publications
+        menu:
+          - href: content/pubs/publications.qmd
+            text: Overview
+          - href: content/pubs/Journals.qmd
+            text: Journal articles
+          - href: content/pubs/Conferences.qmd
+            text: Conference papers
+          - href: content/pubs/Presentations.qmd
+            text: Presentations
+          - href: content/pubs/TechReports.qmd
+            text: Technical reports
+          - href: content/pubs/Scholar.qmd
+            text: Google Scholar
       - href: content/software/software.qmd
         text: Software
       - href: content/resume.qmd
         text: Resume
-      - href: content/tutorials/tutorials.qmd
-        text: Tutorials
+      - text: Tutorials
+        menu:
+          - href: content/tutorials/tutorials.qmd
+            text: Overview
+          - href: content/tutorials/devitoapi/00_sympy.ipynb
+            text: Devito API
+          - href: content/tutorials/devitotutos/01_modelling.ipynb
+            text: Modeling and imaging
+          - href: content/tutorials/judituto/01_intro.ipynb
+            text: JUDI workflows
 
   sidebar:
-    - id: pubs
-      title: "Publications"
-      style: "floating"
-      collapse-level: 1
-      contents:
-        - href: content/pubs/publications.qmd
-          text: Introduction
-        - title: Journal Papers
-          href: content/pubs/Journals.qmd
-        - title: Conferences
-          href: content/pubs/Conferences.qmd
-        - title: Presentations
-          href: content/pubs/Presentations.qmd
-        - title: Technical Reports
-          href: content/pubs/TechReports.qmd
-        - title: Unpublished
-          href: content/pubs/Unpublished.qmd
-
-    - id: soft
-      title: "Software"
-      contents:
-        - content/software/software.qmd
-    
-    - id: resume
-      title: "Resume"
-      contents:
-        - href: content/resume.qmd
-
     - id: tuto
       style: "docked"
       title: "Tutorials"
@@ -117,8 +109,8 @@ website:
 format:
   html:
     theme:
-      light: spacelab
-      dark: cyborg
+      light: cosmo
+      dark: darkly
     css: assets/styles.css
     toc: true
     link-external-newwindow: True
@@ -130,5 +122,3 @@ format:
 
 execute:
   freeze: auto
-
-

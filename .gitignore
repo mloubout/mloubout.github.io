@@ -1,0 +1,10 @@
+.DS_Store
+.ipynb_checkpoints/
+.pytest_cache/
+/.quarto/
+__pycache__/
+*.py[cod]
+_freeze/
+_site/
+site_libs/
+/content/**/*.html

@@ -1,0 +1,842 @@
+---
+title: "Google Scholar"
+subtitle: "Current citation profile and publication index"
+toc: true
+toc-depth: 1
+body-classes: publication-list-page scholar-page
+---
+
+::: {.publication-intro}
+This snapshot is refreshed from my public Google Scholar profile.
+The curated publication categories remain available from the main
+Publications menu.
+
+[Open the live Google Scholar profile](https://scholar.google.com/citations?user=RGVC664AAAAJ&hl=en&sortby=pubdate)
+:::
+
+::: {.scholar-metrics}
+::: {.scholar-metric}
+<strong>1909</strong>
+<span>Total citations</span>
+:::
+::: {.scholar-metric}
+<strong>22</strong>
+<span>h-index</span>
+:::
+::: {.scholar-metric}
+<strong>39</strong>
+<span>i10-index</span>
+:::
+:::
+
+# Publications
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:vRqMK49ujn8C">Automatic Generation of Matrix-Free Routines for PDE Solvers with Devito via PETSc</a>
+
+Z Leibowitz, R Nelson, F Luporini, M Louboutin, M Knepley, L Mitchell, ... · Empowering the Energy Shift: The Role of HPC in Sustainable Innovation 2025 …, 2025
+
+2025 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:08ZZubdj9fEC">Emerging AI Hardware Enables Low-Power, High-Throughput Seismic Imaging on the Edge</a>
+
+E Caunt, M Louboutin, F Luporini, G Gorman, M Badrais, J Betteridge · Empowering the Energy Shift: The Role of HPC in Sustainable Innovation 2025 …, 2025
+
+2025 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:AXPGKjj_ei8C">Polychromatic multiparameter FWI backed by symbolic abstractions</a>
+
+J Washbourne, L Decker, S Kaplan, A Loddoch, O Cristea, K Bube, ... · SEG International Exposition and Annual Meeting, SEG-2025-4311940, 2025
+
+2025 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:dshw04ExmUIC">Automated MPI-X code generation for scalable finite-difference solvers</a>
+
+G Bisbas, R Nelson, M Louboutin, F Luporini, PHJ Kelly, G Gorman · 2025 IEEE International Parallel and Distributed Processing Symposium (IPDPS …, 2025
+
+2025 · Cited by 7
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:tOudhMTPpwUC">Galactic 2D Seismic Imaging Study, Phase 2: novel technologies</a>
+
+H Debens, R Eliott-Lockhart, J Moss, A Kovacs, S Debnath, ... · 86th EAGE Annual Conference &amp; Exhibition 2025 (1), 1-5, 2025
+
+2025 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:p2g8aNsByqUC">ASPIRE: iterative amortized posterior inference for Bayesian inverse problems</a>
+
+R Orozco, A Siahkoohi, M Louboutin, FJ Herrmann · Inverse Problems 41 (4), 045001, 2025
+
+2025 · Cited by 23
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:WbkHhVStYXYC">Machine learning-enabled velocity model building with uncertainty quantification</a>
+
+R Orozco, HT Erdinc, Y Zeng, M Louboutin, FJ Herrmann · arXiv preprint arXiv:2411.06651, 2024
+
+2024 · Cited by 11
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:OU6Ihb5iCvQC">Time-lapse full-waveform permeability inversion: A feasibility study</a>
+
+Z Yin, M Louboutin, O Møyner, FJ Herrmann · The Leading Edge 43 (8), 544-553, 2024
+
+2024 · Cited by 8
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:SP6oXDckpogC">WISE: Full-waveform variational inference via subsurface extensions</a>
+
+Z Yin, R Orozco, M Louboutin, FJ Herrmann · Geophysics 89 (4), A23-A28, 2024
+
+2024 · Cited by 42
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:CHSYGLWDkRkC">Wave‐based inversion at scale on graphical processing units with randomized trace estimation</a>
+
+M Louboutin, FJ Herrmann · Geophysical Prospecting 72 (2), 353-366, 2024
+
+2024 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:LPZeul_q3PIC">devitocodes/devito: v4. 8.10</a>
+
+F Luporini, M Louboutin, N Kukreja, G Bisbas, L Cavalcante, T Burgess, ... · Zenodo, 2024
+
+2024 · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:738O_yMBCRsC">Automatic PETSc Code Generation For Finite Differences</a>
+
+Z Leibowitz, R Nelson, F Luporini, M Louboutin, M Knepley, L Mitchell, ... · SIAM PP24, 2024
+
+2024 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:UxriW0iASnsC">InvertibleNetworks. jl: A Julia package for scalable normalizing flows</a>
+
+R Orozco, P Witte, M Louboutin, A Siahkoohi, G Rizzuti, B Peters, ... · arXiv preprint arXiv:2312.13480, 2023
+
+2023 · Cited by 16
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:1sJd4Hv_s6UC">Solving multiphysics-based inverse problems with learned surrogates and constraints</a>
+
+Z Yin, R Orozco, M Louboutin, FJ Herrmann · Advanced Modeling and Simulation in Engineering Sciences 10 (1), 14, 2023
+
+2023 · Cited by 25
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:P5F9QuxV20EC">Cross-platform Benchmarking of Seismic Imaging Kernels</a>
+
+G Gorman, L Decker, A Loddoch, M Louboutin, F Luporini, R Nelson, ... · EAGE Seventh High Performance Computing Workshop 2023 (1), 1-3, 2023
+
+2023 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:abG-DnoFyZgC">Model-parallel Fourier neural operators as learned surrogates for large-scale parametric PDEs</a>
+
+TJ Grady, R Khan, M Louboutin, Z Yin, PA Witte, R Chandra, RJ Hewett, ... · Computers &amp; Geosciences 178, 105402, 2023
+
+2023 · Cited by 69
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:nb7KW1ujOQ8C">3D seismic survey design by maximizing the spectral gap</a>
+
+Y Zhang, Z Yin, O López, A Siahkoohi, M Louboutin, FJ Herrmann · SEG International Exposition and Annual Meeting, SEG-2023-3895546, 2023
+
+2023 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:_xSYboBqXhAC">Learned multiphysics inversion with differentiable programming and machine learning</a>
+
+M Louboutin, Z Yin, R Orozco, TJ Grady, A Siahkoohi, G Rizzuti, PA Witte, ... · The Leading Edge 42 (7), 474-486, 2023
+
+2023 · Cited by 21
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:f2IySw72cVMC">Optimized time-lapse acquisition design via spectral gap ratio minimization</a>
+
+Y Zhang, Z Yin, O López, A Siahkoohi, M Louboutin, R Kumar, ... · Geophysics 88 (4), A19-A23, 2023
+
+2023 · Cited by 5
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:b0M2c_1WBrUC">Refining amortized posterior approximations using gradient-based summary statistics</a>
+
+R Orozco, A Siahkoohi, M Louboutin, FJ Herrmann · arXiv preprint arXiv:2305.08733, 2023
+
+2023 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:bFI3QPDXJZMC">Amortized normalizing flows for transcranial ultrasound with uncertainty quantification</a>
+
+R Orozco, M Louboutin, A Siahkoohi, G Rizzuti, T van Leeuwen, ... · arXiv preprint arXiv:2303.03478, 2023
+
+2023 · Cited by 17
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:J-pR_7NvFogC">slimgroup/JOLI. jl: v0. 8.5</a>
+
+H Modzelewski, M Louboutin, Z Yin, D Karrasch, R Orozco · Zenodo, 2023
+
+2023 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:1qzjygNMrQYC">slimgroup/SegyIO. jl: v0. 8.3</a>
+
+K Lensink, H Modzelewski, M Louboutin, Z Yin · Zenodo, 2023
+
+2023 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:kRWSkSYxWN8C">slimgroup/JutulDarcyRules. jl: v0. 2.4</a>
+
+Z Yin, M Louboutin · Zenodo, 2023
+
+2023 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:VOx2b1Wkg3QC">slimgroup/JUDI. jl: v3. 3.8</a>
+
+M Louboutin, P Witte, Z Yin, H Modzelewski, G Bruer, C Da Costa, ... · Zenodo, 2023
+
+2023 · Cited by 13
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:8AbLer7MMksC">slimgroup/InvertibleNetworks. jl: v2. 2.4</a>
+
+P Witte, M Louboutin, R Orozco, A Siahkoohi, F Herrmann, B Peters, ... · Zenodo, 2023
+
+2023 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:4fKUyHm3Qg0C">slimgroup/ImageGather. jl: v0. 2.6</a>
+
+M Louboutin · Zenodo, 2023
+
+2023 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:J_g5lzvAfSwC">Derisking geologic carbon storage from high-resolution time-lapse seismic to explainable leakage detection</a>
+
+Z Yin, HT Erdinc, AP Gahlot, M Louboutin, FJ Herrmann · The Leading Edge 42 (1), 69-76, 2023
+
+2023 · Cited by 19
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:yD5IFk8b50cC">De-risking carbon capture and sequestration with explainable CO2 leakage detection in time-lapse seismic monitoring images</a>
+
+HT Erdinc, AP Gahlot, Z Yin, M Louboutin, FJ Herrmann · arXiv preprint arXiv:2212.08596, 2022
+
+2022 · Cited by 8
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:ns9cj8rnVeAC">A simulation-free seismic survey design by maximizing the spectral gap</a>
+
+Y Zhang, M Louboutin, A Siahkoohi, Z Yin, R Kumar, FJ Herrmann · SEG International Exposition and Annual Meeting, D011S001R004, 2022
+
+2022 · Cited by 8
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:GnPB-g6toBAC">Learned coupled inversion for carbon sequestration monitoring and forecasting with Fourier neural operators</a>
+
+Z Yin, A Siahkoohi, M Louboutin, FJ Herrmann · SEG International Exposition and Annual Meeting, D011S026R001, 2022
+
+2022 · Cited by 32
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:BqipwSGYUEgC">Velocity continuation with Fourier neural operators for accelerated uncertainty quantification</a>
+
+A Siahkoohi, M Louboutin, FJ Herrmann · SEG International Exposition and Annual Meeting, D011S092R004, 2022
+
+2022 · Cited by 7
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:YFjsv_pBGBYC">Accelerating innovation with software abstractions for scalable computational geophysics</a>
+
+M Louboutin, P Witte, A Siahkoohi, G Rizzuti, Z Yin, R Orozco, ... · SEG International Exposition and Annual Meeting, D011S078R003, 2022
+
+2022 · Cited by 6
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:JV2RwH3_ST0C">Enabling wave-based inversion on GPUs with randomized trace estimation</a>
+
+M Louboutin, F Herrmann · 83rd EAGE Annual Conference &amp; Exhibition 2022 (1), 1-5, 2022
+
+2022 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:TQgYirikUcIC">Lossy checkpoint compression in full waveform inversion: a case study with ZFPv0. 5.5 and the overthrust model</a>
+
+N Kukreja, J Hückelheim, M Louboutin, J Washbourne, PHJ Kelly, ... · Geoscientific Model Development 15 (9), 3815-3829, 2022
+
+2022 · Cited by 26
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:RGFaLdJalmkC">Memory efficient invertible neural networks for 3D photoacoustic imaging</a>
+
+R Orozco, M Louboutin, FJ Herrmann · arXiv preprint arXiv:2204.11850, 2022
+
+2022 · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:WA5NYHcadZ8C">slimgroup/CloudSegyIO. jl: v1. 0.1</a>
+
+H Modzelewski, M Louboutin · Zenodo, 2022
+
+2022 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:mvPsJ3kp5DgC">slimgroup/JOLI. jl: v0. 7.16</a>
+
+H Modzelewski, M Louboutin, Z Yin, R Orozco · Zenodo, 2022
+
+2022 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:tS2w5q8j5-wC">slimgroup/SlimOptim. jl: v0. 2.5</a>
+
+M Louboutin, Z Yin, F Herrmann · Zenodo, 2022
+
+2022 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:pyW8ca7W8N0C">devitocodes/devito: v4. 2.3</a>
+
+F Luporini, M Louboutin, M Lange, N Kukreja, G Bisbas, V Pandolfo, ... · Zenodo, 2022
+
+2022 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:vV6vV6tmYwMC">slimgroup/JUDI4Cloud. jl: First public release</a>
+
+M Louboutin, Z Yin, F Herrmann · Zenodo, 2022
+
+2022 · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:O3NaXMp0MMsC">Towards large-scale learned solvers for parametric pdes with model-parallel fourier neural operators</a>
+
+TJ Grady, R Khan, M Louboutin, Z Yin, PA Witte, R Chandra, RJ Hewett, ... · arXiv preprint arXiv:2204.01205, 2022
+
+2022 · Cited by 17
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:M3NEmzRMIkIC">Seismic velocity inversion and uncertainty quantification using conditional normalizing flows</a>
+
+Y Ren, PA Witte, A Siahkoohi, M Louboutin, Z Yin, FJ Herrmann · AGU Fall Meeting, U12A-03, 2021
+
+2021 · Cited by 5
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:iH-uZ7U-co4C">Compressive time-lapse seismic monitoring of carbon storage and sequestration with the joint recovery model</a>
+
+Z Yin, M Louboutin, FJ Herrmann · SEG International Exposition and Annual Meeting, D011S145R001, 2021
+
+2021 · Cited by 11
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:r0BpntZqJG4C">Ultra-low memory seismic inversion with randomized trace estimation</a>
+
+M Louboutin, FJ Herrmann · SEG International Exposition and Annual Meeting, D011S033R001, 2021
+
+2021 · Cited by 7
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:R3hNpaxXUhUC">A dual formulation of wavefield reconstruction inversion for large-scale seismic inversion</a>
+
+G Rizzuti, M Louboutin, R Wang, FJ Herrmann · Geophysics 86 (6), R879-R893, 2021
+
+2021 · Cited by 26
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:bEWYMUwI8FkC">Low-memory stochastic backpropagation with multi-channel randomized trace estimation</a>
+
+M Louboutin, A Siahkoohi, R Wang, FJ Herrmann · arXiv preprint arXiv:2106.06998, 2021
+
+2021 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:eMMeJKvmdy0C">XConv: Low-memory stochastic backpropagation for convolutional layers</a>
+
+A Thatipelli, J Sam, M Louboutin, A Siahkoohi, R Wang, FJ Herrmann · arXiv e-prints, arXiv: 2106.06998, 2021
+
+2021 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:e5wmG9Sq2KIC">Temporal blocking of finite-difference stencil operators with sparse “off-the-grid” sources</a>
+
+G Bisbas, F Luporini, M Louboutin, R Nelson, GJ Gorman, PHJ Kelly · 2021 IEEE International Parallel and Distributed Processing Symposium (IPDPS …, 2021
+
+2021 · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:RHpTSmoSYBkC">Preconditioned training of normalizing flows for variational inference in inverse problems</a>
+
+A Siahkoohi, G Rizzuti, M Louboutin, PA Witte, FJ Herrmann · arXiv preprint arXiv:2101.03709, 2021
+
+2021 · Cited by 48
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:q3oQSFYPqjQC">slimgroup/Devito4PyTorch: Initial release</a>
+
+A Siahkoohi, M Louboutin · Zenodo, 2021
+
+2021 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:geHnlv5EZngC">slimgroup/SlimOptim. jl: v0. 1.6</a>
+
+M Louboutin, F Herrmann · Zenodo, 2021
+
+2021 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:B3FOqHPlNUQC">slimgroup/SetIntersectionProjection. jl: v0. 2.1</a>
+
+B Peters, M Louboutin, H Modzelewski · Zenodo, 2021
+
+2021 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:u9iWguZQMMsC">InvertibleNetworks. jl-Memory Efficient Deep Learning in Julia</a>
+
+PA Witte, M Louboutin, A Siahkoohi, G Rizzuti, B Peters, FJ Herrmann
+
+2021 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:4OULZ7Gr8RgC">930 Preconditioned training of normalizing flows for variational inference in inverse 931 problems</a>
+
+A Siahkoohi, G Rizzuti, M Louboutin, PA Witte, FJ Herrmann · arXiv preprint arXiv:2101.03709 932, 2021
+
+2021 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:fPk4N6BV_jEC">PROCEEDINGS-2021 IEEE 35TH INTERNATIONAL PARALLEL AND DISTRIBUTED PROCESSING SYMPOSIUM, IPDPS 2021</a>
+
+Y Niu, Z Lu, M Dong, Z Jin, W Liu, G Tan, Q Cao, Y Pei, G Bosilca, ...
+
+2021 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:HoB7MX3m0LUC">Ultra-low memory seismic inversion with randomized trace estimation. SEG Technical Program Expanded Abstracts, 787–791</a>
+
+M Louboutin, FJ Herrmann · IMAGE, Denver, 2021
+
+2021 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:ldfaerwXgEUC">Preconditioned training of normalizing flows for variational inference in inverse problems. arXiv e-prints, Jan</a>
+
+A Siahkoohi, G Rizzuti, M Louboutin, PA Witte, FJ Herrmann · arXiv preprint arXiv:2101.03709, 2021
+
+2021 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:TFP_iSt0sucC">Time-Domain Wavefield Reconstruction Inversion for Large-Scale Seismic Inversion</a>
+
+G Rizzuti, M Louboutin, R Wang, FJ Herrmann
+
+2021 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:7PzlFSSx8tAC">Extended source imaging—A unifying framework for seismic and medical imaging</a>
+
+Z Yin, R Orozco, P Witte, M Louboutin, G Rizzuti, FJ Herrmann · SEG International Exposition and Annual Meeting, D041S078R003, 2020
+
+2020 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:_FxGoFyzp5QC">Architecture and performance of Devito, a system for automated stencil computation</a>
+
+F Luporini, M Louboutin, M Lange, N Kukreja, P Witte, J Hückelheim, ... · ACM Transactions on Mathematical Software (TOMS) 46 (1), 1-28, 2020
+
+2020 · Cited by 230
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:IWHjjKOFINEC">Scaling through abstractions--high-performance vectorial wave simulations for seismic inversion with Devito</a>
+
+M Louboutin, F Luporini, P Witte, R Nelson, G Bisbas, J Thorbecke, ... · arXiv preprint arXiv:2004.10519, 2020
+
+2020 · Cited by 8
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:L8Ckcad2t8MC">Time-domain wavefield reconstruction inversion in a TTI medium</a>
+
+M Louboutin, G Rizzuti, FJ Herrmann · arXiv preprint arXiv:2004.07355, 2020
+
+2020 · Cited by 5
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:4DMP91E08xMC">An event-driven approach to serverless seismic imaging in the cloud</a>
+
+PA Witte, M Louboutin, H Modzelewski, C Jones, J Selvage, FJ Herrmann · IEEE Transactions on Parallel and Distributed Systems 31 (9), 2032-2049, 2020
+
+2020 · Cited by 49
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:5Ul4iDaHHb8C">slimgroup/InvertibleNetworks. jl: Jacobians and adjoint Jacobians of layers and networks</a>
+
+P Witte, M Louboutin, A Siahkoohi, F Herrmann · Zenodo, 2020
+
+2020 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:XiSMed-E-HIC">Unsupervised Data-Guided Uncertainty Analysis in Imaging and Horizon Tracking</a>
+
+A Siahkoohi, G Rizzuti, M Louboutin, FJ Herrmann
+
+2020 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:u_35RYKgDlwC">Lossy checkpoint compression in full waveform inversion: Geoscientific Model Development Discussions</a>
+
+N Kukreja, J Hückelheim, M Louboutin, J Washbourne, PHJ Kelly, ...
+
+2020 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:70eg2SAEIzsC">InvertibleNetworks. jl: A Julia framework for invertible neural networks</a>
+
+P Witte, G Rizzuti, M Louboutin, A Siahkoohi, F Herrmann, B Peters · November, 2020
+
+2020 · Cited by 5
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:dhFuZR0502QC">Modeling for inversion in exploration geophysics</a>
+
+M Louboutin · Georgia Institute of Technology, 2020
+
+2020 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:9ZlFYXVOiuMC">Time-domain wavefield reconstruction inversion for large-scale seismics</a>
+
+G Rizzuti, M Louboutin, R Wang, FJ Herrmann · 82nd EAGE Annual Conference and Exhibition, Expanded abstracts, 1-5, 2020
+
+2020 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:kNdYIx-mwKoC">The importance of transfer learning in seismic modeling and imaging</a>
+
+A Siahkoohi, M Louboutin, FJ Herrmann · Geophysics 84 (6), A47-A52, 2019
+
+2019 · Cited by 113
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:2P1L_qKh6hAC">Accelerating ideation &amp; innovation cheaply in the cloud the power of abstraction, collaboration &amp; reproducibility</a>
+
+FJ Herrmann, C Jones, G Gorman, J Hückelheim, K Lensink, P Kelly, ... · 4th EAGE Workshop on Highperformance Computing,(EAGE HPC Workshop, Dubai), 2019
+
+2019 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:qxL8FJ1GzNcC">Neural network augmented wave-equation simulation</a>
+
+A Siahkoohi, M Louboutin, FJ Herrmann · arXiv preprint arXiv:1910.00925, 2019
+
+2019 · Cited by 22
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:M05iB0D1s5AC">A dual formulation for time-domain wavefield reconstruction inversion</a>
+
+G Rizzuti, M Louboutin, R Wang, E Daskalakis, F Herrmann · SEG International Exposition and Annual Meeting, D043S130R005, 2019
+
+2019 · Cited by 16
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:KlAtU1dfN6UC">Event-driven workflows for large-scale seismic imaging in the cloud</a>
+
+PA Witte, M Louboutin, H Modzelewski, C Jones, J Selvage, FJ Herrmann · SEG International Exposition and Annual Meeting, D043S108R006, 2019
+
+2019 · Cited by 13
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:3fE2CSJIrl8C">Compressive least-squares migration with on-the-fly Fourier transforms</a>
+
+PA Witte, M Louboutin, F Luporini, GJ Gorman, FJ Herrmann · Geophysics 84 (5), R655-R672, 2019
+
+2019 · Cited by 41
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:Zph67rFs4hoC">Combining checkpointing and data compression to accelerate adjoint-based optimization problems</a>
+
+N Kukreja, J Hückelheim, M Louboutin, P Hovland, G Gorman · European Conference on Parallel Processing, 87-100, 2019
+
+2019 · Cited by 15
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:8k81kl-MbHgC">A large-scale framework for symbolic implementations of seismic inversion algorithms in Julia</a>
+
+PA Witte, M Louboutin, N Kukreja, F Luporini, M Lange, GJ Gorman, ... · Geophysics 84 (3), F57-F71, 2019
+
+2019 · Cited by 82
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:roLk4NBRz8UC">Devito (v3. 1.0): an embedded domain-specific language for finite differences and geophysical exploration</a>
+
+M Louboutin, M Lange, F Luporini, N Kukreja, PA Witte, FJ Herrmann, ... · Geoscientific Model Development 12 (3), 1165-1187, 2019
+
+2019 · Cited by 275
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:l7t_Zn2s7bgC">Devito (v3. 1.0): An embedded domain-specific language for finite differences and geophysical exploration: Geoscientific Model Development, 12, 1165–1187, doi: 10.5194</a>
+
+M Louboutin, M Lange, F Luporini, N Kukreja, PA Witte, FJ Herrmann, ... · gmd-12-1165-2019, 2019
+
+2019 · Cited by 84
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:pqnbT2bcN3wC">The Julia Devito Inversion Framework (JUDI)</a>
+
+PA Witte, M Louboutin, FJ Herrmann
+
+2019 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:NMxIlDl6LWMC">The importance of transfer learning in seismic modeling and imaging. Geophysics 84</a>
+
+A Siahkoohi, M Louboutin, FJ Herrmann · A47–A52, 2019
+
+2019 · Cited by 16
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:YOwf2qJgpHMC">Accelerating real-world stencil computations using temporal blocking: handling sparse sources and receivers</a>
+
+G Bisbas, F Luporini, M Louboutin, G Gorman, PHJ Kelly
+
+2019 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:UebtZRa9Y70C">Sparsity-promoting photoacoustic imaging with source estimation</a>
+
+S Sharan, R Kumar, DS Dumani, M Louboutin, R Wang, S Emelianov, ... · 2018 IEEE International Ultrasonics Symposium (IUS), 206-212, 2018
+
+2018 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:Se3iqnhoufwC">Effects of wrong adjoints for RTM in TTI media</a>
+
+M Louboutin, P Witte, FJ Herrmann · SEG International Exposition and Annual Meeting, SEG-2018-2996274, 2018
+
+2018 · Cited by 15
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:LkGwnXOMwfcC">Deep-convolutional neural networks in prestack seismic: Two exploratory examples</a>
+
+A Siahkoohi, M Louboutin, R Kumar, FJ Herrmann · SEG International Exposition and Annual Meeting, SEG-2018-2998599, 2018
+
+2018 · Cited by 24
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:Wp0gIr-vW9MC">Devito: Fast and Scalable Full-Waveform Inversion Without the Excruciating Pain</a>
+
+G Gorman, F Luporini, N Kukreja, M Louboutin, A St-Cyr, B Souza, ... · First EAGE Workshop on High Performance Computing for Upstream in Latin …, 2018
+
+2018 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:W7OEmFMy1HYC">Full-waveform inversion, part 3: Optimization</a>
+
+P Witte, M Louboutin, K Lensink, M Lange, N Kukreja, F Luporini, ... · The Leading Edge 37 (2), 142-145, 2018
+
+2018 · Cited by 34
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:eQOLeE2rZwMC">High-level python abstractions for optimal checkpointing in inversion problems</a>
+
+N Kukreja, J Hückelheim, M Lange, M Louboutin, A Walther, SW Funke, ... · arXiv preprint arXiv:1802.02474, 2018
+
+2018 · Cited by 17
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:cFHS6HbyZ2cC">High-level Python abstractions for optimal checkpointing in inversion problems: ArXiv e–prints</a>
+
+N Kukreja, J Hückelheim, M Lange, M Louboutin, A Walther, SW Funke, ...
+
+2018 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:3s1wT3WcHBgC">a, De-vito: An embedded domain-specific language for finite differences and geophysical exploration: ArXiv preprints</a>
+
+M Louboutin, M Lange, F Luporini, N Kukreja, PA Witte, J Herrmann, ... · arXiv preprint arXiv:1808.01995, 2018
+
+2018 · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:SeFeTyx0c_EC">Boundary conditions in Devito</a>
+
+M Louboutin, F Luporini · preparation, 2018
+
+2018 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:g5m5HwL7SMYC">Effects of wrong adjoints for RTM in TTI media: SEG Technical Program Expanded Abstracts, 331–335</a>
+
+M Louboutin, PA Witte, FJ Herrmann · SEG, Anaheim, 2018
+
+2018 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:lSLTfruPkqcC">The Julia Devito inversion framework (JUDI): https://github. com/slimgroup</a>
+
+PA Witte, M Louboutin, FJ Herrmann · JUDI. jl, 2018
+
+2018 · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:0EnyYjriUFMC">Combining checkpointing and data compression for large scale seismic inversion</a>
+
+N Kukreja, J Hückelheim, M Louboutin, K Hou, F Luporini, P Hovland, ... · arXiv preprint arXiv:1810.05268, 2018
+
+2018 · Cited by 5
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:2osOgNQ5qMEC">Full-waveform inversion, Part 2: Adjoint modeling</a>
+
+M Louboutin, P Witte, M Lange, N Kukreja, F Luporini, G Gorman, ... · The Leading Edge 37 (1), 69-72, 2018
+
+2018 · Cited by 29
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:Tyk-4Ss8FVUC">Full-waveform inversion, Part 1: Forward modeling</a>
+
+M Louboutin, P Witte, M Lange, N Kukreja, F Luporini, G Gorman, ... · The Leading Edge 36 (12), 1033-1036, 2017
+
+2017 · Cited by 50
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:WF5omc3nYNoC">Rapid development of seismic imaging applications using symbolic math</a>
+
+N Kukreja, M Louboutin, M Lange, F Luporini, G Gorman · Third EAGE Workshop on High Performance Computing for Upstream 2017 (1), 1-4, 2017
+
+2017 · Cited by 7
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:qjMakFHDy7sC">Performance prediction of finite-difference solvers for different computer architectures</a>
+
+M Louboutin, M Lange, FJ Herrmann, N Kukreja, G Gorman · Computers &amp; Geosciences 105, 148-157, 2017
+
+2017 · Cited by 26
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:Y0pCki6q_DkC">Optimised finite difference computation from symbolic equations</a>
+
+M Lange, N Kukreja, F Luporini, M Louboutin, C Yount, J Hückelheim, ... · arXiv preprint arXiv:1707.03776, 2017
+
+2017 · Cited by 11
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:9yKSN-GCB0IC">Extending the search space of time-domain adjoint-state FWI with randomized implicit time shifts</a>
+
+M Louboutin, FJ Herrmann · 79th EAGE Conference and Exhibition 2017 2017 (1), 1-5, 2017
+
+2017 · Cited by 7
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:d1gkVwhDpl0C">Data normalization strategies for full-waveform inversion</a>
+
+M Louboutin, L Guasch, FJ Herrmann · 79th EAGE conference and exhibition 2017 2017 (1), 1-5, 2017
+
+2017 · Cited by 11
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:uWQEDVKXjbEC">Devito: Symbolic Math for Automated Fast Finite Difference Computations</a>
+
+N Kukreja, M Lange, M Louboutin, F Luporini, G Gorman
+
+2017 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:aqlVkmm33-oC">Leveraging symbolic math for rapid development of applications for seismic modeling</a>
+
+N Kukreja, M Louboutin, M Lange, F Luporini, G Gorman
+
+2017 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:zYLM7Y9cAGgC">A Large-Scale Time-Domain Seismic Modeling and Inversion Workflow in Julia</a>
+
+PA Witte, M Louboutin, G Gorman, FJ Herrmann
+
+2017 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:IjCSPb-OGe4C">Optimizing the computational performance of time-domain modelling—leveraging multiple right-hand-sides</a>
+
+M Louboutin, G Gorman, FJ Herrmann
+
+2017 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:u-x6o8ySG0sC">Devito: Automated fast finite difference computation</a>
+
+N Kukreja, M Louboutin, F Vieira, F Luporini, M Lange, G Gorman · 2016 Sixth International Workshop on Domain-Specific Languages and High …, 2016
+
+2016 · Cited by 37
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:u5HHmVD_uO8C">Devito: Towards a generic finite difference dsl using symbolic python</a>
+
+M Lange, N Kukreja, M Louboutin, F Luporini, F Vieira, V Pandolfo, ... · 2016 6th workshop on python for high-performance and scientific computing …, 2016
+
+2016 · Cited by 65
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:dfsIfKJdRG4C">Devito: Towards a generic finite difference DSL using symbolic Python: 6th workshop on python for high-performance and scientific computing</a>
+
+M Lange, N Kukreja, M Louboutin, F Luporini, FV Zacarias, V Pandolfo, ...
+
+2016 · Cited by 4
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:rO6llkc54NcC">Devito: Towards a generic finite difference DSL using symbolic Python: Computing Research Repository</a>
+
+M Lange, N Kukreja, M Louboutin, F Luporini, F Vieira, V Pandolfo, ...
+
+2016 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:ufrVoPGSRksC">DeVito: Fast Finite Difference Computation</a>
+
+M de Aguiar, G Gorman, FJ Herrmann, N Kukreja, M Lange, M Louboutin, ...
+
+2016 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:UeHWp8X0CEIC">Optimizing the computational performance and maintainability of time-domain modelling—leveraging multiple right-hand-sides</a>
+
+M Louboutin, G Gorman, F Herrmann
+
+2016 · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:YsMSGLbcyi4C">Time compressively sampled full-waveform inversion with stochastic optimization</a>
+
+M Louboutin, FJ Herrmann · SEG International Exposition and Annual Meeting, SEG-2015-5924937, 2015
+
+2015 · Cited by 9
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:Tiz5es2fbqcC">Time-Domain FWI in TTI Media.”</a>
+
+PA Witte, M Louboutin, FJ Herrmann
+
+2015 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:QIV2ME_5wuYC">Overview on anisotropic modeling and inversion</a>
+
+P Witte, M Louboutin, FJ Herrmann
+
+2015 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:zA6iFVUQeVQC">Impact of dust particle shape and water coating on multiwavelength LIDAR signals</a>
+
+P Lafrique, L Hespel, A Dabas, X Briottet, T Huet, M Louboutin · Imaging Systems and Applications, JTu2C. 4, 2014
+
+2014 · Cited by 1
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:ZHo1McVdvXMC">Neural network augmented wave-equation simulation, arXiv preprint, doi: 10. 48550</a>
+
+A Siahkoohi, M Louboutin, FJ Herrmann · arxiv, 1910
+
+1910 · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:hMod-77fHWUC">Architecture and performance of Devito, a system for automated stencil computation, CoRR, abs/1807.03032</a>
+
+F Luporini, M Lange, M Louboutin, N Kukreja, J Hückelheim, C Yount, ...
+
+1807 · Cited by 9
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:tkaPQYYpVKoC">slimgroup/JUDI. jl: v3. 3.10</a>
+
+M Louboutin, P Witte, Z Yin, H Modzelewski, G Bruer, C da Costa, ... · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:olpn-zPbct0C">slimgroup/InvertibleNetworks. jl: Chainrules</a>
+
+P Witte, M Louboutin, A Siahkoohi, F Herrmann, B Peters · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:XiVPGOgt02cC">slimgroup/ImageGather. jl</a>
+
+M Louboutin · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:5ugPr518TE4C">slimgroup/dfno: Optimal comm</a>
+
+T Grady, M Louboutin · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:wbdj-CoPYUoC">slimgroup/ImageGather. jl: v0. 2.10</a>
+
+M Louboutin · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:eflP2zaiRacC">slimgroup/JUDI. jl: Better devito management</a>
+
+M Louboutin, P Witte, Z Yin, H Modzelewski, C Da Costa · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:D_sINldO8mEC">opesci/devito: Devito-3.1</a>
+
+F Luporini, M Lange, M Louboutin, N Kukreja, V Pandolfo, P Kazakas, ... · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:fQNAKQ3IYiAC">slimgroup/TimeProbeSeismic. jl: updates</a>
+
+M Louboutin · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:sSrBHYA8nusC">slimgroup/SetIntersectionProjection. jl: v0. 2.4</a>
+
+B Peters, M Louboutin, H Modzelewski · Zenodo, 0
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:xtRiw3GOFMkC">Model-Parallel Fourier Neural Operators as Learned Surrogates for Large-Scale Parametric PDEs</a>
+
+TJG II, R Khan, M Louboutin, Z Yin, PA Witte, R Chandra, RJ Hewett, ...
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:EUQCXRtRnyEC">We present InvertibleNetworks. jl, an open-source package for invertible neural networks and normalizing flows using memory-efficient backpropagation. InvertibleNetworks. jl …</a>
+
+M Louboutin
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:35N4QoGY0k4C">InvertibleNetworks. jl: A Julia framework for invertible neural networks, March 2021</a>
+
+P Witte, G Rizzuti, M Louboutin, A Siahkoohi, F Herrmann, B Peters · URL https://doi. org/10.5281/zenodo 4610118, 0
+
+Year unavailable · Cited by 3
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:RYcK_YlVTxYC">slimgroup/judi. jl: v2. 6.4, January 2022</a>
+
+M Louboutin, P Witte, Z Yin, H Modzelewski, C da Costa · URL https://doi. org/10.5281/zenodo 5893940, 0
+
+Year unavailable · Cited by 2
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:maZDTaKrznsC">Full-waveform inversion 2: adjoint modeling</a>
+
+M Louboutin, P Witte, M Lange, N Kukreja, F Luporini, G Gorman, ...
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:k_IJM867U9cC">Full-waveform inversion 1: forward modeling</a>
+
+M Louboutin, P Witte, M Lange, N Kukreja, F Luporini, G Gorman, ...
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:mB3voiENLucC">TheMatrix: An automated cross-platform benchmarking suite</a>
+
+R Nelson, F Luporini, M Louboutin, G Bisbas, G Gorman
+
+Year unavailable · Cited by 0
+
+## <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RGVC664AAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=RGVC664AAAAJ:hFOr9nPyWt4C">Devito for large scale elastic modelling and anisotropic inversion.</a>
+
+M Louboutin, F Luporini, P Witte, R Nelson, G Bisbas, J Thorbecke, ...
+
+Year unavailable · Cited by 0

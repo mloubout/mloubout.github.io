@@ -1,0 +1,10 @@
+---
+title: "Unpublished"
+subtitle: "Unpublished manuscripts and research notes"
+bibliography: unpublished.bib
+callout-icon: false
+toc-depth: 1
+body-classes: publication-list-page
+nocite: |
+  @*
+---
