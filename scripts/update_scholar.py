@@ -118,7 +118,11 @@ def fetch_profile_page(profile_id: str, start: int, page_size: int) -> str:
     try:
         with urlopen(request, timeout=30) as response:
             return response.read().decode("utf-8", errors="replace")
-    except (HTTPError, URLError, TimeoutError) as error:
+    except HTTPError as error:
+        raise ScholarUpdateError(
+            f"Google Scholar profile request failed with HTTP {error.code}."
+        ) from error
+    except (URLError, TimeoutError) as error:
         raise ScholarUpdateError(
             "Google Scholar did not return the public author profile."
         ) from error
@@ -217,12 +221,26 @@ def build_scholar_page(profile: dict, profile_id: str) -> str:
     return "\n".join(lines)
 
 
-def update_scholar(project_root: str, profile_id: str) -> None:
+def update_scholar(
+    project_root: str,
+    profile_id: str,
+    allow_stale: bool = False,
+) -> bool:
     """Fetch Scholar data and replace the generated page after validation."""
-    profile = fetch_profile(profile_id)
     output_path = (
         Path(project_root).resolve() / "content" / "pubs" / "Scholar.qmd"
     )
+    try:
+        profile = fetch_profile(profile_id)
+    except ScholarUpdateError as error:
+        if not allow_stale or not output_path.is_file():
+            raise
+        logging.warning(
+            "%s Keeping the existing Scholar snapshot.",
+            error,
+        )
+        return False
+
     output_text = build_scholar_page(profile, profile_id)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(
@@ -238,6 +256,7 @@ def update_scholar(project_root: str, profile_id: str) -> None:
         "Updated Google Scholar snapshot with %s articles",
         len(profile["articles"]),
     )
+    return True
 
 
 def main() -> None:
@@ -253,12 +272,21 @@ def main() -> None:
         default="RGVC664AAAAJ",
         help="Public Google Scholar author ID.",
     )
+    parser.add_argument(
+        "--allow-stale",
+        action="store_true",
+        help="Keep the existing snapshot when Scholar is unavailable.",
+    )
     arguments = parser.parse_args()
     logging.basicConfig(
         level=logging.INFO,
         format="%(levelname)s: %(message)s",
     )
-    update_scholar(arguments.project_root, arguments.profile_id)
+    update_scholar(
+        arguments.project_root,
+        arguments.profile_id,
+        allow_stale=arguments.allow_stale,
+    )
 
 
 if __name__ == "__main__":

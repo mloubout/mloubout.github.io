@@ -45,7 +45,7 @@ jobs:
         run: julia scripts/mkpubs.jl
 
       - name: Refresh Google Scholar snapshot
-        run: python scripts/update_scholar.py
+        run: python scripts/update_scholar.py --allow-stale
 
       - name: Run regression tests
         run: |

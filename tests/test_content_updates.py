@@ -1,10 +1,16 @@
 """Regression tests for automated tutorial and publication updates."""
 
 from pathlib import Path
+from unittest.mock import patch
 
 import pytest
 
-from scripts.update_scholar import ScholarProfileParser, build_scholar_page
+from scripts.update_scholar import (
+    ScholarProfileParser,
+    ScholarUpdateError,
+    build_scholar_page,
+    update_scholar,
+)
 from scripts.update_tutorials import ContentUpdateError, replace_directory
 
 
@@ -73,6 +79,27 @@ def test_scholar_profile_is_parsed_and_rendered() -> None:
     assert "<strong>1909</strong>" in output
 
 
+def test_scholar_update_preserves_snapshot_when_unavailable(tmp_path) -> None:
+    """Keep a valid snapshot when Scholar rejects an automated request."""
+    publication_directory = tmp_path / "content" / "pubs"
+    publication_directory.mkdir(parents=True)
+    scholar_path = publication_directory / "Scholar.qmd"
+    scholar_path.write_text("Existing snapshot", encoding="utf-8")
+
+    with patch(
+        "scripts.update_scholar.fetch_profile",
+        side_effect=ScholarUpdateError("HTTP 403"),
+    ):
+        was_updated = update_scholar(
+            str(tmp_path),
+            "profile-id",
+            allow_stale=True,
+        )
+
+    assert not was_updated
+    assert scholar_path.read_text(encoding="utf-8") == "Existing snapshot"
+
+
 def test_update_workflow_includes_all_external_sources() -> None:
     """Keep tutorials, archives, and Scholar in the scheduled refresh."""
     workflow = Path(".github/workflows/update-content.yml").read_text(
@@ -81,6 +108,6 @@ def test_update_workflow_includes_all_external_sources() -> None:
     expected_commands = [
         "python scripts/update_tutorials.py",
         "julia scripts/mkpubs.jl",
-        "python scripts/update_scholar.py",
+        "python scripts/update_scholar.py --allow-stale",
     ]
     assert all(command in workflow for command in expected_commands)
