@@ -58,16 +58,6 @@
 	url2 = {https://slim.gatech.edu/Publications/Public/Conferences/IPMS/2024/orozco2024IPMSnwi/herrmann2024.pdf},
 	author = {Rafael Orozco and Ziyi Yin and Ali Siahkoohi and Mathias Louboutin and Felix J. Herrmann}
 }
-@conference {orozco2024EAGEnfb,
-	title = {Normalizing Flows for Bayesian Experimental Design in Imaging Applications},
-	booktitle = {EAGE Annual Conference Proceedings},
-	year = {2024},
-	month = {6},
-	abstract = {Neural density estimators, such as invertible normalizing flows, are capable of estimating the Bayesian posterior distribution in a variety of imaging problems, including medical MRI and seismic imaging/monitoring. So far, few works explore the possibility to make explicit use of probabilistic information contained within the full Bayesian solution of these inverse problems. During our talk, we investigate how a simple modification to the training objective of conditional normalizing flows allows for Bayesian experimental design without modifying the normalizing flow{\textquoteright}s neural architecture itself. By establishing a key relationship between the expected information gain (EIG) and the maximum-likelihood, attained during the training of normalizing flows, we show that optimal experimental design can be achieved. During our talk, we first verify, on a stylized problem, that our method indeed maximizes the expected information gain, followed by demonstrating the advocacy of our methodology on large-scale medical and seismic problems.},
-	keywords = {Bayesian inference, deep learning, expected information gain, Normalizing flows, optimal experimental design, Uncertainty quantification},
-	url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2024/orozco2024EAGEnfb},
-	author = {Rafael Orozco and Abhinav Prakash Gahlot and Peng Chen and Mathias Louboutin and Felix J. Herrmann}
-}
 @conference {orozco2024SIAMboed,
 	title = {Normalizing Flows for Bayesian Experimental Design in Imaging Applications},
 	booktitle = {SIAM Conference on Uncertainty Quantification},
@@ -79,6 +69,16 @@
 	doi = {10.48550/arXiv.2402.18337},
 	url = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMUQ/2024/orozco2024SIAMUQboed},
 	url2 = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMUQ/2024/orozco2024SIAMUQboed/orozco2024SIAMUQboed.pdf},
+	author = {Rafael Orozco and Abhinav Prakash Gahlot and Peng Chen and Mathias Louboutin and Felix J. Herrmann}
+}
+@conference {orozco2024EAGEnfb,
+	title = {Normalizing Flows for Bayesian Experimental Design in Imaging Applications},
+	booktitle = {EAGE Annual Conference Proceedings},
+	year = {2024},
+	month = {6},
+	abstract = {Neural density estimators, such as invertible normalizing flows, are capable of estimating the Bayesian posterior distribution in a variety of imaging problems, including medical MRI and seismic imaging/monitoring. So far, few works explore the possibility to make explicit use of probabilistic information contained within the full Bayesian solution of these inverse problems. During our talk, we investigate how a simple modification to the training objective of conditional normalizing flows allows for Bayesian experimental design without modifying the normalizing flow{\textquoteright}s neural architecture itself. By establishing a key relationship between the expected information gain (EIG) and the maximum-likelihood, attained during the training of normalizing flows, we show that optimal experimental design can be achieved. During our talk, we first verify, on a stylized problem, that our method indeed maximizes the expected information gain, followed by demonstrating the advocacy of our methodology on large-scale medical and seismic problems.},
+	keywords = {Bayesian inference, deep learning, expected information gain, Normalizing flows, optimal experimental design, Uncertainty quantification},
+	url = {https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2024/orozco2024EAGEnfb},
 	author = {Rafael Orozco and Abhinav Prakash Gahlot and Peng Chen and Mathias Louboutin and Felix J. Herrmann}
 }
 @conference {herrmann2024SIAMUQdt,
@@ -627,6 +627,17 @@
 	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMCSE/2019/witte2019SIAMCSEclsmft/witte2019SIAMCSEclsmft.pdf},
 	author = {Philipp A. Witte and Mathias Louboutin and Fabio Luporini and Gerard J. Gorman and Felix J. Herrmann}
 }
+@conference {rizzuti2019SIAMGStwri,
+	title = {A dual formulation for time-domain wavefield reconstruction inversion},
+	booktitle = {SIAM Conference on Mathematical and Computational Issues in the Geosciences},
+	year = {2019},
+	note = {(SIAM GS)},
+	month = {03},
+	abstract = {Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.},
+	keywords = {WRI},
+	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMGS/2019/rizzuti2019SIAMGStwri/rizzuti2019SIAMGStwri.pdf},
+	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann}
+}
 @conference {rizzuti2019SEGadf,
 	title = {A dual formulation for time-domain wavefield reconstruction inversion},
 	booktitle = {SEG Technical Program Expanded Abstracts},
@@ -640,17 +651,6 @@
 	url = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/rizzuti2019SEGadf/rizzuti2019SEGadf.html},
 	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/rizzuti2019SEGadf/rizzuti2019SEGadf_pres.pdf},
 	software = {https://github.com/slimgroup/Software.rizzuti2019SEGadf},
-	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann}
-}
-@conference {rizzuti2019SIAMGStwri,
-	title = {A dual formulation for time-domain wavefield reconstruction inversion},
-	booktitle = {SIAM Conference on Mathematical and Computational Issues in the Geosciences},
-	year = {2019},
-	note = {(SIAM GS)},
-	month = {03},
-	abstract = {Wavefield reconstruction inversion (WRI) is based on the combination of data misfit and PDE-residual penalty terms, and it aims at the reconstruction of the optimal property model and field pair. A full-space optimization would require the storage of field variables for every frequency or time sample (and every source). Remedies via variable projection are well studied, but they entail the solution of a modified wave equation, which is costly both in frequency and time domain. Here, we explore an efficient alternative to WRI, where properties are complemented, instead, by elements of the dual data space. The starting point of our proposal is the denoising reformulation of WRI: the PDE compliance is optimized under the constraint of a given data fit. Since the field variable can be eliminated from the associated saddle-point problem, we obtain a new objective functional of only properties and Lagrange multipliers. Its evaluation, and gradient computation, involves the solution of the original wave equation, which is amenable to time-domain discretization. The optimization scheme of choice can now leverage on affordable storage of the iterates.},
-	keywords = {WRI},
-	presentation = {https://slim.gatech.edu/Publications/Public/Conferences/SIAMGS/2019/rizzuti2019SIAMGStwri/rizzuti2019SIAMGStwri.pdf},
 	author = {Gabrio Rizzuti and Mathias Louboutin and Rongrong Wang and Emmanouil Daskalakis and Felix J. Herrmann}
 }
 @conference {witte2019SEGedw,
